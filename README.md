@@ -21,6 +21,11 @@
 - [로그인](https://eyoh1.github.io/project/2024edu_eumseong/site/www/login.html)
 - [증명서 프린트](https://eyoh1.github.io/project/2024edu_eumseong/site/www/certificate.html)
 
+### 2024mpva (2024 un국가보훈부 영문)
+- [메인 레이아웃](https://eyoh1.github.io/project/2024mpva/site/english/main.html)
+- [서브 레이아웃](https://eyoh1.github.io/project/2024mpva/site/english/sub.html)
+- [템플릿](https://eyoh1.github.io/project/2024mpva/site/english/template.html)
+
 ### 2023dh (2023 동해시청 전면개편)
 - [공통 서브 레이아웃](https://eyoh1.github.io/project/2023dh/site/public/sub.html)
 - [대표 서브 레이아웃](https://eyoh1.github.io/project/2023dh/site/www/sub.html)
