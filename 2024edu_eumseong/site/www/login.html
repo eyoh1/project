@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"/>
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}"/>
+    <meta name="description" content="@@{siteInfo.siteDc}"/>
+    <link rel="stylesheet" type="text/css" href="../../site/www/css/font.css"/>
+    <link rel="stylesheet" href="../../site/www/css/sub.css">
+    <script src="../../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../../common/js/plugins.js"></script>
+    <script src="../../site/www/js/common.js"></script>
+    <script src="../../site/www/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+
+                    <div id="contents">
+
+                        <!-- 사용자 통합로그인 'program login' -->
+
+                        <div class="login_header">
+                            <a href="https://edu.eumseong.go.kr/www/index.do" class="home_btn"><span>메인화면</span></a>
+                            <h2>충북혁신 평생학습공유플랫폼</h2>
+                        </div>
+
+                        <div class="program login">
+                            <div class="login_top">
+                                <h3>홈페이지를 방문해 주신 여러분을 환영합니다.</h3>
+                                <p>
+                                    회원 로그인을 하시면 홈페이지의 모든서비스를 이용하실 수 있습니다. <br/>
+                                    <em class="em_red">회원 가입 후</em> 네이버, 카카오를 통한 SNS인증을 통해 보다 간편하게 홈페이지를 이용하실 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="login_box">
+                                <div class="login_cont n1">
+                                    <div class="login_title">회원 로그인</div>
+                                    <p class="login_text">회원 아이디와 비밀번호를입력해 주세요.</p>
+                                    <div class="login_inp_box">
+                                        <div class="login_inp_inner">
+                                            <div class="login_inp">
+                                                <label for="id">아이디</label>
+                                                <input type="text" id="id" />
+                                            </div>
+                                            <div class="login_inp">
+                                                <label for="pw">비밀번호</label>
+                                                <input type="text" id="pw" />
+                                            </div>
+                                        </div>
+                                        <button type="button" class="login_inp_btn">로그인</button>
+                                    </div>
+                                    <a href="#n" class="login_link">회원가입</a>
+                                    <a href="#n" class="login_link">ID/PW 찾기</a>
+                                </div>
+                                <div class="login_cont n2">
+                                    <div class="login_title">SNS 로그인</div>
+                                    <p class="login_text">회원인 경우 SNS 아이디 연동 후 간편하게<br/> 서비스를 이용하실 수있습니다.</p>
+                                    <ul class="login_sns">
+                                        <li><button type="button" class="login_sns_btn naver" onclick=""><span>네이버</span></button></li>
+                                        <li><button type="button" class="login_sns_btn kakao" onclick=""><span>카카오</span></button></li>
+                                    </ul>
+                                    <div class="login_waring">
+                                        <p>SNS로그인을 사용하시려면 최초 1회 본인인증이 필요합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //사용자 통합로그인 -->
+
+                        <div class="login_footer">
+                            <p class="copyright">Copyright ⓒ 2024 Eumseong Gun•Jincheon-Gun. All Rights Reserved.</p>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <!-- SNS 로그인 및 계정인증 간 연동 안내' program login sns' -->
+                        <div class="program login sns">
+                            <div class="login_top">
+                                <h3><span>SNS로그인을 사용하시려면 </span><br/>최초1회 계정인증(ID/PW)이 필요합니다.</h3>
+                                <p>
+                                    위 SNS로그인을 통해 홈페이지를 이용하시려면 <em class="em_blue">계정인증을 하셔야 정상적인 이용이 가능합니다. </em><br/>
+                                    계정인증은 <em class="em_red">최초 1회만 필요</em>하며 이후에는 계정인증 없이 SNS인증만으로 페이지를 이용하실 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="sns_box naver">
+                                <!--
+                                연동 sns에 맞게 클래스 붙여주세요.
+	                            네이버 : sns_box naver
+	                            카카오 : sns_box kakao
+	                            -->
+                                <div class="sns_title"><span>네이버</span> 로그인</div>
+                                <ul>
+                                    <li>
+                                        <span class="dt">ID</span>
+                                        <span class="dd">abc***</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">성명(닉네임)</span>
+                                        <span class="dd">홍길동</span>
+                                    </li>
+                                </ul>
+
+                                <script>
+                                    if($('.sns_box').hasClass('naver') === true){
+                                        $('.sns_box .sns_title span').text('네이버')
+                                    }else if($('.sns_box').hasClass('kakao') === true){
+                                        $('.sns_box .sns_title span').text('카카오')
+                                    }
+                                </script>
+
+                            </div>
+                            <div class="login_box">
+                                <div class="login_cont">
+                                    <div class="login_title">계정인증</div>
+                                    <p class="login_text">회원 아이디와 비밀번호를입력해 주세요.</p>
+                                    <div class="login_inp_box">
+                                        <div class="login_inp_inner">
+                                            <div class="login_inp">
+                                                <label for="id">아이디</label>
+                                                <input type="text" id="id" />
+                                            </div>
+                                            <div class="login_inp">
+                                                <label for="pw">비밀번호</label>
+                                                <input type="text" id="pw" />
+                                            </div>
+                                        </div>
+                                        <button type="button" class="login_inp_btn">로그인</button>
+                                    </div>
+                                    <a href="#n" class="login_link">회원가입</a>
+                                    <a href="#n" class="login_link">ID/PW 찾기</a>
+                                    <a href="#n" class="btn type3 link small" onclick=""><span>SNS로그인 연동 취소</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //SNS 로그인  및 계정인증 간 연동 안내 -->
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <!-- SNS 로그인 및 연동 성공 'program login sns success' -->
+                        <div class="program login sns success">
+                            <div class="login_top">
+                                <h3><span>SNS로그인연동이 </span><br/>성공적으로 완료되었습니다.</h3>
+                            </div>
+                            <div class="sns_box naver">
+                                <!--
+                                연동 sns에 맞게 클래스 붙여주세요.
+                                네이버 : sns_box naver
+                                카카오 : sns_box kakao
+                                -->
+                                <div class="sns_title"><span>네이버</span> 로그인</div>
+                                <ul>
+                                    <li>
+                                        <span class="dt">ID</span>
+                                        <span class="dd">abc***</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">성명(닉네임)</span>
+                                        <span class="dd">홍길동</span>
+                                    </li>
+                                </ul>
+
+                                <script>
+                                    if($('.sns_box').hasClass('naver') === true){
+                                        $('.sns_box .sns_title span').text('네이버')
+                                    }else if($('.sns_box').hasClass('kakao') === true){
+                                        $('.sns_box .sns_title span').text('카카오')
+                                    }
+                                </script>
+
+                            </div>
+                            <div class="login_text">
+                                <p>
+                                    앞으로 위 SNS로그인을 통해 홈페이지를 보다 쉽게 이용하실 수 있습니다. <br/>
+                                    연동된 SNS로그인 연동 현황은 <span>홈페이지가이드>SNS로그인 연동관리</span>에서 확인하실 수 있으며, <br/>
+                                    해당 페이지에서 사용중인 SNS로그인을 해제하실 수 있습니다.
+                                </p>
+                                <a href="#n" class="btn type3 link"><span>이전페이지로 이동</span></a>
+                                <a href="#n" class="btn link"><span>SNS로그인 연동관리</span></a>
+                            </div>
+                        </div>
+                        <!-- //SNS 로그인 및 연동 성공 -->
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <!-- SNS 연동 관리 'program login status' -->
+                         <div class="program login status">
+                             <h3>SNS로그인 연동 현황</h3>
+
+                             <!-- 연동되어 있는 경우 -->
+                             <div class="sns_box naver">
+                                 <div class="sns_title"><span>네이버</span> 로그인</div>
+                                 <ul>
+                                     <li>
+                                         <span class="dt">ID</span>
+                                         <span class="dd">abc***</span>
+                                     </li>
+                                     <li>
+                                         <span class="dt">성명(닉네임)</span>
+                                         <span class="dd">홍길동</span>
+                                     </li>
+                                     <li>
+                                         <span class="dt">연동일시</span>
+                                         <span class="dd">2022-01-01 10:30:30</span>
+                                     </li>
+                                 </ul>
+                                 <a href="#" onclick="" class="btn link type3 small"><span>연동 해제</span></a>
+                             </div>
+                             <!-- //연동되어 있는 경우 -->
+
+                             <!-- 연동되어 있지 않은 경우 -->
+                             <div class="sns_box kakao">
+                                 <div class="sns_title"><span>카카오</span> 로그인</div>
+                                 <ul>
+                                     <li>
+                                         <span class="dt">계정인증과 연동되어 있지 않습니다.</span>
+                                     </li>
+                                 </ul>
+                                 <a href="#" onclick="" class="btn link small"><span>계정인증 연동</span></a>
+                             </div>
+                             <!-- //연동되어 있지 않은 경우 -->
+                         </div>
+                        <!-- //SNS 연동 관리 -->
+
+                    </div>
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="wrap">
+            <div class="banner">
+                <h2 class="banner_title">배너모음 </h2>
+                <div class="banner_list">
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">충북평생교육진흥원</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">교육통계서비스</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">음성군장애인복지관</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                    <div class="banner_item">
+                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer_content">
+                <div class="link_shortcut">
+                    <h2 class="skip">바로가기</h2>
+                    <ul class="shortcut_list">
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">개인정보처리방침</a></li>
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">저작권정책</a></li>
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">바이러스/검사치료</a></li>
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">뷰어다운로드</a></li>
+                    </ul>
+                </div>
+
+                <div class="logo">
+                    <a href="./index.do" class="logo_anchor"><span>충북혁신 평생학습 공유플랫폼</span></a>
+                </div>
+                <div class="info">
+                    <div class="info_list">
+                        <div class="info_item">
+                            <span class="info_title">음성군 금빛평생학습관</span>
+                            <ul class="info_list">
+                                <li class="address"><span class="skip">주소</span>우 27633 충청북도 음성군 금왕읍 금빛공원2길 2 금빛평생학습관
+                                </li>
+                                <li class="tel">대표전화 : 043-871-4921~4 팩스 : 043-871-1925</li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <span class="info_title">음성군 설성평생학습관</span>
+                            <ul class="info_list">
+                                <li class="address"><span class="skip">주소</span>우 27695 충청북도 음성군 음성읍 수정로37 설성문화회관 2층
+                                </li>
+                                <li class="tel">대표전화 : 043-871-4911~3</li>
+                            </ul>
+                        </div>
+                        <div class="info_item">
+                            <span class="info_title">진천군 평생학습관</span>
+                            <ul class="info_list">
+                                <li class="address">
+                                    <span class="skip">주소</span>우 27832 충청북도 진천군 진천읍 포석길 37-6 (읍내리 352-4)
+                                </li>
+                                <li class="tel"> 대표전화 : 043-539-3742 팩스 : 0502-1192-0027</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="info_copyright">Copyright ⓒ 2024 Eumseong Gun•Jincheon-Gun. All Rights Reserved.</p>
+                </div>
+                <!--<div class="wa">
+                    <a href="http://webwatch.or.kr/certification/situation.html" target="_blank" title="새창" rel="noopener noreferrer" class="wa_anchor">
+                        <img src="/common/images/layout/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                    </a>
+                </div>-->
+            </div>
+        </div>
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <address><span class="info_address">@@{siteInfo.insttAdres}</span><span class="info_tel">TEL : @@{siteInfo.insttTelno}</span></address>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+    </footer>
+
+</div>
+</body>
+</html>

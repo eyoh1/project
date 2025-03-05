@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* WantedSans */
+@font-face{
+    font-family: 'WantedSans';
+    font-weight: 400;
+    src: url("../font/WantedSans-Regular.woff2") format('woff2'),
+    url("../font/WantedSans-Regular.woff") format('woff');
+}
+@font-face{
+    font-family: 'WantedSans';
+    font-weight: 500;
+    src: url("../font/WantedSans-Medium.woff2") format('woff2'),
+    url("../font/WantedSans-Medium.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'WantedSans';
+    font-weight: 600;
+    src: url("../font/WantedSans-SemiBold.woff2") format('woff2'),
+    url("../font/WantedSans-SemiBold.woff") format('woff');
+}
+@font-face{
+    font-family: 'WantedSans';
+    font-weight: 700;
+    src: url("../font/WantedSans-Bold.woff2") format('woff2'),
+    url("../font/WantedSans-Bold.woff") format('woff');
+}
+
+/* Tmoney */
+@font-face{
+    font-family: 'Tmoney';
+    font-weight: 400;
+    src: url("../font/TmoneyRoundWindRegular.woff2") format('woff2'),
+    url("../font/TmoneyRoundWindRegular.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Tmoney';
+    font-weight: 800;
+    src: url("../font/TmoneyRoundWindExtraBold.woff2") format('woff2'),
+    url("../font/TmoneyRoundWindExtraBold.woff") format('woff');
+}
+
+/* Nexen */
+@font-face{
+    font-family: 'Nexen';
+    font-weight: 400;
+    src: url("../font/NEXEN-TIRE_Regular.woff2") format('woff2'),
+    url("../font/NEXEN-TIRE_Regular.woff") format('woff');
+}
+@font-face{
+    font-family: 'Nexen';
+    font-weight: 600;
+    src: url("../font/NEXEN-TIRE_Bold.woff2") format('woff2'),
+    url("../font/NEXEN-TIRE_Bold.woff") format('woff');
+
+}
+/* 상주곶감체 */
+@font-face{
+    font-family: 'SANGJU';
+    font-weight: 400;
+    src: url("../font/SANGJU_Gotgam.woff2") format('woff2'),
+    url("../font/SANGJU_Gotgam.woff") format('woff');
+}
+
+/* 카페24 */
+@font-face{
+    font-family: 'cafe24SR';
+    font-weight: 400;
+    src: url("../font/Cafe24Ssurround-v2.0.woff2") format('woff2'),
+    url("../font/Cafe24Ssurround-v2.0.woff") format('woff');
+}
+
+/* 카페24 */
+@font-face{
+    font-family: 'Diphylleia';
+    font-weight: 400;
+    src: url("../font/Diphylleia_Regular.woff2") format('woff2'),
+    url("../font/Diphylleia_Regular.woff") format('woff');
+}
+
+/* SBAggro */
+@font-face{
+    font-family:'SBAggro';
+    font-weight: 500;
+    src: url("../font/SBAggroM.woff2") format('woff2'),
+    url("../font/SBAggroM.woff") format('woff');
+}
+
+/* SCDream */
+@font-face{
+    font-family:'SCDream';
+    font-weight: 500;
+    src: url("../font/S-CoreDream-5Medium.woff2") format('woff2'),
+    url("../font/S-CoreDream-5Medium.woff") format('woff');
+}

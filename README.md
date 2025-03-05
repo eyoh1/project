@@ -13,6 +13,14 @@
 - [오죽헌·시립박물관 메인 레이아웃](https://eyoh1.github.io/project/2023cjfmc/site/museum/main.html)
 - [오죽헌·시립박물관 서브 레이아웃](https://eyoh1.github.io/project/2023cjfmc/site/museum/sub.html)
 
+### 2024edu_eumseong (2024 음성진전평생학습)
+- [대표 서브 레이아웃](https://eyoh1.github.io/project/2024edu_eumseong/site/www/sub.html)
+- [대표 메인 대시보드 TV](https://eyoh1.github.io/project/2024edu_eumseong/site/www/dashboard_tv.html)
+- [대표 템플릿](https://eyoh1.github.io/project/2024edu_eumseong/site/www/template.html)
+- [대표 회원가입](https://eyoh1.github.io/project/2024edu_eumseong/site/www/join.html)
+- [대표 로그인](https://eyoh1.github.io/project/2024edu_eumseong/site/www/login.html)
+- [대표 증명서 프린트](https://eyoh1.github.io/project/2024edu_eumseong/site/www/certifiate.html)
+
 ### 2023dh (2023 동해시청 전면개편)
 - [공통 서브 레이아웃](https://eyoh1.github.io/project/2023dh/site/public/sub.html)
 - [대표 서브 레이아웃](https://eyoh1.github.io/project/2023dh/site/www/sub.html)
