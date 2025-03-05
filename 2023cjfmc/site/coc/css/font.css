@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* NotoKr */
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 200;
+    src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
+    url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 400;
+    src: url("../fonts/NotoSansCJKkr-Regular.woff2") format('woff2'),
+    url("../fonts/NotoSansCJKkr-Regular.woff") format('woff');
+}
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 500;
+    src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
+    url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
+}
+
+/* onemobileOTF */
+@font-face{
+    font-family: 'onemobileOTF';
+    font-weight: 300;
+    src: url("../../coc/fonts/ONEMobileOTFLight.woff2") format('woff2'),
+    url("../../coc/fonts/ONEMobileOTFLight.woff") format('woff');
+}
+@font-face{
+    font-family: 'onemobileOTF';
+    font-weight: 400;
+    src: url("../../coc/fonts/ONEMobileOTFRegular.woff2") format('woff2'),
+    url("../../coc/fonts/ONEMobileOTFRegular.woff") format('woff');
+}
+@font-face{
+    font-family: 'onemobileOTF';
+    font-weight: 600;
+    src: url("../../coc/fonts/ONEMobileOTFBold.woff2") format('woff2'),
+    url("../../coc/fonts/ONEMobileOTFBold.woff") format('woff');
+}
+
+/* tangsbudaejjigae */
+@font-face{
+    font-family: 'tangsbudaejjigae';
+    font-weight: 300;
+    src: url("../../coc/fonts/tangsbudaejjigae_Light.woff2") format('woff2'),
+    url("../../coc/fonts/tangsbudaejjigae_Light.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'tangsbudaejjigae';
+    font-weight: 500;
+    src: url("../../coc/fonts/tangsbudaejjigae_Medium.woff2") format('woff2'),
+    url("../../coc/fonts/tangsbudaejjigae_Medium.woff") format('woff');
+}
+
+/* Montserrat */
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    src: url("../../coc/fonts/Montserrat-Bold.woff2") format('woff2'),
+    url("../../coc/fonts/Montserrat-Bold.woff") format('woff');
+}

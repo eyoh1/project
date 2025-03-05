@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"/>
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}"/>
+    <meta name="description" content="@@{siteInfo.siteDc}"/>
+    <link rel="stylesheet" href="../../site/coc/css/sub.css">
+    <script src="../../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../../site/coc/js/plugins.js"></script>
+    <script src="../../site/coc/js/common.js"></script>
+    <script src="../../site/coc/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+
+    <header id="header">
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="group">
+            <div class="logo">
+                <a href="./index.do" class="logo_anchor"><img src="../../site/coc/images/common/logo.png" alt="">충주유기농체험교육센터</a>
+            </div>
+
+            <div class="lnb">
+
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="site">
+                            <ul class="site_list">
+                                <li class="site_item n1"><a href="#" class="site_anchor"><span>충주시청</span></a></li>
+                                <li class="site_item n2"><a href="#" class="site_anchor"><span>충주시설관리공단</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="depth depth1"><!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                        <ul class="depth_list depth1_list cut">
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">소개</a>
+                                <div class="depth depth2">
+                                    <ul class="depth_list depth2_list cut">
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth2_text">2차메뉴(새창)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth1_text">숙소</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">체험</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">교육</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">대관</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">알림마당</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="shortcut">
+                <ul class="shortcut_list">
+                    <li class="shortcut_item home"><a href="#n" class="shortcut_anchor">홈</a></li>
+                    <li class="shortcut_item login"><a href="#n" class="shortcut_anchor">로그인</a></li>
+                    <!--<li class="shortcut_item logout"><a href="#n" class="shortcut_anchor">로그아웃</a></li>-->
+                    <li class="shortcut_item sitemap"><a href="#n" class="shortcut_anchor"><span>사이트맵</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+                        <div class="sub_title">
+                            <h2>현재메뉴명</h2>
+                        </div>
+
+                        <div class="breadcrumbs">
+                            <ol class="breadcrumbs_list">
+                                <!-- 차수에 맞게 링크 추가해주세요! -->
+                                <li class="breadcrumbs_item home"><a href="./index.do" class="breadcrumbs_anchor">홈</a></li>
+                                <li class="breadcrumbs_item n1"><a href="#n" class="breadcrumbs_anchor">1차메뉴</a></li>
+                                <li class="breadcrumbs_item n2"><a href="#n" class="breadcrumbs_anchor">2차메뉴</a></li>
+                                <li class="breadcrumbs_item n3"><a href="#n" class="breadcrumbs_anchor">3차메뉴</a></li>
+                                <li class="breadcrumbs_item n4">4차메뉴</li><!-- 마지막차수 링크 없음 -->
+                            </ol>
+                        </div>
+
+                        <div class="addons">
+                            <ul class="addons_list">
+                                <li class="addons_item share toggle">
+                                    <button type="button" class="addons_button share_show">공유하기</button>
+                                    <div class="share_panel">
+                                        <ul class="share_list clearfix">
+                                            <li class="share_item n1">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">유튜브</a>
+                                            </li>
+                                            <li class="share_item n2">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">블로그</a>
+                                            </li>
+                                            <li class="share_item n3">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">페이스북</a>
+                                            </li>
+                                            <li class="share_item n4">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">트위터</a>
+                                            </li>
+                                            <li class="share_item n5">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">인스타그램</a>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="share_hide">닫기</button>
+                                    </div>
+                                </li>
+                                <li class="addons_item print"><button type="button" onclick="window.print();" class="addons_button">인쇄</button></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <!--- 3차 탭메뉴 -->
+                    <div class="tab_menu type1">
+                        <button class="tab_select"><span>선택된 메뉴명</span></button><!--  -->
+                        <div class="tab_panel">
+                            <ul class="tab_list clearfix">
+                                <li class="tab_item active"><a href="" class="tab_anchor" target="_self"><span>A블럭</span></a></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>B블럭</span></a></li>
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>C블럭</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--- 4차 탭메뉴 -->
+                    <div class="tab_menu type2">
+                        <button class="tab_select"><span>선택된 메뉴명</span></button><!--  -->
+                        <div class="tab_panel">
+                            <ul class="tab_list clearfix">
+                                <li class="tab_item active"><a href="" class="tab_anchor" target="_self"><span>호랑이</span></a></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>코끼리</span></a></li>
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>브라키오사우르스</span></a></li>
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>무당벌레</span></a></li>
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>꿀벌</span></a></li>
+                                <li class="tab_item"><a href="" class="tab_anchor" target="_self"><span>메뚜기</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="contents" class="cts@@{key}">
+                        contents
+                    </div>
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer_link">
+            <ul class="link_list">
+                <li class="link_item"><a href="#n" class="link_anchor">개인정보처리방침</a></li>
+                <li class="link_item"><a href="#n" class="link_anchor">이메일주소무단수집거부</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_info">
+            <p class="info_address">충주시 살미면 세성리 산57-1번지</p>
+            <p class="info_tel">대표번호 : 043-870-7832</p>
+            <p class="info_copyright">Copyright ⓒ 2023 충주유기농체험교육센터. ALL RIGHT RESERVED.</p>
+        </div>
+
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <p class="info_address">@@{siteInfo.insttAdres}</p>
+            <p class="info_tel">대표번호 : @@{siteInfo.insttTelno}</p>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+
+    </footer>
+
+</div>
+</body>
+</html>

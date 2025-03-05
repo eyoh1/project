@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"/>
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}"/>
+    <meta name="description" content="@@{siteInfo.siteDc}"/>
+    <link rel="stylesheet" href="../../site/coc/css/sub.css">
+    <script src="../../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../../site/coc/js/plugins.js"></script>
+    <script src="../../site/coc/js/common.js"></script>
+    <script src="../../site/coc/js/sub.js"></script>
+    <script src="../../site/coc/js/template.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+
+    <header id="header">
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="group">
+            <div class="logo">
+                <a href="./index.do" class="logo_anchor"><img src="../../site/coc/images/common/logo.png" alt="">충주유기농체험교육센터</a>
+            </div>
+
+            <div class="lnb">
+
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="site">
+                            <ul class="site_list">
+                                <li class="site_item n1"><a href="#" class="site_anchor"><span>충주시청</span></a></li>
+                                <li class="site_item n2"><a href="#" class="site_anchor"><span>충주시설관리공단</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="depth depth1"><!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                        <ul class="depth_list depth1_list cut">
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">소개</a>
+                                <div class="depth depth2">
+                                    <ul class="depth_list depth2_list cut">
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                        </li>
+                                        <li class="depth_item depth2_item">
+                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth2_text">2차메뉴(새창)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth1_text">숙소</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">체험</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">교육</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">대관</a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text">알림마당</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="shortcut">
+                <ul class="shortcut_list">
+                    <li class="shortcut_item home"><a href="#n" class="shortcut_anchor">홈</a></li>
+                    <li class="shortcut_item login"><a href="#n" class="shortcut_anchor">로그인</a></li>
+                    <!--<li class="shortcut_item logout"><a href="#n" class="shortcut_anchor">로그아웃</a></li>-->
+                    <li class="shortcut_item sitemap"><a href="#n" class="shortcut_anchor"><span>사이트맵</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+                        <div class="sub_title">
+                            <h2>현재메뉴명</h2>
+                        </div>
+
+                        <div class="breadcrumbs">
+                            <ol class="breadcrumbs_list">
+                                <!-- 차수에 맞게 링크 추가해주세요! -->
+                                <li class="breadcrumbs_item home"><a href="./index.do" class="breadcrumbs_anchor">홈</a></li>
+                                <li class="breadcrumbs_item n1"><a href="#n" class="breadcrumbs_anchor">1차메뉴</a></li>
+                                <li class="breadcrumbs_item n2"><a href="#n" class="breadcrumbs_anchor">2차메뉴</a></li>
+                                <li class="breadcrumbs_item n3"><a href="#n" class="breadcrumbs_anchor">3차메뉴</a></li>
+                                <li class="breadcrumbs_item n4">4차메뉴</li><!-- 마지막차수 링크 없음 -->
+                            </ol>
+                        </div>
+
+                        <div class="addons">
+                            <ul class="addons_list">
+                                <li class="addons_item share toggle">
+                                    <button type="button" class="addons_button share_show">공유하기</button>
+                                    <div class="share_panel">
+                                        <ul class="share_list clearfix">
+                                            <li class="share_item n1">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">유튜브</a>
+                                            </li>
+                                            <li class="share_item n2">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">블로그</a>
+                                            </li>
+                                            <li class="share_item n3">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">페이스북</a>
+                                            </li>
+                                            <li class="share_item n4">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">트위터</a>
+                                            </li>
+                                            <li class="share_item n5">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">인스타그램</a>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="share_hide">닫기</button>
+                                    </div>
+                                </li>
+                                <li class="addons_item print"><button type="button" onclick="window.print();" class="addons_button">인쇄</button></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div id="contents" class="cts@@{key}">
+                        <div class="box" copy-attr="yes">
+                            <div class="box_inner">
+                                <p class="title">최상단 박스 (개요박스) - 타이틀 22px / #2999a44</p>
+                                <p class="text">본문 기본폰트는 16px, Noto Sans KR, #444444, letter-spacing:-1px, line-height:28px; 입니다.<br/>두번째줄까지 현재 높이값으로 적용되며 세번째줄부턴 유동성있게 조절가능합니다.</p>
+                            </div>
+                        </div>
+                        <div class="box type2" copy-attr="yes">
+                            <div class="box_inner">
+                                <p class="title">최상단 박스 (개요박스) - 타이틀 22px / #2999a44</p>
+                                <p class="text">본문 기본폰트는 16px, Noto Sans KR, #444444, letter-spacing:-1px, line-height:28px; 입니다.<br/>두번째줄까지 현재 높이값으로 적용되며 세번째줄부턴 유동성있게 조절가능합니다.</p>
+                            </div>
+                        </div>
+                        <div class="box type3" copy-attr="yes">
+                            <div class="box_inner">
+                                <p class="title">최상단 박스 (개요박스) - 타이틀 22px / #2999a44</p>
+                                <p class="text">본문 기본폰트는 16px, Noto Sans KR, #444444, letter-spacing:-1px, line-height:28px; 입니다.<br/>두번째줄까지 현재 높이값으로 적용되며 세번째줄부턴 유동성있게 조절가능합니다.</p>
+                                <a href="" class="btn type1 download">소비자분쟁해결기준 다운로드</a>
+                            </div>
+                        </div>
+                        <h3>H3 타이틀 30pt Noto Sans KR, Medium -35 #222222</h3>
+                        <h4>H4 타이틀 26pt Noto Sans KR, Medium -35 #008428</h4>
+                        <h5>H5 타이틀 22pt Noto Sans KR, Medium -35 #038dd7</h5>
+
+                        <ul class="bu">
+                            <li>순서 없는 목록형 16pt, Noto Sans KR, Light #444444, line-height:28px;</li>
+                            <li>순서 없는 목록형</li>
+                            <li>순서 없는 목록형 두줄일때는 이렇게 해주세요.순서 없는 목록형 두줄일때는 이렇게 해주세요.순서 없는 목록형 두줄일때는 이렇게 해주세요.순서 없는 목록형 두줄일때는 이렇게 해주세요.순서 없는 목록형 두줄일때는 이렇게 해주세요.순서 없는 목록형 두줄일때는 이렇게 해주세요.
+                                <ul>
+                                    <li>순서 없는 중첩 목록형 15pt, Light #444444, line-height:26px;</li>
+                                    <li>순서 없는 중첩 목록형</li>
+                                    <li>순서 없는 중첩 목록형
+                                        <ul>
+                                            <li>순서 없는 중첩 목록형 15pt, line-height:24px;</li>
+                                            <li>순서 없는 중첩 목록형</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="bu dl">
+                            <li>
+                                <div class="title">컬러타이틀 #299a44</div>
+                                <div class="text">내용 16px, Noto Sans KR, Light #444444, line-height:28px;</div>
+                            </li>
+                            <li>
+                                <div class="title">컬러타이틀 #299a44</div>
+                                <div class="text">내용 16px, Noto Sans KR, Light #444444, line-height:28px;</div>
+                            </li>
+                            <li>
+                                <div class="title">홈페이지</div>
+                                <div class="text"><a href="#" class="link blank"><span>www.naver.com</span></a></div>
+                            </li>
+                        </ul>
+                        <ol class="num type1">
+                            <li>
+                                <span class="count">1</span>
+                                순서 있는 목록형 16pt, Noto Sans KR,  #444444, line-height:28px;
+                            </li>
+                            <li>
+                                <span class="count">2</span>
+                                순서 있는 목록형 16pt, Noto Sans KR,  #444444, line-height:28px;
+                            </li>
+                            <li>
+                                <span class="count">3</span>
+                                순서 있는 목록형 16pt, Noto Sans KR,  #444444, line-height:28px;
+                                <ol class="num type2">
+                                    <li>
+                                        <span class="count">1</span>
+                                        순서 있는 목록형 15pt, Noto Sans KR,  #444444, line-height:28px;
+                                    </li>
+                                    <li>
+                                        <span class="count">2</span>
+                                        순서 있는 목록형 15pt, Noto Sans KR,  #444444, line-height:28px;
+                                    </li>
+                                    <li>
+                                        <span class="count">3</span>
+                                        순서 있는 목록형 15pt, Noto Sans KR,  #444444, line-height:28px;
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <p class="notice type1"><span class="skip">주의</span>유의사항 또는 경고문구 15px, Light #f95901, line-height:24px; 상단과의 거리 15px</p>
+                        <p class="notice type2"><span class="skip">안내</span>일반안내문구 15pt, light #444444, line-height:24px; 상단과의 거리 15px</p>
+
+                        <div class="notice_box type1" copy-attr="yes">
+                            <div class="box_inner">
+                                <p class="notice type1"><span class="skip">유의</span>유의사항을 알려드려요.</p>
+                                <ul class="bu">
+                                    <li>순서 없는 중첩 목록형</li>
+                                    <li>순서 없는 중첩 목록형</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notice_box type2" copy-attr="yes">
+                            <div class="box_inner">
+                                <p class="notice type2"><span class="skip">안내</span>안내사항을 알려드려요.</p>
+                                <ul class="bu">
+                                    <li>순서 없는 중첩 목록형</li>
+                                    <li>순서 없는 중첩 목록형</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 class="table_title">H3 타이틀과 테이블 간격 25px</h3>
+                        <p class="table_unit">테이블상단에 내용이 있을경우 15pt / #666666</p>
+                        <table class="table" copy-attr="yes">
+                            <caption>테이블제목 - 순으로 정보를 제공</caption>
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:40%;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">테이블 제목1</th>
+                                <th scope="col">테이블 제목2</th>
+                                <th scope="col">테이블 제목3</th>
+                                <th scope="col">테이블 제목3</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="col">테이블 내용1</th>
+                                <td>테이블 내용1</td>
+                                <td>테이블 내용1</td>
+                                <td>테이블 내용1</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">테이블 내용2</th>
+                                <td>테이블 내용2</td>
+                                <td>테이블 내용2</td>
+                                <td>테이블 내용2</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">테이블 내용3</th>
+                                <td>테이블 내용3</td>
+                                <td>테이블 내용3</td>
+                                <td>테이블 내용3</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>H3 타이틀 30pt Noto Dans Kr, Medium -35 #222222</h3>
+                        <h4>H4 타이틀과 테이블 간격 25px</h4>
+                        <table class="table type2" copy-attr="yes">
+                            <caption>테이블제목 - 순으로 정보를 제공</caption>
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:20%;">
+                                <col style="width:40%;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">테이블 제목1</th>
+                                <td>테이블 내용1</td>
+                                <td>테이블 내용1</td>
+                                <td>테이블 내용1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">테이블 제목2</th>
+                                <td>테이블 내용2</td>
+                                <td>테이블 내용2</td>
+                                <td>테이블 내용2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">테이블 제목3</th>
+                                <td>테이블 내용3</td>
+                                <td>테이블 내용3</td>
+                                <td>테이블 내용3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">테이블 제목4</th>
+                                <td>테이블 내용4</td>
+                                <td>테이블 내용4</td>
+                                <td>테이블 내용4</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p class="notice type1"><span class="skip">유의</span>유의사항 또는 경고문구</p>
+                        <h3>테이블 스크롤</h3>
+                        <div class="table_scroll" copy-attr="yes">
+                            <table class="table">
+                                <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                <colgroup>
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                    <col style="width: 20%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">테이블 제목</th>
+                                    <th scope="col">테이블 제목</th>
+                                    <th scope="col">테이블 제목</th>
+                                    <th scope="col">테이블 제목</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">테이블 내용</th>
+                                    <td>테이블 내용</td>
+                                    <td>테이블 내용</td>
+                                    <td>테이블 내용</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">테이블 내용</th>
+                                    <td>테이블 내용</td>
+                                    <td>테이블 내용</td>
+                                    <td>테이블 내용</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>테이블 반응형</h3>
+                        <table class="table responsive" copy-attr="yes">
+                            <caption>테이블제목 - 순으로 정보를 제공</caption>
+                            <colgroup>
+                                <col class="w25p">
+                                <col class="w25p">
+                                <col class="w25p">
+                                <col class="w25p">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">테이블 제목</th>
+                                <th scope="col">테이블 제목</th>
+                                <th scope="col">테이블 제목</th>
+                                <th scope="col">테이블 제목</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row" data-content="테이블 제목">테이블 내용</th>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-content="테이블 제목">테이블 내용</th>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                                <td data-content="테이블 제목">테이블 내용</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>버튼 스타일</h3>
+                        <button type="button" class="btn type1">기본스타일</button>
+                        <button type="button" class="btn type2">기본스타일</button>
+                        <button type="button" class="btn type3">기본스타일2</button>
+                        <button type="button" class="btn type4">기본스타일2</button>
+                        <button type="button" class="btn type5">강조스타일</button>
+                        <button type="button" class="btn type6">강조스타일</button>
+                        <h3>버튼 스타일 - 작음</h3>
+                        <button type="button" class="btn type1 small">기본스타일</button>
+                        <button type="button" class="btn type2 small">기본스타일</button>
+                        <button type="button" class="btn type3 small">기본스타일2</button>
+                        <button type="button" class="btn type4 small">기본스타일2</button>
+                        <button type="button" class="btn type5 small">강조스타일</button>
+                        <button type="button" class="btn type6 small">강조스타일</button>
+                        <h3>버튼 스타일 - 바로가기 / 다운로드</h3>
+                        <button type="button" class="btn type1 link">바로가기</button>
+                        <button type="button" class="btn type2 download">다운로드</button>
+                 
+
+                        <h3>인풋박스 / 셀렉트박스 / 체크박스 / 라디오버튼</h3>
+                        <div class="input_wrap">
+                            <input type="text" placeholder="인풋박스"/>
+                        </div>
+                        <div class="input_wrap">
+                            <input type="text" placeholder="인풋박스" disabled/>
+                        </div>
+
+                        <div class="select_box">
+                            <button type="button" class="select_btn" title="목록열기">셀렉트박스</button>
+                            <ul class="select_list">
+                                <li class="select_item">선택1</li>
+                                <li class="select_item">선택2</li>
+                                <li class="select_item">선택3</li>
+                            </ul>
+                        </div>
+
+                        <div class="select_wrap">
+                            <select name="" id="">
+                                <option>셀렉트박스</option>
+                                <option>선택1</option>
+                                <option>선택2</option>
+                                <option>선택3</option>
+                            </select>
+                        </div>
+
+                        <div class="check_box">
+                            <input type="checkbox" name="" id="check1"/>
+                            <label for="check1">체크박스</label>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="" id="check2" checked/>
+                            <label for="check2">체크박스 활성화</label>
+                        </div>
+                        <div class="check_box">
+                            <input type="checkbox" name="" id="check3" disabled/>
+                            <label for="check3">체크박스 비활성화</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="" id="radio1">
+                            <label for="radio1">라디오버튼</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="" id="radio2" checked>
+                            <label for="radio2">라디오버튼 활성화</label>
+                        </div>
+                        <div class="radio_box">
+                            <input type="radio" name="" id="radio3" disabled>
+                            <label for="radio3"> 라디오버튼 비활성화</label>
+                        </div>
+                    </div>
+                    <script>
+                        /*템플릿 코드 복사 코드
+
+                        @name code-copy
+                         * @author Kwon Oh Hwan
+                         * @since 2020-09-16
+
+                        1. 복사할 코드에 attribute로 copy-attr='yes' 기입
+                        2. <textarea id="ClipBoard" style="display:none"></textarea> html 파일에 넣기
+                        3. <div class="copy_clone" style="display:none;"></div> html 파일에 넣기
+
+                        */
+
+                        $("[copy-attr='yes']").on('click', function(){
+                            var findHtml = $(this).clone();
+
+
+                            $('.copy_clone').append(findHtml);
+                            $('.copy_clone *').removeAttr('copy-attr style');
+
+                            var copyHtml = $('.copy_clone').html();
+
+
+                            $('#ClipBoard').css('display', 'block').val(copyHtml).select();
+
+                            var succeed;
+                            try {
+                                succeed = document.execCommand("copy");
+                                $('#ClipBoard').css('display', 'none');
+                                $('.copy_clone').html('');
+                            } catch(e) {
+                                succeed = false;
+                            }
+                            if(succeed){
+                                alert('복사 되었습니다');
+                            }
+                            return false;
+                        });
+
+                    </script>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer_link">
+            <ul class="link_list">
+                <li class="link_item"><a href="#n" class="link_anchor">개인정보처리방침</a></li>
+                <li class="link_item"><a href="#n" class="link_anchor">이메일주소무단수집거부</a></li>
+            </ul>
+        </div>
+
+        <div class="footer_info">
+            <p class="info_address">충주시 살미면 세성리 산57-1번지</p>
+            <p class="info_tel">대표번호 : 043-870-7832</p>
+            <p class="info_copyright">Copyright ⓒ 2023 충주유기농체험교육센터. ALL RIGHT RESERVED.</p>
+        </div>
+
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <p class="info_address">@@{siteInfo.insttAdres}</p>
+            <p class="info_tel">대표번호 : @@{siteInfo.insttTelno}</p>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+
+    </footer>
+
+</div>
+</body>
+</html>
