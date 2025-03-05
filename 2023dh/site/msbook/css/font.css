@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* 엘리스 디지털 배움체 */
+@font-face{
+    font-family: 'Elice';
+    font-weight: 400;
+    src: url("../font/EliceDigitalBaeum_Regular.woff2") format('woff2'),
+    url("../font/EliceDigitalBaeum_Regular.woff") format('woff');
+}
+@font-face{
+    font-family: 'Elice';
+    font-weight: 600;
+    src: url("../font/EliceDigitalBaeum_Bold.woff2") format('woff2'),
+    url("../font/EliceDigitalBaeum_Bold.woff") format('woff');
+}
+
+/* 원모바일 */
+@font-face{
+    font-family: 'ONEMobile';
+    font-weight: 400;
+    src: url("../font/ONEMobile-Regular.woff") format('woff');
+}

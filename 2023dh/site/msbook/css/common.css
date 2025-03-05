@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@media all and (max-width:1000px){
+    .lnb_open .lnb .menu .depth1_list, .lnb .menu.multiple .depth1_list{width:150px;}
+    .lnb .menu .depth2{width:180px;}
+}

@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+#container{z-index: auto;}
+#footer{z-index: 0;}
+/* 메인비주얼 */
+.visual{display:block; position:relative; height:800px; background: url("../../../site/agriculture/images/main/main_visual.jpg") no-repeat; overflow: hidden;}
+.visual:before{display: block; position: absolute; bottom: 0; right: 0; z-index: 1; width:100%; height:438px; background: url("../../../site/agriculture/images/main/main_icon02.png") center no-repeat;}
+.visual .visual_wrap{display: block; position: relative; height: 100%;}
+.visual .visual_wrap:before{display: block; position: absolute; bottom: 0; right: 0; width:688px; height:739px; background: url("../../../site/agriculture/images/main/main_icon01.png") no-repeat;}
+.visual .title_box{position:relative; padding-top: 102px;}
+.visual .title_box p{font-family: 'Nexen'; font-size: 55px; line-height: 80px; letter-spacing: 0; color: #333333; font-weight: 600;}
+.visual .title_box p.title_02{color: #0072bc;}
+.visual .title_box p.title_02 em{color: #179489;}
+.visual .title_box p span{position: relative;}
+.visual .title_box p span:before{display: block; position: absolute; top:-42px; right:-91px; width:85px; height:45px; background: url("../../../site/agriculture/images/main/main_icon03.png") no-repeat;}
+
+@media all and (min-width: 1001px) {
+    .visual{opacity: 0; transition: opacity 1s ease-in-out;}
+    .visual.on{opacity: 1}
+
+    .visual:before{opacity: 0; filter: blur(50px); transform: scale(1.5); transition: opacity, filter, transform 1.5s ease-in-out;}
+    .visual.on:before{opacity: 1; filter:blur(0); transform: scale(1); transition-delay:1.4s; }
+
+    .visual .visual_wrap:before{opacity: 0; filter: blur(50px); transform: translateY(50%); transition: opacity, filter, transform 1s ease-in-out;}
+    .visual.on .visual_wrap:before{opacity: 1; filter:blur(0); transform: translateY(0); transition-delay:0.7s; }
+
+    .visual .title_box p{opacity: 0; transform: translateX(-1000px); transition: opacity, filter, transform 0.6s ease-in-out;}
+    .visual.on .title_box p{opacity: 1; transform: translateY(0); transition-delay:1.5s; }
+    .visual.on .title_box p.title_02{transition-delay: 2.3s;}
+
+    .visual .title_box p span:before{opacity:0; top:-150px; animation:leaves 4s ease 0s forwards; animation-delay: 2s;}
+}
+@keyframes leaves {
+    20%{
+        -webkit-transform:rotate(50deg) translate(-60px,40px);
+        transform:rotate(50deg) translate(-60px,40px);
+        opacity: 0.4;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    60%{
+        -webkit-transform:rotate(-30deg) translate(80px,170px);
+        transform: rotate(-30deg) translate(80px,170px);
+        opacity: 0.8;
+
+    }
+    100%{
+        -webkit-transform:rotate(0) translate(10px,160px);
+        transform:rotate(0) translate(10px,160px);
+        opacity: 1;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1480px) {
+    .visual:before{height: 400px;}
+    .visual.on .visual_wrap:before{bottom:-75px; right:-60px; transform: translateY(0) scale(0.8);}
+}
+@media all and (max-width: 1000px) {
+    .visual{height: 641px; background-position: right;}
+    .visual:before{bottom: -70px; background-size: 1000px 348px; background-position: right;}
+    .visual .title_box{padding-top: 63px;}
+    .visual .title_box p{font-size: 44px; line-height: 64px;}
+    .visual .title_box p.title_02 em{display: block;}
+    .visual .visual_wrap:before{bottom:-143px; right:-113px; transform: scale(0.8);}
+    .visual .title_box p span:before{top: -18px; right: -76px; transform: scale(0.8);}
+}
+@media all and (max-width: 640px) {
+    .visual{height: 480px;}
+    .visual:before{bottom:-100px;  background-size: 720px 263px;}
+    .visual .title_box{padding-top: 63px;}
+    .visual .title_box p{font-size: 26px; line-height: 38px;}
+    .visual .title_box p span:before{top:-40px; right:-53px; transform: scale(0.5);}
+    .visual .visual_wrap:before{bottom:-164px; left:calc(50% - 219px); transform: scale(0.53);}
+}
+/* 팝업존 */
+.popup_line{display:block; position: relative; }
+.popup_line .wrap:before{display: block; position: absolute; bottom: 0; left:381px; z-index: 1; width: 100px; height: 56px;
+    background-image:url("../../../site/agriculture/images/main/white_bg.png"); background-position:-2px 0; background-repeat: no-repeat;}
+.popup_line .wrap:after{display: block; position: absolute; bottom: 0; left:478px; z-index: 1; width: 100vw; height: 56px; background-color: #fff;}
+.popup_line .popup{position: absolute; bottom:-57px; left: 0; z-index:1; width: 400px; margin-left: 0;}
+.popup_line .popup .inner_box:before{right: 1px;}
+.popup_line .popup img{width: 100%; height: 100%;}
+
+@media all and (max-width: 1480px){
+    .popup_line .popup{width: 320px;}
+    .popup_line .wrap:before{left: 304px;}
+    .popup_line .wrap:after{left: 400px;}
+}
+@media all and (max-width: 1000px) {
+    .popup_line .popup{left: 20px;}
+    .popup_line .wrap:before{left:320px; height: 45px;}
+    .popup_line .wrap:after{height: 45px;}
+}
+@media all and (max-width: 800px) {
+    .popup_line .wrap:before{left: 281px;}
+    .popup_line .wrap:after{left: 375px;}
+
+}
+@media all and (max-width: 640px) {
+    .popup_line .wrap:before{display: none;}
+    .popup_line .wrap:after{left:254px; height: 35px; border-top-left-radius: 25px;}
+    .popup_line .popup{left:15px; bottom:-40px; z-index: 2; width: 240px;}
+
+    .popup .inner_box:before{width: calc(100% - 32px); height: calc(100% - 10px); border-radius: 0 0 15px 50px;}
+    .popup .popup_control{padding:12px 25px 8px 25px; }
+    .popup .popup_control button:before{top:-2px; transform: scale(0.75);}
+    .popup .popup_control button.auto{margin: 0 5px;}
+}
+
+/* colgroup */
+.colgroup_wrap{font-size: 0; line-height: 0;}
+.colgroup1{display: inline-block; position: relative; width: 400px; margin-top: 135px; vertical-align: top;}
+.colgroup2{display: inline-block; position: relative; width: calc(100% - 480px); margin-top: 25px; margin-left: 80px;}
+.colgroup2 h2{display:inline-block; font-family: 'Nexen'; font-size: 24px; line-height: 24px; letter-spacing: 0; color: #000;}
+@media all and (max-width: 1480px){
+    .colgroup1{width: 320px;}
+    .colgroup2{width: calc(100% - 370px); margin-left: 50px}
+}
+
+@media all and (max-width: 1000px) {
+    .colgroup1{position:absolute; margin-top:102px; z-index: 1;}
+    .colgroup2{width:100%; margin-left:0;}
+    .rowgroup1{display: block; padding-left: 380px;}
+    .colgroup2 h2{font-size: 22px; line-height: 22px;}
+}
+@media all and (max-width: 800px) {
+    .colgroup1{width: 280px;}
+    .rowgroup1{display: block; padding-left: 320px;}
+}
+@media all and (max-width: 640px) {
+    .colgroup1{position:relative; width: 100%; padding: 0 15px; margin-top: 89px;}
+    .colgroup2{margin-top: 59px;}
+    .colgroup2 h2{font-size: 18px; line-height: 18px;}
+    .rowgroup1{padding-left: 0;}
+}
+
+
+
+/* 이미지 바로가기 */
+.icon_goto{display: block; position: relative; font-size: 0; line-height: 0; text-align: right;}
+.icon_goto .icon_item{display: block; position: relative; width: 100%; height: 160px;}
+.icon_goto .icon_item.short{display: inline-block; width: calc((100% - 21px) / 2); background: url("../../../site/agriculture/images/main/goto_img02.jpg") center no-repeat; background-size: cover; text-align: left; vertical-align: top;}
+.icon_goto .icon_item.type1{height:170px; margin-bottom: 20px; border-radius: 27px; background: url("../../../site/agriculture/images/main/goto_img01.jpg") center no-repeat; background-size: cover;}
+.icon_goto .icon_item.type1:before{display: block; position: absolute; top: 0; left: 0; opacity: 0; visibility: hidden; width: 100%; height: 100%; border-radius:27px;  background: url("../../../site/agriculture/images/main/goto_bg.png") no-repeat; transition: opacity 0.25s ease-in-out;}
+.icon_goto .icon_item.type2{border-radius: 8px 27px 27px 27px;}
+.icon_goto .icon_item.type3{margin-left: 21px; border-radius: 27px 8px 27px 27px; background: url("../../../site/agriculture/images/main/goto_img03.jpg") center no-repeat; background-size: cover;}
+
+.icon_goto .icon_item .icon_anchor{display: block; position: relative; width: 100%; height: 100%; text-decoration: none;}
+.icon_goto .icon_item.type1 .icon_anchor{padding: 56px 38px 0 0;}
+.icon_goto .icon_item.short .icon_anchor{padding: 36px 0 0 29px;}
+.icon_goto .icon_item.type1 .icon_anchor:before{display: block; position: absolute; left: -11px; bottom: 0; width: 164px; height: 123px; background: url("../../../site/agriculture/images/main/goto_icon.png") no-repeat; transition: left 0.25s ease-in-out;}
+.icon_goto .icon_item.short .icon_anchor:before{display: block; position: absolute; bottom: 0; right: 0; width:55px; height: 55px; border-radius:27px 0 24px 0;
+    background-color: rgba(255, 255, 255, 0.35); transition: background-color 0.25s ease-in-out;}
+.icon_goto .icon_item.short .icon_anchor:after{display: block; position: absolute; bottom: 22px; right: 22px; width:7px; height: 12px;
+    background-image: url("../../../site/agriculture/images/main/goto_sprite.png"); background-position: -24px 0; background-repeat: no-repeat;}
+
+.icon_goto .icon_item.type1:hover:before{opacity: 1; visibility: visible;}
+.icon_goto .icon_item.type1:hover .icon_anchor:before{left: 14px;}
+.icon_goto .icon_item.short:hover .icon_anchor:before{background-color: rgba(255, 255, 255, 0.8);}
+.icon_goto .icon_item.short:hover .icon_anchor:after{background-position: 0 0;}
+.icon_goto .icon_item.type3:hover .icon_anchor:after{background-position: -48px 0;}
+
+.icon_goto .icon_title{font-family: 'Nexen'; font-size:26px; line-height:26px; letter-spacing:0; color:#fff; font-weight: 400;}
+.icon_goto .icon_item.short .icon_title{font-size: 22px; line-height: 22px;}
+.icon_goto .icon_subtitle{position:relative; padding-right:20px; font-size: 16px; line-height: 16px; letter-spacing: -0.035em; color: #fff; font-weight: 200;}
+.icon_goto .icon_item.short .icon_subtitle{margin-top: 10px;}
+.icon_goto .icon_item.type1 .icon_subtitle{margin-top: 16px;}
+.icon_goto .icon_item.type1 .icon_subtitle:before{display: block; position: absolute; top: 3px; right: 2px; width: 7px; height: 12px; background: url("../../../site/agriculture/images/main/goto_sprite.png") -24px 0 no-repeat;}
+
+@media all and (max-width: 1480px) {
+    .icon_goto .icon_item.short .icon_anchor{padding: 36px 0 0 15px;}
+}
+@media all and (max-width: 1000px) {
+    .icon_goto .icon_item{height: 129px;}
+    .icon_goto .icon_item.type1{height:137px; margin-bottom: 15px; border-radius: 22px;}
+    .icon_goto .icon_item.type1 .icon_anchor{padding: 45px 32px 0 0;}
+    .icon_goto .icon_item.type1 .icon_subtitle{margin-top: 12px;}
+    .icon_goto .icon_item.type1 .icon_subtitle:before{top:2px; right:1px; transform: scale(0.9);}
+    .icon_goto .icon_item.short{width: calc((100% - 16px) / 2);}
+    .icon_goto .icon_item.short .icon_anchor{padding: 30px 0 0 22px;}
+    .icon_goto .icon_item.short .icon_anchor:before{width: 44px; height: 44px; border-radius: 24px 0;}
+    .icon_goto .icon_item.short .icon_anchor:after{right:19px; bottom:15px; transform: scale(0.9);}
+    .icon_goto .icon_title{font-size: 22px; line-height: 22px;}
+    .icon_goto .icon_item.short .icon_title{font-size: 18px; line-height: 18px;}
+    .icon_goto .icon_subtitle{padding-right:16px; font-size: 14px; line-height: 14px;}
+    .icon_goto .icon_item.short .icon_subtitle{margin-top: 7px;}
+    .icon_goto .icon_item.type2{border-radius:8px 26px 23px 22px; }
+    .icon_goto .icon_item.type3{margin-left: 16px; border-radius:26px 8px 23px 22px;}
+}
+@media all and (max-width: 800px) {
+    .icon_goto .icon_item.short .icon_anchor{padding: 30px 0 0 17px;}
+    .icon_goto .icon_item.type1 .icon_anchor:before{left:-9px; width:132px; height: 99px; background-size: contain;}
+}
+@media all and (max-width: 640px) {
+    .icon_goto .icon_title{font-size: 20px; line-height: 20px;}
+    .icon_goto .icon_subtitle{font-size: 13px; line-height: 13px;}
+    .icon_goto .icon_item.type1{height: 128px;}
+    .icon_goto .icon_item.type1 .icon_anchor{padding: 42px 30px 0 0;}
+    .icon_goto .icon_item.type1 .icon_anchor:before{left:-8px; width: 123px; height: 92px;}
+    .icon_goto .icon_item.type1 .icon_subtitle{margin-top: 11px; padding-right: 14px;}
+    .icon_goto .icon_item.type1 .icon_subtitle:before{top:2px; right:-1px; transform: scale(0.8);}
+
+    .icon_goto .icon_item{height: 121px;}
+    .icon_goto .icon_item.short .icon_anchor{padding:25px 0 0 21px; }
+    .icon_goto .icon_item.short .icon_title{font-size: 17px; line-height: 17px;}
+    .icon_goto .icon_item.type2{border-radius:6px 19px 23px 22px; }
+    .icon_goto .icon_item.type3{border-radius:19px 6px 23px 22px }
+    .icon_goto .icon_item.short .icon_anchor:before{width: 42px; height: 42px; border-radius: 20px 0;}
+    .icon_goto .icon_item.short .icon_anchor:after{right: 16px; transform: scale(0.8);}
+}
+/* 종합농업정보 바로가기 */
+.select_goto{display: block; position: relative; margin-top: 59px;}
+.select_goto .select_goto_title{font-family: 'Nexen'; font-size: 20px; line-height: 24px; letter-spacing: 0; color: #000000; font-weight: 400;}
+.select_design{position:relative; width:100%; min-height: 155px; margin-top: 17px;}
+.select_design:before{display: block; position: absolute; top:12px; right: 0; width:49px; height: 35px; margin: auto 0; border-right: 1px solid #c1c3c7; background:url("../../../site/agriculture/images/main/goto_sprite.png") no-repeat -72px 11px; transform: rotate(180deg);}
+.select_design button,
+.select_design a{position:relative; z-index:1; width: 100%; padding:12px 0 14px 19px; font-size:17px; line-height:25px; letter-spacing: -0.035em; color: #000; font-weight: 200;
+    appearance:none; filter:alpha(opacity=0); -webkit-appearance:none; -moz-appearance:none; text-align: left;}
+.select_design .select_button{border:2px solid #c1c3c7; border-radius: 10px;}
+
+.select_design.active:before{display: none;}
+.select_design.active .select_button{border:none;}
+.select_design .select_panel{display:none; position: absolute; top: 0; z-index: 21; width: 100%; border-radius:10px; padding:2px; border-color: transparent; background-origin: border-box;
+    background-image:linear-gradient(#fff, #fff),linear-gradient(135deg,  #71bf44 0%,#00b7f1 100%); background-clip: content-box, border-box; box-sizing: border-box;
+    transition: bacckgroud-image, color 0.25s ease-in-out;}
+
+.select_panel .select_list{position:relative; padding: 5px 18px 12px;}
+.select_panel .select_item{padding-right: 30px;}
+.select_panel a,
+.select_panel button{padding:6px 0 5px;}
+.select_design .select_anchor{position: relative;}
+.select_design .select_anchor:hover:before{display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #bacfb0;}
+.select_design .select_anchor:hover{color: #000;}
+
+.select_panel .select_hide{display: inline-block; position: absolute; top:11px; right: 0; width: 49px; height: 35px;
+   background:url("../../../site/agriculture/images/main/goto_sprite.png") no-repeat -72px 11px; font-size: 0; line-height: 0;}
+
+@media all and (max-width: 1000px) {
+    .select_goto{margin-top: 51px;}
+    .select_goto .select_goto_title{font-size:18px; line-height: 18px;}
+
+    .select_design{min-height:auto; margin-top: 19px;}
+    .select_design:before{top:8px; width:43px; height: 29px; background-position: -75px 7px; transform: rotate(180deg) scale(0.9);}
+    .select_design button, .select_design a{padding:9px 0 11px 13px; font-size: 15px; line-height: 20px;}
+    .select_panel .select_list{padding: 4px 15px 7px;}
+    .select_panel .select_item{padding-right: 22px;}
+    .select_panel a, .select_panel button{padding: 6px 0 3px 0;}
+    .select_panel .select_hide{transform: scale(0.9); background-position: -66px 4px;}
+}
+@media all and (max-width: 640px) {
+    .select_goto{margin-top: 49px;}
+    .select_goto .select_goto_title{font-size: 15px; line-height: 15px;}
+    .select_design{margin-top: 14px;}
+    .select_design button, .select_design a{font-size: 13px; line-height: 18px;}
+    .select_design:before{transform:rotate(180deg) scale(0.7); background-position: -79px 8px; }
+}
+
+
+/* 게시판 */
+.board{display:block; position: relative; }
+.board_wrap{position:relative; height:180px;}
+.board .board_list{font-size:0; line-height:0;}
+.board .board_item{display:inline-block;}
+.board .board_open{position:relative; margin-right: 24px; font-family: 'Nexen'; color:#7d7d7d; font-size:24px; line-height:24px; letter-spacing: 0; font-weight:400; vertical-align:top; transition-duration:.25s; transition-property:font-size; transition-timing-function:ease-in-out;}
+.board .board_item.n2 .board_open{padding-left: 24px;}
+.board .board_item.n2 .board_open:before{display:block; position:absolute; top:3px; left:0; width:1px; height:15px; background-color: #000; opacity: 0.3;}
+
+.board .board_item:hover .board_open{color: #179489;}
+.board .board_item.active .board_open{color:#000000;}
+.board .board_item.active .button_box .board_open:hover{color: #179489;}
+
+.board .board_panel{display:none; position:absolute; top:0; left:0; width:100%; margin-top:42px;}
+.board .board_item.active .board_panel{display:block;}
+.board .basic_item{display:inline-block; position:relative; width: calc((100% - 26px) / 3); min-height: 138px; border-radius: 10px 0 25px 0; background-color: #f2f2f2; vertical-align: top;}
+.board .basic_item:hover{background-color: #fdebd0;}
+.board .basic_item + .basic_item{margin-left: 13px;}
+.board .basic_item:nth-child(n + 4){display: none;}
+.board .basic_anchor{display:block; position:relative; width: 100%; height: 100%; padding:23px 20px 29px 30px; overflow:hidden;}
+.board .basic_subject{display:-webkit-box; min-height:50px; font-size:17px; line-height: 25px; letter-spacing: -0.035em; font-weight:200; color: #000;
+    overflow:hidden; white-space:normal; word-wrap:break-word;-webkit-box-orient:vertical; -webkit-line-clamp:2;}
+.board .basic_date{position:relative; margin-top: 20px; font-size: 16px; line-height: 16px; letter-spacing: -0.035em; color: #808080;}
+.board .basic_new{display: inline-block; position: absolute; bottom: 3px; right:3px; width: 67px; height: 40px; border-radius: 25px 0; background-color: #fff;
+    font-family:'Nexen'; font-size: 12px; line-height: 46px; letter-spacing: 0; color: #f14950; font-weight: 400; text-align: center;}
+.board .board_more{display: none; position: absolute; top: 5px; right: 0; width:12px; height: 12px; background: url("../../../site/agriculture/images/main/board_icon.png") right no-repeat;}
+.board .board_more:hover{background: url("../../../site/agriculture/images/main/over_icon.png") right no-repeat;}
+.board .board_item.active .board_more{display: inline-block;}
+@media all and (max-width: 1000px) {
+    .board_wrap{height: 297px;}
+    .board .board_open{margin-right:20px; font-size: 22px; line-height: 22px;}
+    .board .board_item.n2 .board_open{padding-left: 21px;}
+    .board .basic_item{display: block; width: 100%; min-height: 125px;}
+    .board .basic_item + .basic_item{margin-left: 0; margin-top:9px;}
+    .board .basic_item:nth-child(n + 3){display: none;}
+
+    .board .board_panel{margin-top: 38px;}
+    .board .basic_anchor{padding: 21px 25px 26px 25px;}
+    .board .basic_subject{font-size: 16px; line-height: 23px;}
+    .board .basic_date{margin-top:13px; font-size: 15px; line-height: 15px;}
+    .board .basic_new{width:61px; height:36px; font-size: 11px; line-height: 40px;}
+}
+@media all and (max-width: 640px) {
+    .board .board_wrap{height: 128px;}
+    .board .board_open{margin-right:13px; font-size: 18px; line-height: 18px;}
+    .board .board_item.n2 .board_open{padding-left: 18px;}
+    .board .board_item.n2 .board_open:before{height: 11px;}
+    .board .board_more{top: 3px; right: -2px; transform: scale(0.8);}
+
+    .board .board_panel{width:calc(100% + 15px); margin-top: 31px;}
+    .board .basic_list{-webkit-mask-image: linear-gradient(to right, #fff 0%, #fff 75%, transparent 100%);}
+    .board .basic_item{display: inline-block; width: 228px; height: 97px; min-height: auto; margin-right: 8px;}
+    .board .basic_item + .basic_item{margin-top: 0;}
+    .board .basic_item:nth-child(n + 2){display: block;}
+    .board .basic_anchor{padding:16px 20px 9px 20px;}
+    .board .basic_subject{min-height:34px; font-size: 14px; line-height: 17px;}
+    .board .basic_date{margin-top:12px; font-size: 13px; line-height: 13px;}
+
+    .board .basic_new{width: 47px; height: 29px; font-size: 9px; line-height: 32px;}
+}
+
+/* 즐겨찾는 서비스 */
+.quick_service{margin-top:80px; font-size: 0; line-height: 0;}
+.quick_service h2{display: inline-block; position: relative; width: 210px;}
+.quick_service .service_wrap{display: inline-block; position: relative; width: calc(100% - 210px);}
+.quick_service .service_item{display: inline-block; position: relative; width: calc((100% - 126px) / 3);}
+.quick_service .service_item + .service_item{margin-left: 63px;}
+.quick_service .service_anchor{display: block; position: relative; width: 100%; height: 100%; padding: 26px 0; text-align: right;}
+.quick_service .service_anchor span{padding-right: 50px;
+    font-family:'Nexen'; font-size: 19px; line-height: 30px; letter-spacing: 0; font-weight: 400;
+    background: -webkit-linear-gradient(0deg, #000 0%, #000 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quick_service .service_anchor:before{display: block; position: absolute; top: 0; left: 0; background-repeat: no-repeat;}
+.quick_service .service_item:nth-child(1) .service_anchor:before{width: 84px; height: 77px; background-image: url("../../../site/agriculture/images/main/service_icon01.png");}
+.quick_service .service_item:nth-child(2) .service_anchor:before{left:1px; top:3px; width: 84px; height: 71px; background-image: url("../../../site/agriculture/images/main/service_icon02.png");}
+.quick_service .service_item:nth-child(3) .service_anchor:before{left:3px; top:2px; width: 60px; height: 73px; background-image: url("../../../site/agriculture/images/main/service_icon03.png");}
+.quick_service .service_anchor span:before{display: block; position: absolute; top: 0; bottom: 0; right: 0; width: 30px; height: 30px; margin: auto 0; border-radius: 50%;
+    background: #dae7fd;}
+.quick_service .service_anchor span:after{display: block; position: absolute; top: 0; bottom: 0; right: 0; width: 30px; height: 30px; margin: auto 0;
+    background-image: url("../../../site/agriculture/images/main/service_sprite.png"); background-position: -27px 9px; background-repeat: no-repeat;}
+
+.quick_service .service_item:nth-child(1):hover .service_anchor:before{background-image: url("../../../site/agriculture/images/main/service_icon01_on.png");}
+.quick_service .service_item:nth-child(2):hover .service_anchor:before{background-image: url("../../../site/agriculture/images/main/service_icon02_on.png");}
+.quick_service .service_item:nth-child(3):hover .service_anchor:before{background-image: url("../../../site/agriculture/images/main/service_icon03_on.png");}
+.quick_service .service_item:hover .service_anchor span{background:-webkit-linear-gradient(-45deg,  #d52534 55%,#8f3e60 65%,#455990 75%,#116cb1 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+.quick_service .service_item:hover .service_anchor span:before{background:linear-gradient(-45deg,  #d52534 5%,#8f3e60 40%,#455990 75%,#116cb1 90%);}
+.quick_service .service_item:hover .service_anchor span:after{background-position:10px 9px; }
+
+@media all and (max-width: 1480px) {
+    .quick_service h2{display: block; width: auto;}
+    .quick_service .service_wrap{display: block; width: 100%; margin-top: 40px;}
+    .quick_service .service_item{width: calc((100% - 40px) / 3);}
+    .quick_service .service_item + .service_item{margin-left: 20px;}
+    .quick_service .service_anchor span{padding-right:40px; font-size: 18px;}
+}
+@media all and (max-width: 1000px) {
+    .quick_service{margin-top: 51px;}
+    .quick_service .service_wrap{margin-top: 26px;}
+    .quick_service .service_item:nth-child(1){width: 103px;}
+    .quick_service .service_item:nth-child(2){width: 101px;}
+    .quick_service .service_item:nth-child(3){width: 121px;}
+    .quick_service .service_item + .service_item{margin-left:calc(50% - 163px);}
+    .quick_service .service_anchor{padding:76px 0 0 0; text-align: left;}
+    .quick_service .service_anchor:before{left: 0; right: 0; margin: 0 auto; transform: scale(0.8);}
+    .quick_service .service_item:nth-child(1) .service_anchor:before{top: -7px;}
+    .quick_service .service_item:nth-child(2) .service_anchor:before{top: -4px; left: 13px;}
+    .quick_service .service_item:nth-child(3) .service_anchor:before{top: -6px; left:0;}
+    .quick_service .service_anchor span{padding-right:0; font-size: 17px; line-height: 27px;}
+    .quick_service .service_anchor span:before{top: auto; margin: 0; transform: scale(0.9);}
+    .quick_service .service_anchor span:after{top: auto; margin: 0; transform: scale(0.9);}
+}
+@media all and (max-width: 750px) {
+    .quick_service .service_item:nth-child(1){width: 88px;}
+    .quick_service .service_item:nth-child(2){width: 86px;}
+    .quick_service .service_item:nth-child(3){width: 106px;}
+    .quick_service .service_item + .service_item{margin-left:calc(50% - 140px);}
+
+    .quick_service .service_anchor span{display:block; font-size: 15px; text-align: center;}
+    .quick_service .service_anchor span:before{bottom: -27px; left: 0; right: 0; margin: 0 auto;}
+    .quick_service .service_anchor span:after{bottom: -27px; left: 0; right: 0; margin: 0 auto;}
+}
+@media all and (max-width: 640px) {
+    .quick_service{margin-top: 59px;}
+    .quick_service .service_wrap{width: 100%; overflow-x: scroll; -webkit-mask-image: linear-gradient(to right, #fff 0%, #fff 75%, transparent 100%);}
+    .quick_service .service_wrap.end{-webkit-mask-image:none;}
+    .quick_service .service_wrap .service_list{width: 640px; overflow: hidden;}
+    .quick_service .service_item:nth-child(2),
+    .quick_service .service_item:nth-child(3),
+    .quick_service .service_item:nth-child(1){width: calc((100% - 40px) / 3);}
+    .quick_service .service_item + .service_item{margin-left: 20px;}
+    .quick_service .service_anchor{padding:24px 0 26px 70px;}
+    .quick_service .service_anchor:before{left:-13px; right: auto; transform: scale(0.7);}
+    .quick_service .service_item:nth-child(2) .service_anchor:before{top:-7px; left: -11px;}
+    .quick_service .service_anchor span{padding-right: 35px; font-size: 13px; line-height: 13px;}
+    .quick_service .service_anchor span:after,
+    .quick_service .service_anchor span:before{top:0; bottom: 0; left: auto; right: 0; margin: auto; transform: scale(0.75);}
+}
+@media all and (max-width: 480px) {
+    .quick_service .service_wrap .service_list{width: 520px;}
+    .quick_service .service_item:nth-child(2),
+    .quick_service .service_item:nth-child(3),
+    .quick_service .service_item:nth-child(1){width:auto;}
+}
+
+/* 농촌관광 */
+.farm{margin-top:71px; font-size: 0; line-height: 0;}
+.farm .farm_title{display: inline-block; position: relative; width:136px; vertical-align: top;}
+.farm .farm_title .farm_more{margin-top: 14px;}
+.farm .farm_title .farm_more_anchor{display:inline-block; position: relative; padding-right: 19px; font-size: 16px; line-height: 25px; letter-spacing: -0.035em; font-weight: 200; color:#333333;}
+.farm .farm_title .farm_more_anchor:before{display: block; position: absolute; top: 0; bottom: 0; right:0; width:7px; height: 12px; margin: auto 0; background: url("../../../site/agriculture/images/main/board_icon.png") no-repeat;  }
+.farm .farm_wrap{display: inline-block; position: relative; width:calc(100% - 136px); min-height:303px; padding-left: 38px;}
+
+.farm .farm_list{width: calc(100% + 50px);}
+.farm .farm_item{margin-right: 15px; border-radius: 20px; overflow: hidden; transition: opacity 0.5s ease-in-out;}
+
+.farm .farm_list .slick-list{padding-right: 37px; padding-bottom: 103px;}
+.farm .farm_item.slick-slide{visibility: hidden; opacity: 0;}
+.farm .farm_item.slick-active{visibility: visible; opacity: 1;}
+
+.farm .farm_item .farm_anchor{display: block; position: relative; }
+.farm .farm_item .farm_anchor img{width: 100%; height: 100%;}
+.farm .farm_item .farm_cont{display:block; position: absolute; opacity: 0; visibility:hidden; top: 0; left: 0; width:100%; height:100%; background:url("../../../site/agriculture/images/main/farm_bg01.png"); text-align: center; transition: opacity 0.25s linear;}
+.farm .farm_item .farm_cont .farm_title{position: absolute; bottom:37px; left: 0; right: 0; margin: 0 auto; font-size: 17px; line-height: 17px; letter-spacing: -0.035em; color: #fff; font-weight: 400;}
+.farm .farm_item:hover{box-shadow: 21px 21px 30px 0 rgba(0, 0, 0, 0.2);}
+.farm .farm_item:hover .farm_cont{opacity: 1; visibility: visible;}
+
+.farm .farm_control{position: absolute; top:calc(50% - 78px); left:13px; width: 100%; text-align: left;}
+.farm .farm_control .farm_icon{display: inline-block; position: absolute; left: 0; width: 50px; height: 50px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.9);}
+.farm .farm_control .farm_icon:before{display: block; position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; left: 0; width: 8px; height: 12px; margin: auto;
+    background-image: url("../../../site/agriculture/images/main/farm_sprite.png"); background-position: bottom; background-repeat: no-repeat;}
+.farm .farm_control .farm_icon.farm_next{left: auto; right:-10px;}
+.farm .farm_control .farm_icon.farm_next:before{top:2px; transform: rotate(180deg);}
+.farm .farm_control .farm_icon:hover:after{display:block; position:absolute; top: 0; width: 100%; height: 100%; padding: 1px; border-radius:50%;
+    border-color:transparent; background-image:linear-gradient(#fff, #fff),linear-gradient(135deg, #0288c1 0, #e72f78 100%); box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-origin:border-box; background-clip:content-box,border-box; box-sizing:border-box; opacity: 0.9;}
+.farm .farm_control .farm_icon,
+.farm .farm_control .farm_icon:hover:before{background-position: bottom;}
+
+.farm .farm_control .farm_icon.slick-disabled:before{background-position: top;}
+.farm .farm_control .farm_icon.slick-disabled:after{display: none;}
+
+.farm .icon_wrap{display: inline-block; position: absolute; left: 0; bottom:107px; width: 96px; height: 88px;}
+.farm .farm_pot{display:inline-block; position: relative; width: 48px; height: 88px;}
+.farm .farm_pot:before{display: block; position: absolute; left: 0; top: 0; z-index: 1; width: 48px; height: 81px; background: url("../../../site/agriculture/images/main/farm_i01.png") no-repeat;}
+.farm .farm_pot:after{display: inline-block; position: absolute; bottom: 0; left:8px; width: 27px; height: 13px; border-radius: 50%; background-color: #d6d6d6;}
+.farm .farm_pot.show:after{opacity: 0.38;}
+.farm .farm_shadow{display: inline-block; position: absolute; width:47px; height: 88px; vertical-align: top; }
+.farm .farm_shadow:before{display: block; position: absolute; right: 0; top:40px; width: 41px; height: 41px; background: url("../../../site/agriculture/images/main/farm_i02.png") no-repeat;}
+.farm .farm_shadow:after{display: inline-block; position: absolute; bottom: 0; left:15px; width: 21px; height: 11px; border-radius: 50%; background-color: #d6d6d6;}
+.farm .farm_shadow.show:after{opacity: 0.38;}
+
+/* 20230119 추가 */
+.farm .farm_goto{display: inline-block; position: relative; width: calc((100% - 30px) / 3); height: 200px; margin-right: 15px;}
+.farm .farm_goto:last-child{margin-right: 0;}
+.farm .farm_goto .farm_link{display: block; width: 100%; height: 100%; box-shadow: none; transition: box-shadow 0.25s ease-in-out;
+    border-radius: 20px; background-image: url("../../../site/agriculture/images/main/farm_link01.jpg"); background-repeat: no-repeat; background-position: center; text-align: center;}
+.farm .farm_goto:nth-child(2) .farm_link{background-image: url("../../../site/agriculture/images/main/farm_link02.jpg");}
+.farm .farm_goto:nth-child(3) .farm_link{background-image: url("../../../site/agriculture/images/main/farm_link03.jpg");}
+.farm .farm_goto .farm_link span{position:absolute; bottom:35px; left:0; right:0; margin:0 auto; font-size: 17px; line-height: 17px; letter-spacing: -0.035em; color: #fff; font-weight: 600;}
+.farm .farm_goto .farm_link:before{display:block; position: absolute; opacity: 0; visibility:hidden; top: 0; left: 0; width:100%; height:100%; border-radius: 20px; background:url("../../../site/agriculture/images/main/farm_bg01.png"); transition: opacity, visible 0.25s linear;}
+
+.farm .farm_goto:hover .farm_link{box-shadow: 21px 21px 30px 0 rgba(0, 0, 0, 0.2);}
+.farm .farm_goto:hover .farm_link:before{opacity: 1; visibility: visible;}
+@media all and (min-width: 1001px) {
+    .fade{opacity:0; transition:opacity;}
+    .fade.show{opacity:1; }
+
+    .farm .farm_pot.show:before{-webkit-animation: bounce-top 0.9s both;}
+    .farm .farm_pot:after{opacity: 0; transition: opacity 0.4s ease-in-out; transition-delay: 0.8s;}
+    .farm .farm_shadow:before{opacity: 0; transition: opacity 0.25s ease-in-out; transition-delay: 0.5s;}
+    .farm .farm_shadow.show:before{opacity:1; -webkit-animation: bounce-top 0.9s both; animation-delay:0.5s;}
+    .farm .farm_shadow:after{opacity: 0; transition: opacity 0.4s ease-in-out; transition-delay: 1.5s;}
+
+}
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+
+    }
+    24% {
+
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+
+    }
+}
+
+@media all and (max-width: 1480px) {
+    .farm .farm_wrap{min-height:269px;}
+
+    /* 20230119 */
+    .farm .farm_wrap{padding-left: 0;}
+    .farm .farm_goto{height: 160px;}
+}
+@media all and (max-width: 1000px) {
+    .farm{margin-top: 61px;}
+    .farm .farm_control .farm_icon{transform: scale(0.9);}
+    .farm .icon_wrap{bottom: 99px; left: -5px; transform: scale(0.9);}
+    .farm .farm_title .farm_more{margin-top: 11px;}
+    .farm .farm_title .farm_more_anchor{padding-right:22px; font-size: 14px;}
+    .farm .farm_title .farm_more_anchor:before{width: 7px; height: 9px; background-size: contain;}
+    .farm .farm_item .farm_cont .farm_title{font-size: 16px;}
+    .farm .farm_wrap{min-height:221px;}
+}
+@media all and (max-width: 800px) {
+    .farm .farm_title{width: 224px;}
+    .farm .farm_wrap{width: calc(100% - 224px); padding-left: 21px;}
+    .farm .farm_list{width: calc(100% + 30px);}
+    .farm .farm_list .slick-list{padding-bottom: 100px;}
+    .farm .farm_control .farm_icon{left: -17px;}
+    .farm .farm_control .farm_icon.farm_next{right: 10px;}
+
+    /* 20230119 */
+    .farm .farm_title{width: 130px;}
+    .farm .farm_wrap{width: calc(100% - 130px); padding-left: 0;}
+}
+/*
+@media all and (max-width: 700px) {
+    .farm .farm_title{width: 170px;}
+    .farm .farm_wrap{width: calc(100% - 170px);}
+}*/
+@media all and (max-width: 640px) {
+    .farm{margin-top: 55px;}
+    .farm .farm_title{width: 106px;}
+    .farm .farm_title .farm_more_anchor{display:block; padding-right:0; font-size: 13px; line-height: 13px;}
+    .farm .farm_title .farm_more_anchor:before{right: -2px;}
+    .farm .farm_control{top: calc(50% - 67px);}
+    .farm .farm_control .farm_icon{left:-7px; transform: scale(0.7);}
+    .farm .farm_control .farm_icon.farm_next{right: -5px;}
+    .farm .farm_wrap{width: calc(100% - 106px); padding-left:30px;}
+    .farm .farm_list{width: calc(100% + 45px);}
+    .farm .farm_list .slick-list{padding-bottom: 80px;}
+    .farm .farm_item .farm_cont .farm_title{bottom:25px; font-size: 12px; line-height: 14px;}
+
+    .farm .icon_wrap{left:-14px; bottom:70px; transform: scale(0.7);}
+}
+
+/* 20230119 */
+@media all and (max-width: 640px) {
+    .farm .icon_wrap{display: none;}
+    .farm .farm_title{display: block; width: auto;}
+    .farm .farm_wrap{display: block; width: 100%; padding-left: 0; margin-top: 20px;}
+    .farm .farm_goto .farm_link span{font-size: 15px; font-weight: 500;}
+    .farm .farm_goto .farm_link:before{visibility: visible; opacity: 0.5;}
+}

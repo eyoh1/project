@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+@font-face{
+    font-family: 'Gabriola';
+    font-weight: 400;
+    src: url("/site/language/font/Gabriola.woff2") format('woff2'),
+    url("/site/language/font/Gabriola.woff") format('woff');
+}
+
+
+@font-face{
+    font-family: 'MyriadPro';
+    font-weight: 400;
+    src: url("/site/language/font/MyriadPro-Regular.woff2") format('woff2'),
+    url("/site/language/font/MyriadPro-Regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Caramel';
+    font-weight: 400;
+    src: url("/site/language/font/Caramel-Regular.woff2") format('woff2'),
+    url("/site/language/font/Caramel-Regular.woff") format('woff');
+}

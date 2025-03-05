@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.attraction .item_box .text_box{word-break: keep-all;}
+@media all and (max-width: 1000px) {
+    .quick .quick_item:last-child .quick_anchor{padding-bottom: 27px;}
+}
+
+@media all and (max-width: 640px) {
+    .quick .quick_item:last-child .quick_anchor{padding-top:37px; padding-bottom:7px;}
+}

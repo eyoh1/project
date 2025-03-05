@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.logo .logo_anchor{margin-top: 43px;}
+.lnb_open .logo .logo_anchor{background: url("../../../site/language/images/common/eng_logo_color.png") no-repeat; background-size: contain;}
+.lnb_open .logo .logo_anchor img{opacity: 0; visibility: hidden;}
+
+#header{position: absolute; background-color: inherit;}
+#header .group:before{display: none;}
+
+#header .shortcut{bottom: 21px;}
+#header .shortcut_list{bottom: 6px;}
+#header .shortcut_item .link_button{display:block; position:relative; width:30px; height:23px;}
+#header .shortcut_item .link_button:before{display:block; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; background-image: url("../../../site/language/images/common/eng_common_icon01.png"); background-repeat: no-repeat;}
+.chinese #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/chn_common_icon01.png");}
+.japanese #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/jpn_common_icon01.png");}
+.russian #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/rus_common_icon01.png");}
+
+#header .shortcut_item.sitemap .shortcut_anchor{top:-13px; box-shadow: none; background-color: inherit;}
+
+.lnb_open #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/eng_common_icon02.png");}
+.lnb_open .chinese #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/chn_common_icon02.png");}
+.lnb_open .japanese #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/jpn_common_icon02.png");}
+.lnb_open .russian #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/rus_common_icon02.png");}
+
+.lnb_open #header .shortcut_anchor:before{background-image:url("../../../site/public/images/common/icon6_2.svg");}
+#header .shortcut_anchor{width:18px; height:23px; border-radius:0; box-shadow:none; background-color: inherit;}
+#header .shortcut_item + .shortcut_item{margin-left: 5px;}
+#header .shortcut_item.language .language_panel{display:none; position:absolute; top:34px; right:-48px; z-index:30; width: 100px;}
+#header .shortcut_item.language .language_panel .language_list{width: 75px;  padding: 6px 0; background: linear-gradient(135deg,  #d52534 5%,#8f3e60 40%,#455990 75%,#116cb1 90%); border-radius: 10px;}
+#header .shortcut_item.language .language_anchor{display:block; font-size:13px; line-height:24px; letter-spacing: 0; color: #fff; text-align: center;}
+#header .shortcut_item.language .language_panel .language_hide{display: inline-block; position: absolute; top: 0; right:0; width: 35px; height: 35px;
+    background:#fff url("../../../site/public/images/common/icon6_13_grey.svg") center no-repeat; border-radius: 15px; transition: none;}
+
+.lnb .menu{background-color: inherit;}
+.lnb_open .lnb .menu{background-color: #fff;}
+
+@media all and (min-width: 1001px) {
+    .lnb{height: 130px;}
+    .lnb:after{display: block; position: absolute; bottom: 0; width: 100%; height: 1px; background-color: #fff; opacity: 0.2;}
+    .lnb .menu .depth2, .lnb .menu.after:after{height: calc(100% - 130px);}
+
+    .lnb .menu .depth1_list{padding-right: 125px;}
+    .lnb .menu .depth1_text{margin:0 13px; padding:55px 0 53px; font-family:'Montserrat'; color: #fff; font-size: 18px; font-weight: 500;}
+    .lnb_open .lnb .menu .depth1_text{color: #000;}
+}
+@media (min-width: 1001px) and (max-width: 1480px) {
+    .logo .logo_anchor{width: 140px; margin-top: 52px;}
+    .lnb .menu .depth1_list{padding-left: 135px; padding-right:85px; }
+    .lnb .menu .depth1_text{margin: 0 7px; font-size: 13px;}
+
+    #header .shortcut_item + .shortcut_item{margin-left: 0;}
+    #header .shortcut_item.sitemap .shortcut_anchor{width: 35px;}
+    
+    #header .shortcut_anchor:before,
+    #header .shortcut_item .link_button:before{transform: scale(0.9);}
+}
+@media all and (max-width: 1000px) {
+    #header{position: relative;}
+    .logo .logo_anchor{margin:22px 0; background: url("../../../site/language/images/common/eng_logo_color.png") no-repeat; background-size: contain;}
+    .logo .logo_anchor img{opacity: 0; visibility: hidden; width:160px; height: 32px;}
+    #header .shortcut_item .link_button:before{background-image: url("../../../site/language/images/common/eng_common_icon02.png");}
+    #header .shortcut_item.language{display: none;}
+    .lnb .menu .depth1:after{height: calc(100% + 150px);}
+    .lnb .menu .depth1_text{font-size:14px; word-break: keep-all;}
+    .lnb .menu .depth1_item.has .depth1_text:before{left: 5px; width: calc(100% + 10px);}
+    .lnb .menu .depth1_item.has.active .depth1_text:after{right: -8px;}
+
+    .lnb .menu .depth1.long:before{left: 0; right: 0; margin: 0 auto;}
+    .lnb .menu .depth1_list.long{width: 100%;}
+    .lnb .menu .depth1_list.long .depth1_item:last-child{position: relative;}
+    .lnb .menu .depth1_list.long .depth1_item:last-child .depth1_text:before{display:block; position:absolute; top: 0; left: 0; right: 0; width: calc(100% - 60px); height: 100%; margin: 0 auto; border-radius: 50px;
+        background: linear-gradient(-30deg,  #d52534 5%,#8f3e60 40%,#455990 75%,#116cb1 90%);}
+    .lnb .menu .depth1_list.long .depth1_item:last-child .depth1_text:after{display: none;}
+}
+@media all and (max-width: 640px) {
+    .logo .logo_anchor img{width: 140px; height: 31px;}
+}
+
+#footer{padding-top:102px; padding-bottom: 10px; font-size:0; line-height: 0;}
+#footer .use_link{display: inline-block; position: relative; width: 300px; font-family:'Montserrat';}
+#footer .use_link .use_title{margin-bottom:28px; font-size: 24px; line-height: 26px; letter-spacing: -0.035em; font-weight: 600; color: #fff;}
+#footer .use_link .use_anchor{font-size: 18px; line-height: 36px; font-weight: 300; letter-spacing: -0.035em; color: #fff;}
+#footer .footer_content{display: inline-block; position: relative; width: calc(100% - 300px); margin-top: 0; text-align: right; font-family:'Montserrat'; vertical-align: bottom;}
+#footer .footer_content .goto_sns{position: relative;}
+#footer .goto_sns .sns_item{display: inline-block; position: relative; width: 60px; height: 60px; margin-left:38px; border-radius:50%; box-shadow: -3px -4px 35px 0 rgba(0, 0, 0, 0.07); background-color: rgba(255, 255, 255, 0.2); font-size:0; line-height: 0;}
+#footer .goto_sns .sns_item:before{display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background-image: url("../../../site/language/images/common/eng_sns_icon.png"); background-repeat: no-repeat;}
+#footer .goto_sns .sns_item.blog:before{width: 19px; height: 22px; background-position:3px -3px;}
+#footer .goto_sns .sns_item.youtube:before{width: 21px; height: 25px; background-position: -98px -2px;}
+#footer .goto_sns .sns_item.facebook:before{width: 15px; height: 29px; background-position:-202px 0; }
+#footer .goto_sns .sns_item.instagram:before{width: 23px; height: 23px; background-position: right;}
+#footer .goto_sns .sns_anchor{display: block; width: 100%; height: 100%;}
+#footer .info{margin-top: 54px; font-size:18px; line-height:36px; letter-spacing:-0.035em;  font-weight: 300;}
+#footer .info .info_address{font-weight: 600;}
+#footer .info em{font-weight: 600;}
+#footer .info .info_address br{display: none;}
+
+@media all and (max-width: 1000px) {
+    #footer{padding-top: 62px;}
+    #footer .use_link{width: 245px;}
+    #footer .use_link .use_title{font-size: 20px;}
+    #footer .use_link .use_anchor{font-size: 16px; line-height: 28px;}
+    #footer .footer_content{width:calc(100% - 245px); margin-top: 0; vertical-align: bottom;}
+    #footer .goto_sns .sns_item{margin-left: 10px; transform: scale(0.8);}
+    #footer .info{margin-top:40px; font-size: 16px; line-height: 28px;}
+    #footer .info .info_address br{display: block;}
+    #footer .info .info_copyright{font-size:14px; letter-spacing: -0.035em; }
+}
+
+@media all and (max-width: 640px) {
+    #footer{padding-bottom: 100px;}
+    #footer .use_link{display:block; width: 100%; text-align: center;}
+    #footer .use_link .use_title{margin-bottom:11px; font-size: 17px;}
+    #footer .use_link .use_anchor{font-size: 13px; line-height: 22px;}
+    #footer .footer_content{display:block; width:100%; text-align: center;}
+    #footer .goto_sns .sns_item{margin-left: 0; transform: scale(0.6);}
+    #footer .info{margin-top:15px; font-size: 13px; line-height: 20px;}
+    #footer .info .info_copyright{font-size:13px;}
+}
