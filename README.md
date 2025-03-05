@@ -40,6 +40,9 @@
 - [메인 레이아웃](https://eyoh1.github.io/project/2023cjfmc/site/coc/main.html)
 - [템플릿](https://eyoh1.github.io/project/2023cjfmc/site/coc/template.html)
 
+### 2021cju (2021 청주대학교 산학협력단)
+- [메인 레이아웃](https://eyoh1.github.io/project/2021cju/site/iacf/main.html)
+
 ### 2021knu (2021 강원대학교 입학처)
 - [메인 레이아웃](https://eyoh1.github.io/project/2021knu/site/admission/main.html)
 
