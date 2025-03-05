@@ -1692,9 +1692,9 @@
 .no-svg .p-media--gallery .p-media__image-wrap img{position:relative;width:260px;height:170px}
 .no-svg .p-media--gallery .p-media__image-wrap.no-image{width:260px;height:170px}
 .no-svg .p-page__control .next .skip,.no-svg .p-page__control .next-end .skip,.no-svg .p-page__control .prev .skip,.no-svg .p-page__control .prev-end .skip{left:0;width:100%!important;height:auto!important;font-size:12px!important;line-height:1.6!important;color:#666!important}
-/*# sourceMappingURL=program.css.map */
 
-/* 음성군청 게시판 템플릿 2023-10*/
+
+
 /* 게시판 상단박스*/
 .boardtopbox{position:relative;margin-bottom:30px;padding:42px 40px 40px 180px;background-color:#fff;border:1px solid #e3e5e8;border-radius:30px;}
 .boardtopbox .icon{display:block; position:absolute; top:40px; left:40px; z-index:2; width:100px; height:100px; background-color:#f7f7fc; border-radius:50%;}
