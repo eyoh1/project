@@ -43,3 +43,6 @@
 ### 2021knu (2021 강원대학교 입학처)
 - [메인 레이아웃](https://eyoh1.github.io/project/2021knu/site/admission/main.html)
 
+### 2020gwto (2020 강원관광재단)
+- [메인 레이아웃](https://eyoh1.github.io/project/2020gwto/site/www/main.html)
+
