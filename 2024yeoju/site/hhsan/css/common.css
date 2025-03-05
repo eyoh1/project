@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@media all and (min-width: 1001px) {
+
+    /* logo */
+    .logo .logo_anchor{margin-top: 20px;}
+    .logo .logo_anchor img{width: 106px; height: 80px;}
+    html:not(.lnb_open) .visual_sub .logo .logo_anchor:before{width:106px; height:80px; background: url("../../../site/hhsan/images/common/hhsan_logo.png") no-repeat;}
+
+    /* search */
+    #header .shortcut{bottom: 7px;}
+    .visual_sub #header .shortcut_item .search_btn{background: url("../../../site/hhsan/images/common/hhsan_search.png") no-repeat;}
+    html:not(.lnb_open) .visual_sub #header .shortcut_item .search_btn{background: url("../../../site/hhsan/images/common/hhsan_search.png") no-repeat;}
+
+    /* lnb */
+    .visual_sub .lnb .menu .depth1_list{padding-right: 68px;}
+    .visual_sub .lnb .menu .depth1_text{padding: 49px 0 55px; margin: 0 38px;}
+
+    /* gnb weather */
+    .gnb .site_link.right ul .link_item:first-child{margin-right: 0; padding-right: 23px;}
+    .visual_sub .gnb .site_link.right ul .link_item + .link_item{margin-left: 28px;}
+    .visual_sub .gnb .site_link.right ul .link_item.weather{font-size: 16px; line-height: 16px; font-weight: 400; letter-spacing: 0; color: #636363;}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather{color: #fff;}
+
+    .visual_sub .gnb .site_link.right ul .link_item.weather:before{display: block; position: absolute; top: 0; bottom: 0; left:auto; right: 0; width: 1px; height: 13px; margin:auto 0; background-color: #969696; opacity: 0.5;}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather:before{background-color:rgba(255,255,255,.25);}
+
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state{position:relative;padding-left: 40px;padding-right: 6px;}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state:before{display: block;position: absolute;top: -9px;left: 0;width: 36px;height: 36px;background-repeat:no-repeat;}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type1:before{background-image: url("../../../site/hhsan/images/common/weather_type1_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type2:before{background-image: url("../../../site/hhsan/images/common/weather_type2_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type3:before{background-image: url("../../../site/hhsan/images/common/weather_type3_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type4:before{background-image: url("../../../site/hhsan/images/common/weather_type4_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type5:before{background-image: url("../../../site/hhsan/images/common/weather_type5_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type6:before{background-image: url("../../../site/hhsan/images/common/weather_type6_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type7:before{background-image: url("../../../site/hhsan/images/common/weather_type7_grey.png");}
+    .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type8:before{background-image: url("../../../site/hhsan/images/common/weather_type8_grey.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type1:before{background-image: url("../../../site/hhsan/images/common/weather_type1.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type2:before{background-image: url("../../../site/hhsan/images/common/weather_type2.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type3:before{background-image: url("../../../site/hhsan/images/common/weather_type3.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type4:before{background-image: url("../../../site/hhsan/images/common/weather_type4.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type5:before{background-image: url("../../../site/hhsan/images/common/weather_type5.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type6:before{background-image: url("../../../site/hhsan/images/common/weather_type6.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type7:before{background-image: url("../../../site/hhsan/images/common/weather_type7.png");}
+    html:not(.lnb_open) .visual_sub .gnb .site_link.right ul .link_item.weather .weather_state.type8:before{background-image: url("../../../site/hhsan/images/common/weather_type8.png");}
+
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .visual_sub .lnb .menu .depth1_text{margin: 0 23px;}
+}
+@media all and (max-width: 1000px) {
+    .logo .logo_anchor img{width: 67px; height: auto;}
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media all and (min-width: 1001px) {
+    .visual_sub .top_sub_visual .sub_title h2 span{font-family: 'Gmarket'; font-weight: 600;}
+    .visual_sub .breadcrumbs .tab_panel .tab_item .breadcrumbs_anchor{font-family: 'Gmarket'; font-size: 17px; font-weight: 400;}
+    .visual_sub .breadcrumbs .breadcrumbs_item button{font-family: 'Gmarket'; font-weight: 400;}
+    .visual_sub .breadcrumbs .breadcrumbs_item button:before{top: -6px;}
+    .visual_sub .breadcrumbs .breadcrumbs_item:after{top: -3px;}
+
+    .lnb .menu .depth2_text{font-family: 'Gmarket';}
+    .lnb .menu .depth2_text span{padding: 13px 35px 10px 16px;}
+    /* sub visual */
+    .visual_sub.sub1 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual01.jpg');}
+    .visual_sub.sub2 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual02.jpg');}
+    .visual_sub.sub3 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual03.jpg');}
+    .visual_sub.sub4 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual04.jpg');}
+    .visual_sub.sub5 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual05.jpg');}
+    .visual_sub.sub6 .top_sub_visual:before{background-image: url('../../../site/mayor/images/sub/sub_visual06.jpg');}
+}

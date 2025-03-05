@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+/* 서브헤드 */
+@media all and (min-width: 1001px) {
+    .sub_head{display:block; height: 228px; margin-top:24px; text-align: center;}
+    .sub_head:before{position:absolute; left:-160px; top:0; width: 100vw; height: 178px; background: linear-gradient(135deg,  rgba(185, 213, 49, 0.1) 10%,rgba(77, 184, 72, 0.1) 35%, rgba(0, 137, 200, 0.1) 75%);}
+    .sub_head .sub_title{padding-top: 67px;}
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .sub_head{text-align: left;}
+    .sub_head .sub_title{font-size: 27px;}
+}
+
+/* 브래드크럼 */
+@media all and (min-width: 1001px) {
+    .breadcrumbs {margin-top: 7px; margin-bottom: 40px;}
+    .breadcrumbs .breadcrumbs_item {color: #000;}
+    .breadcrumbs .breadcrumbs_item a {color: #636363;}
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .breadcrumbs .breadcrumbs_item{line-height: 25px;}
+    .breadcrumbs .breadcrumbs_item:first-child{top: 4px;}
+    .breadcrumbs .breadcrumbs_item:before{top: 1px;}
+}
+/* 공유 */
+@media all and (min-width: 1001px) {
+    .addons {top: 68px;}
+    .addons .addons_button:before{background: url("../../../site/public/images/sub/addons_share_open_grey.svg") no-repeat; background-size: contain;}
+    .addons .addons_button.print_anchor:before{background: url("../../../site/public/images/sub/addons_print_grey.svg") no-repeat; background-size: contain;}
+    .addons .addons_button.copy_anchor:before{background:url("../../../site/public/images/sub/addons_copy_grey.svg") no-repeat; background-size: contain; }
+    .addons .addons_button:hover{background-color: #fff;}
+    .addons .share_anchor{box-shadow: none;}
+    .addons .addons_button.qr_show:before{background: url("../../../site/public/images/sub/qr_text_bgrey.png") no-repeat;}
+    .addons .addons_button.qr_show:hover:before{background: url("../../../site/public/images/sub/qr_text_black.png") no-repeat;}
+
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .addons{top: 60px;}
+    .addons .addons_item{margin-left: 6px;}
+}
+
+/* 사이드메뉴 */
+.sub_visual{border-top-right-radius: 65px;}
+
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 나눔소미체 */
+@font-face{
+	font-family: 'NanumSomice';
+	font-weight: 400;
+	src: url("../font/NanumSoMiCe.woff2") format('woff2'),
+	url("../font/NanumSoMiCe.woff") format('woff');
+}
+
+/* YesevaOne */
+@font-face{
+	font-family: 'YesevaOne';
+	font-weight: 400;
+	src: url("../font/YesevaOne-Regular.woff2") format('woff2'),
+	url("../font/YesevaOne-Regular.woff") format('woff');
+}
+
+/* Jalnan */
+@font-face{
+	font-family: 'Jalnan';
+	font-weight: 400;
+	src: url("../font/Jalnan.woff2") format('woff2'),
+	url("../font/Jalnan.woff") format('woff');
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* 땅스부대찌개 */
+@font-face{
+	font-family: 'Ddangs';
+	font-weight: 600;
+	src: url("../font/Ddangs-Bold.woff2") format('woff2'),
+	url("../font/Ddangs-Bold.woff") format('woff');
+}
+
+

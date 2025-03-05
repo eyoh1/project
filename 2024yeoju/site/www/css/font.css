@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* 여기어때 잘난 */
+@font-face{
+    font-family: 'Jalnan';
+    font-weight: 600;
+    src: url("../font/Jalnan.woff2") format('woff2'),
+    url("../font/Jalnan.woff") format('woff');
+}
+
+/* remixicon */
+@font-face {
+    font-family: 'remixicon';
+    font-weight: 700;
+    src: url("../font/remixicon.woff2") format('woff2'), url("../font/remixicon.woff") format('woff');
+}
