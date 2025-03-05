@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'BrushScriptStd';
+    font-weight: 400;
+    src: url("../font/BrushScriptStd.woff2") format('woff2'),
+    url("../font/BrushScriptStd.woff") format('woff');
+}
+
+/* OneMobile */
+@font-face{
+    font-family: 'OneMobile';
+    font-weight: 400;
+    src: url("../font/ONEMobileTitle.woff2") format('woff2'),
+    url("../font/ONEMobileTitle.woff") format('woff');
+}
