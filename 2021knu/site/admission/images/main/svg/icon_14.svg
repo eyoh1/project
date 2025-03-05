@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.513" height="44.728" viewBox="0 0 54.513 44.728">
+  <g id="그룹_53" data-name="그룹 53" transform="translate(-479.399 -190.534)">
+    <path id="패스_70" data-name="패스 70" d="M510.35,198.422v5.02" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_71" data-name="패스 71" d="M492.915,198.422H482.868a1.968,1.968,0,0,0-1.969,1.969v31.4a1.968,1.968,0,0,0,1.969,1.969h47.576a1.967,1.967,0,0,0,1.968-1.969v-31.4a1.967,1.967,0,0,0-1.968-1.969H520.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_72" data-name="패스 72" d="M502.962,203.442v-5.02" fill="none" stroke="#0098ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_73" data-name="패스 73" d="M510.35,203.442V194a1.968,1.968,0,0,0-1.968-1.968h-3.451A1.968,1.968,0,0,0,502.962,194v9.44" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="선_22" data-name="선 22" x2="15.175" transform="translate(499.068 203.414)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="그룹_50" data-name="그룹 50">
+      <line id="선_23" data-name="선 23" x2="16.573" transform="translate(509.975 211.987)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="선_24" data-name="선 24" x2="16.573" transform="translate(509.975 220.975)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="그룹_52" data-name="그룹 52">
+      <path id="패스_74" data-name="패스 74" d="M499.413,211.586a4.175,4.175,0,1,1-4.176-4.175A4.177,4.177,0,0,1,499.413,211.586Z" fill="none" stroke="#fff200" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <g id="그룹_51" data-name="그룹 51">
+        <path id="패스_75" data-name="패스 75" d="M500.573,219.1a2.087,2.087,0,0,0-2.088-2.088h-6.5A2.088,2.088,0,0,0,489.9,219.1v7.191h10.672Z" fill="none" stroke="#fff200" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

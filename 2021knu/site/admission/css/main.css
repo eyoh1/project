@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* layout */
+@import url('../../../site/admission/css/default.css');
+@import url('../../../site/admission/css/common.css');
+@import url('../../../site/admission/css/main_layout.css');
+@import url('../../../site/admission/css/main_layout_svg.css');/*svg아이콘*/
+
+

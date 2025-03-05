@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* 본고딕 */
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 200;
+	src: url("../font/noto-sans-kr-v13-latin_korean-300.woff2") format('woff2'),
+	url("../font/noto-sans-kr-v13-latin_korean-300.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 400;
+	src: url("../font/noto-sans-kr-v13-latin_korean-regular.woff2") format('woff2'),
+	url("../font/noto-sans-kr-v13-latin_korean-regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 500;
+	src: url("../font/noto-sans-kr-v13-latin_korean-500.woff2") format('woff2'),
+	url("../font/noto-sans-kr-v13-latin_korean-500.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 600;
+	src: url("../font/noto-sans-kr-v13-latin_korean-700.woff2") format('woff2'),
+	url("../font/noto-sans-kr-v13-latin_korean-700.woff") format('woff');
+}
+
+/* Lato */
+@font-face{
+	font-family: 'Lato';
+	font-weight: 200;
+	src: url("../font/Lato-Light.woff2") format('woff2'),
+	url("../font/Lato-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'Lato';
+	font-weight: 400;
+	src: url("../font/Lato-Regular.woff2") format('woff2'),
+	url("../font/Lato-Regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'Lato';
+	font-weight: 600;
+	src: url("../font/Lato-Bold.woff2") format('woff2'),
+	url("../font/Lato-Bold.woff") format('woff');
+}
+
+/* montserrat */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	src: url('../font/Montserrat-Bold.woff2') format('woff2'),
+	url('../font/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	src: url('../font/Montserrat-ExtraBold.woff2') format('woff2'),
+	url('../font/Montserrat-ExtraBold.woff') format('woff');
+
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: 900;
+	src: url('../font/Montserrat-Black.woff2') format('woff2'),
+	url('../font/Montserrat-Black.woff') format('woff');
+}
+
+
+/* 나눔스퀘어 */
+@font-face {
+	font-family: 'NanumS';
+	font-weight: 200;
+	src: url('../font/NanumSquareL.woff2') format('woff2'),
+	url('../font/NanumSquareL.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumS';
+	font-weight: 400;
+	src: url('../font/NanumSquareR.woff2') format('woff2'),
+	url('../font/NanumSquareR.woff') format('woff');
+
+}
+
+@font-face {
+	font-family: 'NanumS';
+	font-weight: 600;
+	src: url('../font/NanumSquareB.woff2') format('woff2'),
+	url('../font/NanumSquareB.woff') format('woff');
+
+}
+
+@font-face {
+	font-family: 'NanumS';
+	font-weight: 800;
+	src: url('../font/NanumSquareEB.woff2') format('woff2'),
+	url('../font/NanumSquareEB.woff') format('woff');
+
+}
+
+/* roboto-slab */
+@font-face {
+	font-family: 'RobotoSlab';
+	font-weight: 400;
+	src: url('../font/RobotoSlabR.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/RobotoSlabR.woff') format('woff');
+
+}
+@font-face {
+	font-family: 'RobotoSlab';
+	font-weight: 600;
+	src: url('../font/RobotoSlabM.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/RobotoSlabM.woff') format('woff');
+
+}
+
+/* open-sans-regular */
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: 400;
+	src:
+	url('../font/OpenSansR.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/OpenSansR.woff') format('woff');
+}
+@font-face {
+	font-family: 'OpenSans';
+	font-weight: 600;
+	src:url('../font/OpenSansSB.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../font/OpenSansSB.woff') format('woff');
+}
+
+/* poppins */
+@font-face {
+	font-family: 'Poppins';
+	font-weight: 400;
+	src: url('../font/poppinsR.woff2') format('woff2'),
+    url('../font/poppinsR.woff') format('woff');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../font/poppinsB.woff2') format('woff2'),
+    url('../font/poppinsB.woff') format('woff');
+}
+
+/* DMSerifText */
+@font-face {
+    font-family: 'DMSerifText';
+    font-weight: 400;
+    src: url('../font/DMSerifText.woff2') format('woff2'),
+    url('../font/DMSerifText.woff') format('woff');
+}
+
+/* JosefinSans */
+@font-face {
+	font-family: 'JosefinSans';
+	font-weight: 600;
+	src: url('../font/JosefinSansB.woff2') format('woff2'),
+	url('../font/JosefinSansB.woff') format('woff');
+}

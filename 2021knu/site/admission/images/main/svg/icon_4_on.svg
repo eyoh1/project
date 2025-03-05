@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.875" height="50.875" viewBox="0 0 50.875 50.875">
+  <g id="그룹_86" data-name="그룹 86" transform="translate(-478.796 -460.026)">
+    <g id="그룹_79" data-name="그룹 79">
+      <path id="패스_103" data-name="패스 103" d="M519.238,461.526h-15v23.938h23.938v-15A8.933,8.933,0,0,0,519.238,461.526Z" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="패스_104" data-name="패스 104" d="M504.233,461.526h-15a8.933,8.933,0,0,0-8.933,8.934v15h23.937Z" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="패스_105" data-name="패스 105" d="M480.3,485.464V500.47a8.933,8.933,0,0,0,8.933,8.931h15V485.464Z" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="패스_106" data-name="패스 106" d="M504.233,509.4h15a8.933,8.933,0,0,0,8.933-8.931V485.464H504.233Z" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="그룹_85" data-name="그룹 85">
+      <g id="그룹_82" data-name="그룹 82">
+        <g id="그룹_80" data-name="그룹 80">
+          <path id="패스_107" data-name="패스 107" d="M492.156,470.347v7.924" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="패스_108" data-name="패스 108" d="M488.193,474.31h7.923" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="그룹_81" data-name="그룹 81">
+          <path id="패스_109" data-name="패스 109" d="M494.956,494.981l-2.8,2.8-2.8,2.8" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="패스_110" data-name="패스 110" d="M489.354,494.981l2.8,2.8,2.8,2.8" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+      </g>
+      <g id="그룹_84" data-name="그룹 84">
+        <g id="그룹_83" data-name="그룹 83">
+          <path id="패스_111" data-name="패스 111" d="M512.35,495.366h7.924" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="패스_112" data-name="패스 112" d="M512.35,500.581h7.924" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <path id="패스_113" data-name="패스 113" d="M512.35,474.977h7.924" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

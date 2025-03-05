@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.513" height="44.729" viewBox="0 0 54.513 44.729">
+  <g id="그룹_119" data-name="그룹 119" transform="translate(-479.399 -582.014)">
+    <path id="패스_166" data-name="패스 166" d="M510.35,589.9v5.02" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_167" data-name="패스 167" d="M492.915,589.9H482.868a1.968,1.968,0,0,0-1.969,1.969v31.4a1.97,1.97,0,0,0,1.969,1.969h47.576a1.968,1.968,0,0,0,1.968-1.969v-31.4a1.967,1.967,0,0,0-1.968-1.969H520.4" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_168" data-name="패스 168" d="M502.962,594.922V589.9" fill="none" stroke="#0098ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_169" data-name="패스 169" d="M510.35,594.922v-9.439a1.969,1.969,0,0,0-1.968-1.969h-3.451a1.969,1.969,0,0,0-1.969,1.969v9.439" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="선_58" data-name="선 58" x2="15.175" transform="translate(499.068 594.895)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="선_59" data-name="선 59" x2="16.573" transform="translate(509.975 603.467)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="선_60" data-name="선 60" x2="16.573" transform="translate(509.975 612.456)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="패스_170" data-name="패스 170" d="M499.413,603.067a4.175,4.175,0,1,1-4.176-4.176A4.177,4.177,0,0,1,499.413,603.067Z" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="그룹_118" data-name="그룹 118">
+      <path id="패스_171" data-name="패스 171" d="M500.573,610.581a2.086,2.086,0,0,0-2.088-2.088h-6.5a2.088,2.088,0,0,0-2.088,2.088v7.191h10.672Z" fill="none" stroke="#363dc2" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
