@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* layout */
+@import url('/common/css/default.css');
+/*@import url('/common/css/layout.css');*/
+@import url('/common/css/program.css');
+
+@import url('/site/iacf2021/css/default.css');
+@import url('/site/iacf2021/css/common.css');
+@import url('/site/iacf2021/css/sub_layout.css');
+@import url('template.css')/* 템플릿 */;
+@import url('/site/iacf2021/css/sub_content.css');
+@import url('/site/iacf2021/css/sub_content2.css');
+@import url('/site/iacf2021/css/program.css')/* 산학협력단 사이트맵 */;
+
+@import url('/site/iacf2021/css/program2.css')/* faq 임시작업 */;
