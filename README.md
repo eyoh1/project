@@ -13,7 +13,7 @@
 - [오죽헌·시립박물관 메인 레이아웃](https://eyoh1.github.io/project/2023cjfmc/site/museum/main.html)
 - [오죽헌·시립박물관 서브 레이아웃](https://eyoh1.github.io/project/2023cjfmc/site/museum/sub.html)
 
-### 2024edu_eumseong (2024 음성진전평생학습)
+### 2024edu_eumseong (2024 음성진천평생학습)
 - [서브 레이아웃](https://eyoh1.github.io/project/2024edu_eumseong/site/www/sub.html)
 - [메인 대시보드 TV](https://eyoh1.github.io/project/2024edu_eumseong/site/www/dashboard_tv.html)
 - [템플릿](https://eyoh1.github.io/project/2024edu_eumseong/site/www/template.html)
