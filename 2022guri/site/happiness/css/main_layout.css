@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+
+/* 메인 헤더 깨기 */
+.header_box:before{display:none;}
+
+.searchbox_curtain{z-index:61;}
+.searchbox{z-index:62;}
+@media all and (max-width:1000px){
+    .header_box:after{display:none;}
+    .header_box .wrap:before{display:none;}
+    .search_btn:before{background-position:-60px top;}
+    .header_box .menu_show .menu_button:before{background-position:-120px top;}
+}
+@media all and (min-width:641px) and (max-width:1000px){
+    .header_box .wrap{padding-top:13px;padding-bottom:13px;}
+}
+@media all and (max-width:640px){
+    .header_box .wrap{padding-top:17px;padding-bottom:17px;}
+}
+
+/*반응형 헤더*/
+@media all and (max-width: 1000px) {
+    .header_box{z-index: 56;}
+    .search_btn{z-index: 56;}
+    .logo .image{background-image:url('../../../common/images/layout/logo_white.svg');}
+    .logo .text{color:#fff;}
+    .logo .text:before{display:none;}
+    .search_btn:before{top:4px; left:4px; width:19px; height:19px; background-position:-90px top;}
+
+    .header_box .menu_show .menu_button:before{background-position: -150px top;}
+}
+
+
+/* 상단 타입 변경*/
+.sub_visual{height: 150px; background: none;}
+body.visualtype #container{margin-top: 0;}
+@media all and (max-width:1000px){
+    .sub_visual{display:none;}
+}
+
+
+/* 메인전용폰트 */
+/* SCoreDream */
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 500;
+    src: url("../font/S-CoreDream-5Medium.woff") format('woff');
+}
+
+/* SCoreDream */
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 800;
+    src: url("../font/S-CoreDream-8Heavy.woff") format('woff');
+}
+
+
+
+.rowgroup1{position:relative; top: -150px;}
+/*메인 비주얼*/
+.visual{position:relative; top: 0; left: 0; width: 100%;}
+.visual .slick-list{font-size: 0; line-height: 0;}
+.visual .visual_wrap{position:relative; z-index:52;}
+.visual .visual_wrap .visualbox{position:absolute; top:293px; left:0; z-index:50; width: 100%;}
+.visual .visual_wrap .controlbox{position:relative; line-height:0; font-size:0; animation: title 1.5s 0.4s ease both;}
+
+
+@keyframes title {
+    0%{transform:translateY(50px);opacity: 0;}
+    100%{transform:translateY(0);opacity: 1;}
+}
+
+
+
+
+.visual .visual_wrap .title_box p{font-size: 60px; line-height: 70px; letter-spacing: -0.03em; color: #fff; font-weight: 800; font-family: 'SCoreDream'; animation: title 1.5s ease both;}
+.visual .visual_wrap .title_box p.sub_title{margin:20px 0 55px; font-size: 20px; line-height: 30px; letter-spacing: -0.025em; font-weight: 200; font-family: 'NotoKr';}
+
+.visual .visual_wrap .controlbox .controller{display:block; line-height:0; font-size:0;}
+.visual .visual_wrap .controlbox .controller button{display:inline-block; position:relative; width:12px; height:13px; vertical-align:top;}
+.visual .visual_wrap .controlbox .controller button:before{display:block; position:absolute; top: 0; bottom: 0; left: 0; width:8px; height:11px; margin: auto 0;
+    background-repeat:no-repeat; background-image:url('../../../site/happiness/images/main/visual_icon01.png'); content:'';}
+.visual .visual_wrap .controlbox .controller button.prev{margin-right: 18px;}
+.visual .visual_wrap .controlbox .controller button.next{margin-left: 18px; }
+.visual .visual_wrap .controlbox .controller button.next:before{background-position:-28px 0; }
+
+
+.visual .visual_wrap .controlbox .controller button.auto{margin-left: 8px;}
+.visual .visual_wrap .controlbox .controller button.auto.slick-pause:before{width:12px; background-position:-50px 0;  }
+.visual .visual_wrap .controlbox .controller button.auto.slick-play:before{width:12px; background-position:-74px -1px;  }
+
+.visual .visual_wrap .controlbox .controller .middot{margin:0 4px; font-size:16px; line-height: 13px; font-weight: 400; color: #fff; }
+.visual .visual_wrap .controlbox .controller .slick-text{display:inline-block; vertical-align:top; color:#FFF; font-size:16px; line-height:13px; letter-spacing:0; font-weight: 600;}
+.visual .visual_wrap .controlbox .controller .slick-text.total{font-weight: 200;}
+
+.visual .visual_wrap .controlbox .controller .totalbar{display:inline-block; position:relative; left:25px; width:291px; height:2px; margin:7px 0; vertical-align:top;}
+.visual .visual_wrap .controlbox .controller .totalbar:before{display:block; position:absolute; top:0; left:0; width:291px; height:2px; background-color:#fff;}
+.visual .visual_wrap .controlbox .controller .totalbar i{display:block; position:absolute; top:0; left:0; width:0; height:2px; background-color:#00ab4e; content:'';}
+.visual .visual_wrap .controlbox .controller .totalbar.active i{width:100%; animation:bar_ani 4.6s 1;animation-timing-function: linear;-webkit-animation-timing-function: linear;}
+.visual .visual_wrap .controlbox .controller .totalbar.first.active i{width:100%; animation:bar_ani 4.6s 1;animation-timing-function: linear;-webkit-animation-timing-function: linear;}
+
+
+@keyframes bar_ani {
+    0% {width:0;}
+    100% {width:100%;}
+}
+
+.visual .visual_wrap .link_box{position: relative; margin-top:99px; font-size: 0; line-height: 0; animation: title 1.5s 0.7s ease both;}
+.visual .visual_wrap .link_box ul li{display: inline-block; position: relative; width: 230px; overflow: hidden; text-align: center;}
+.visual .visual_wrap .link_box ul li + li{margin-left: 20px;}
+.visual .visual_wrap .link_box ul li a{width: 100%; height: 100%; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.8); border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.3); font-size: 18px; line-height: 18px; letter-spacing: -0.025em; color: #fff; font-weight: 500; text-decoration: none; }
+.visual .visual_wrap .link_box ul li a:before{display: block; position: absolute; top: 0; left: 0; width: 32px; height: 25px;
+    background-image: url("../../../site/happiness/images/main/visual_icon03.png"); background-repeat: no-repeat;}
+.visual .visual_wrap .link_box ul li:nth-child(1) a:before{top:37px; left:32px; background-position:0 -13px;}
+.visual .visual_wrap .link_box ul li:nth-child(2) a:before{width:32px; height:28px; top:35px; left:33px; background-position:-300px -13px;}
+.visual .visual_wrap .link_box ul li a:after{display: block; position: absolute; top:44px; right:20px; width: 18px; height: 15px;
+    background-image: url("../../../site/happiness/images/main/visual_icon03.png"); background-repeat: no-repeat; background-position:-172px -14px; }
+.visual .visual_wrap .link_box ul li a span{padding-left: 3px;}
+
+
+.visual .visual_list .visual_item .itembox{position:relative; height: 885px; background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.visual .visual_list .visual_item .itembox img{width: 0; height: 0;}
+
+@media all and (min-width: 1001px) {
+    .visual .visual_wrap .controlbox .controller button.prev:hover:before{background-image:url('../../../site/happiness/images/main/visual_icon02.png');}
+    .visual .visual_wrap .controlbox .controller button.next:hover:before{background-image:url('../../../site/happiness/images/main/visual_icon02.png');}
+
+    .visual .visual_wrap .link_box ul li:hover{border-color:#fff;}
+    .visual .visual_wrap .link_box ul li:hover a{background-color: #fff; color: #000;}
+    .visual .visual_wrap .link_box ul li:nth-child(1):hover a:before{top: 23px; left: 31px; width:45px; height: 42px; background-position:-60px 0; }
+    .visual .visual_wrap .link_box ul li:nth-child(2):hover a:before{top: 23px; left: 34px; width:42px; height: 41px; background-position:-225px 0; }
+    .visual .visual_wrap .link_box ul li:hover a:after{background-position: -132px -14px;}
+}
+
+
+@media all and (max-width: 1000px) {
+    .rowgroup1{top: -65px;}
+    .visual .visual_list .visual_item .itembox{height: 420px;}
+
+    .visual .visual_wrap .visualbox{top: 110px;}
+    .visual .visual_wrap .title_box p{font-size: 36px; line-height: 42px;}
+    .visual .visual_wrap .title_box p.sub_title{margin:15px 0 20px; font-size: 14px; line-height: 16px;}
+
+    .visual .visual_wrap .controlbox .controller button.prev{margin-right: 13px;}
+    .visual .visual_wrap .controlbox .controller button.next{margin-left: 13px;}
+    .visual .visual_wrap .controlbox .controller .slick-text{font-size: 14px;}
+    .visual .visual_wrap .controlbox .controller .middot{margin: 0 3px;}
+    .visual .visual_wrap .controlbox .controller button.auto{margin-left: 15px;}
+    .visual .visual_wrap .controlbox .controller .totalbar{width: 197px;}
+    .visual .visual_wrap .controlbox .controller .totalbar:before{width: 197px;}
+
+    .visual .visual_wrap .link_box{margin-top:40px; }
+    .visual .visual_wrap .link_box ul li{width: 144px;}
+    .visual .visual_wrap .link_box ul li + li{margin-left: 10px;}
+    .visual .visual_wrap .link_box ul li a{padding:20px 0; font-size: 14px; line-height: 14px;}
+    .visual .visual_wrap .link_box ul li a span{padding-left: 14px;}
+    .visual .visual_wrap .link_box ul li a:after{top: 21px; right: 10px; transform: scale(0.82);}
+
+    .visual .visual_wrap .link_box ul li:nth-child(1) a:before{top:17px; left:20px; transform: scale(0.84);}
+    .visual .visual_wrap .link_box ul li:nth-child(2) a:before{top:14px; left:19px; transform: scale(0.86);}
+
+/*    .visual .visual_wrap .link_box ul li:nth-child(1):hover a:before{top: 8px; left: 9px; transform: scale(0.8); }
+    .visual .visual_wrap .link_box ul li:nth-child(2):hover a:before{top: 7px; left: 10px; transform: scale(0.8); }*/
+
+    @keyframes title {
+        0%{transform:translateY(30px);opacity: 0;}
+        100%{transform:translateY(0);opacity: 1;}
+    }
+}
+
+@media all and (max-width: 640px) {
+    .visual .visual_wrap .visualbox{top: 175px;}
+    .visual .visual_list .visual_item .itembox{height: 450px;}
+    .visual .visual_wrap .title_box p{font-size: 26px; line-height:32px;}
+    .visual .visual_wrap .title_box p.sub_title{font-size: 13px; line-height: 16px;}
+
+    .visual .visual_wrap .controlbox .controller .totalbar{width: 163px;}
+    .visual .visual_wrap .controlbox .controller .totalbar:before{width: 163px;}
+
+
+    .visual .visual_wrap .link_box{margin-top: 35px;}
+    .visual .visual_wrap .link_box ul li{width: 160px;}
+    .visual .visual_wrap .link_box ul li:nth-child(1) a:before{top: 19px;}
+    .visual .visual_wrap .link_box ul li:nth-child(2) a:before{top: 17px;}
+/*    .visual .visual_wrap .link_box ul li:nth-child(1):hover a:before{left: 16px;}
+    .visual .visual_wrap .link_box ul li:nth-child(2):hover a:before{left: 17px;}*/
+
+    .visual .visual_wrap .link_box ul li a{padding: 22px 0;}
+    .visual .visual_wrap .link_box ul li a:after{top: 23px; right: 15px;}
+}
+
+
+/*여성행복센터 새소식*/
+.rowgroup2{top: -50px; font-size: 0; line-height: 0;}
+.board{display: inline-block; width: calc(100% - 405px); vertical-align: top;}
+.board h2.h0{display:inline-block; font-size: 30px; line-height: 36px; letter-spacing: -0.02em; color: #000; font-weight: 600; font-family: 'SCoreDream';}
+.board .board_more{display: inline-block; position: relative; width:36px; height: 36px; margin-left: 10px; border: 1px solid #f2f2f2; border-radius: 50%;
+    background-color: #f2f2f2; vertical-align: top; transition: background-color 0.2s linear;}
+.board .board_more:before{display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:16px; height: 2px; margin: auto; background-color: #4d4d4d;}
+.board .board_more:after{display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:2px; height: 16px; margin: auto; background-color: #4d4d4d;}
+
+.board .board_box{position: relative; margin-top: 70px; font-size: 0; line-height: 0;}
+.board .board_box .board_item{display: inline-block; position: relative; width:calc((100% - 96px) /3); padding:45px 48px 0 0; margin-left:48px; vertical-align: top; }
+.board .board_box .board_item:first-child{margin-left: 0;}
+.board .board_box .board_item:before{display: block; position: absolute; top: 0; right: 0; width: 1px; height: 100%;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAAXNSR0IArs4c6QAAAA9JREFUGFdjYGBgSGOAAwAEcQBn0bCwPQAAAABJRU5ErkJggg==");}
+.board .board_box .board_item:last-child:before{display: none;}
+.board .board_box .board_item a{width: 100%; height: 100%; text-decoration: none;}
+
+.board .board_box .board_item .new{display: inline-block; position: absolute; top: 0; left: 0; padding:0 14px; border-radius: 50px; background-color:rgba(204, 238, 220, 0.5);
+    font-size:15px; line-height: 30px; letter-spacing: 0; color: #015d39; font-weight: 400; font-family: 'SCoreDream';}
+
+.board .board_box .board_item .title{height:60px; overflow: hidden;}
+.board .board_box .board_item .title span{display:-webkit-box; height:60px; overflow: hidden; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical;
+    font-size: 20px; line-height: 30px; letter-spacing: -0.02em; color: #000; font-weight: 500; font-family: 'SCoreDream';}
+.board .board_box .board_item .sub_title{display:-webkit-box; height:84px; overflow: hidden; text-overflow:ellipsis; -webkit-line-clamp:3; -webkit-box-orient:vertical;
+    margin-top:30px; font-size: 16px; line-height: 28px; letter-spacing: -0.02em; color: #000; font-weight: 200;}
+.board .board_box .board_item .date{margin-top:53px; font-size: 15px; line-height: 15px; letter-spacing: -0.02em; color: #8c8c8c; font-weight: 400; font-family: 'SCoreDream';}
+
+
+@media all and (min-width: 1001px) {
+
+    .board .board_more:hover{background-color: #fff;}
+    .board .board_more:hover:before{animation:rotate-center 0.5s; animation-iteration-count: 1;}
+    .board .board_more:hover:after{animation:rotate-center 0.5s; animation-iteration-count: 1;}
+
+
+    @-webkit-keyframes rotate-center{
+        0%{
+            -webkit-transform:rotate(0);
+            transform:rotate(0)
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+    @keyframes rotate-center{
+        0%{
+            -webkit-transform:rotate(0);
+            transform:rotate(0)
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+
+
+
+    .board .board_box .board_item a:hover .title span{display:inline; height:60px; border-bottom:1px solid #f5f8d4; box-shadow: inset 0 -11px 0 #f5f8d4; overflow: hidden;}
+
+
+}
+
+
+/*팝업*/
+.popup{display:inline-block; position: relative; width: 355px; margin-left: 50px; padding-top: 34px; vertical-align: top;}
+.popup .inner_box{display: block; position: relative; border-radius: 30px; overflow: hidden; box-shadow: 18px 30px 28px 7px rgba(0, 0, 0, 0.05);}
+.popup .popup_control{display:inline-block; position: absolute; bottom:-25px; right: 0; padding: 14px 14px 15px 25px; border-radius: 30px 0 13px 30px; font-size: 0; line-height:0; background-color: #fff;}
+.popup .popup_control .countbox{display: inline-block; margin-right: 20px; vertical-align: bottom;}
+.popup .popup_control .countbox span{font-size: 15px; line-height: 20px; letter-spacing: -0.035em; font-weight: 400; color:#8c8c8c; }
+.popup .popup_control .countbox span + span{margin-left: 6px;}
+.popup .popup_control .countbox .current{font-size:20px; color:#4d4d4d; font-weight: 600;}
+
+.popup .popup_control button {position: relative; width: 15px; height: 15px; border: 0; font-size: 0; color: transparent; vertical-align: middle;}
+.popup .popup_control button:before{display: block; position: absolute; left:0; right: 0; bottom: 0; top:0; margin: auto; background-image: url('../../../site/happiness/images/main/popup_icon.png'); background-repeat: no-repeat;}
+.popup .popup_control button.prev:before{width: 8px; height: 12px; background-position: 0 -1px;}
+.popup .popup_control button.next:before{width: 8px; height: 12px; background-position: -51px -1px;}
+
+.popup .popup_control button.auto{margin: 0 10px;}
+.popup .popup_control button.auto.slick-pause:before{width: 11px; height: 13px; background-position: -24px center;}
+.popup .popup_control button.auto.slick-play:before{width: 11px; height: 13px; background-position: -76px center;}
+.popup .popup_list .popup_item{display: inline-block; text-align: center;}
+
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    /*여성행복센터 새소식*/
+    .board{width: calc(100% - 330px);}
+    .board .board_box{margin-top: 60px;}
+    .board .board_box .board_item{width:calc((100% - 50px) /3); padding: 45px 25px 0 0; margin-left: 25px;}
+    .board .board_box .board_item .title{height: 56px;}
+    .board .board_box .board_item .title span{height:56px; font-size: 18px; line-height: 26px;}
+    .board .board_box .board_item .sub_title{height:75px; line-height: 24px;}
+    .board .board_box .board_item .date{margin-top: 40px;}
+    /*팝업*/
+    .popup{width: 300px; margin-left: 30px;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup2{top: -28px;}
+    /*여성행복센터 새소식*/
+    .board{width:calc(100% - 290px); }
+    .board h2.h0{font-size: 24px; line-height: 29px;}
+    .board .board_more{width: 29px; height: 29px;}
+    .board .board_more:before{width: 14px;}
+    .board .board_more:after{height: 14px;}
+
+    .board .board_box{margin-top: 50px;}
+    .board .board_box .board_item{width:calc((100% - 20px) /2); padding:40px 22px 0 0; margin-left: 20px; }
+    .board .board_box .board_item .new{padding:0 11px; font-size: 12px; line-height:26px; }
+    .board .board_box .board_item .title{height:47px;}
+    .board .board_box .board_item .title span{height:47px; font-size:16px; line-height: 23px; }
+    .board .board_box .board_item .sub_title{height:60px; margin-top:22px; font-size: 14px; line-height: 20px;}
+    .board .board_box .board_item .date{margin-top:25px; font-size: 14px; line-height: 14px;}
+    /*팝업*/
+    .popup{width: 265px; margin-left: 25px;}
+    .popup .inner_box{border-radius: 20px;}
+    .popup .popup_control .countbox .current{font-size: 16px;}
+    .popup .popup_control .countbox span{font-size: 12px;}
+    .popup .popup_control{bottom:-20px; padding:9px 9px 9px 20px;  }
+    .popup .popup_control .countbox{margin-right: 15px;}
+    .popup .popup_control .countbox span + span{margin-left: 4px;}
+    .popup .popup_control button.auto{margin: 0 6px;}
+    .popup .popup_control button:before{transform: scale(0.9);}
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+    /*여성행복센터 새소식*/
+    .board .board_box .board_item:nth-child(3){display: none;}
+    .board .board_box .board_item:nth-child(2):before{display: none;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup2{top: -37px;}
+    /*여성행복센터 새소식*/
+    .board{display:block; width: 100%;}
+
+    .board h2.h0{font-size: 20px; line-height: 22px;}
+    .board .board_more{width: 22px; height: 22px;}
+    .board .board_more:before{width: 11px;}
+    .board .board_more:after{height: 11px;}
+
+    .board .board_box{margin-top: 5px;}
+    .board .board_box .board_item{display:block; width: 100%; margin-left: 0; padding: 20px 0; }
+    .board .board_box .board_item:before{top:auto; bottom:0; width: 100%; height: 1px; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABNJREFUGFdjZGBgSGNgYJjFAAQABrIBAhPnrU0AAAAASUVORK5CYII=');}
+    .board .board_box .board_item .new{position: relative; width: 50px; margin-right: 10px;}
+    .board .board_box .board_item .title{display: inline-block; position: relative; top: 5px; width: calc(100% - 60px);}
+    .board .board_box .board_item .title{height: 18px;}
+    .board .board_box .board_item .title span{height: 18px; font-size: 16px; line-height: 18px; -webkit-line-clamp:1;}
+    .board .board_box .board_item .sub_title{height: 14px; margin-top:10px; line-height: 14px; -webkit-line-clamp:1;}
+    .board .board_box .board_item .date{margin-top:10px; font-size: 13px; line-height: 13px;}
+
+    /*팝업*/
+    .popup{display: block; width: 100%; margin-left: 0; padding-top: 10px; text-align: center;}
+    .popup .inner_box{display:inline-block; width: 265px;}
+    .popup .popup_control{right: calc(50% - 133px);}
+}
+
+
+/*교육 프로그램*/
+.education {position:relative; width:100%; margin-top: 45px;}
+.education:before{display: block; position: absolute; top: 0; left:calc(50% - 335px); width:100%; height:100%; background-color: #f2f2f2;}
+.education_wrap {width:1400px; margin: 0 auto; font-size:0; line-height:0;}
+.education .education_title{display: inline-block; margin-top: 47px;}
+.education .education_title h2.h0{display:inline-block; font-size: 30px; line-height: 36px; letter-spacing: -0.02em; color: #000; font-weight: 600; font-family: 'SCoreDream';}
+.education .education_content{display: block; width:100%; vertical-align: top;}
+.education .education_content .education_tab{display:inline-block; margin-top: 50px; margin-right: 90px;}
+.education .education_content .education_tab .tab_nav_list {display:inline-block; width:191px; font-size: 0; line-height: 0;}
+.education .education_content .education_tab .tab_nav_item {display:block; position:relative;}
+.education .education_content .education_tab button{border: none;}
+.education .education_content .education_tab .tab_btn {display:block; position:relative; width: 100%; padding:24px 0 24px 10px;
+    font-size:16px; line-height:16px; letter-spacing:-0.02em; font-weight:500; color:#000; font-family: 'SCoreDream'; text-align: left;}
+
+
+.education .education_content .education_tab .tab_btn:before{display: block; position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%; height: 1px; background-color: #ccc;}
+.education .education_content .education_tab .tab_nav_item:last-child .tab_btn:before{display: none;}
+
+
+.education .education_content .education_tab .tab_nav_item.tab_nav_active .tab_btn {padding-left:30px; color: #fff; }
+
+
+.education .education_content .education_tab .tab_nav_item.tab_nav_active .tab_btn:before{display: block; position: absolute; top:-3px; left: 0; z-index: -1;
+    width:calc(100% + 21px); height:calc(100% + 2px); border-radius:10px 50px 50px 10px; background-color: #008752; background-image: url("../../../site/happiness/images/main/tab_icon01.png");
+    background-repeat: no-repeat; background-position: right 20px center;
+    box-shadow: 3px 4px 10px 0 rgba(0, 0, 0, 0.2);}
+
+
+
+.education .education_content .tab_con_item .education_more{display: inline-block; position: absolute; top: 47px; left:180px; width:36px; height: 36px; margin-left: 10px; border: 1px solid #f2f2f2; border-radius: 50%;
+    background-color: #f2f2f2; vertical-align: top; transition: background-color 0.2s linear;}
+.education .education_content .tab_con_item .education_more:before{display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:16px; height: 2px; margin: auto; background-color: #4d4d4d;}
+.education .education_content .tab_con_item .education_more:after{display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:2px; height: 16px; margin: auto; background-color: #4d4d4d;}
+
+@media all and (min-width: 1001px) {
+    .education .education_content .tab_con_item .education_more:hover{background-color: #fff;}
+    .education .education_content .tab_con_item .education_more:hover:before{animation:rotate-center 0.5s; animation-iteration-count: 1;}
+    .education .education_content .tab_con_item .education_more:hover:after{animation:rotate-center 0.5s; animation-iteration-count: 1;}
+
+    @-webkit-keyframes rotate-center{
+        0%{
+            -webkit-transform:rotate(0);
+            transform:rotate(0)
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+    @keyframes rotate-center{
+        0%{
+            -webkit-transform:rotate(0);
+            transform:rotate(0)
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+}
+
+
+
+
+.education .slick-list{width:102%; padding-top: 26px;}
+
+.education .education_content .tab_con_list{display: inline-block; width: calc(100% - 281px); vertical-align: top;}
+.education .education_content .tab_con_item {display:none;}
+.education .education_content .tab_con_item.tab_con_active {display:block;}
+
+
+
+.education .education_content .education_slide_list.no_item{text-align: center; margin-bottom: 60px;}
+.education .education_content .education_slide_list.no_item p{float:none; min-height: 345px; padding:159px 0; font-size: 18px; line-height: 20px; color: #8c8c8c;}
+.education .education_content .education_slide_list.no_item .slick-track{display: inline;}
+.education .education_content .education_slide_list.no_item + .education_ctrl{display: none;}
+/*.education .education_content .education_slide_list.no_item + .education_ctrl + .education_more{display: none;}*/
+
+.education .education_content .education_slide_item {display:inline-block; position: relative; width:260px; padding:50px 30px 40px; margin-top: 20px; margin-right: 26px;
+    border:1px solid #8c8c8c; border-radius:10px; background-color: #fff; text-align: center; transition: all 0.3s linear;}
+
+
+
+.education .education_content .education_slide_item .title{display:-webkit-box; height:20px; margin-bottom: 38px;
+    font-size: 20px; letter-spacing: -0.01em; line-height: 20px; color: #000; font-weight: 500;
+    overflow: hidden;  text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+
+.education .education_content .education_slide_item .con_wrap{padding: 0 9px; text-align: center; font-size: 15px; line-height: 17px; letter-spacing: -0.025em; color: #000; font-weight: 400;}
+.education .education_content .education_slide_item .con_wrap .sub_text{margin:6px 0 17px; color: #707070;}
+.education .education_content .education_slide_item a.edu_more{margin-top:25px; padding:0 24px; border:1px solid #00893e; border-radius: 50px;
+    font-size: 15px; line-height:34px; letter-spacing: 0; color: #00893e; font-weight: 400; text-align: center; text-decoration: none; transition:color,background-color 0.2s linear; }
+
+
+.education .education_content .education_slide_item:hover{margin-top:0; box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.2);}
+.education .education_content .education_slide_item:hover a.edu_more{background-color:#00893e; color: #fff; }
+
+
+.education .education_content .tab_con_item .education_ctrl{position: relative;}
+.education .education_content .tab_con_item .education_ctrl {display:block; padding: 40px 0 66px; text-align:right;}
+.education .education_content .tab_con_item .education_ctrl button.ctrl_btn{display:inline-block; position:relative; width:44px; height:44px; border-radius: 50%;
+    background-color: #8c8c8c; transition: background-color 0.2s linear;}
+.education .education_content .tab_con_item .education_ctrl button.ctrl_btn:before{display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:17px; height: 16px; margin: auto;
+    background-image: url("../../../site/happiness/images/main/tab_icon02.png"); background-repeat: no-repeat;}
+
+.education .education_content .tab_con_item .education_ctrl button.ctrl_btn.next{margin-left:9px;}
+.education .education_content .tab_con_item .education_ctrl button.ctrl_btn.next:before{background-position: right;}
+
+.education .education_content .tab_con_item .education_ctrl button.ctrl_btn:hover{background-color: #008752;}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .education_wrap{width: 1000px;}
+    /*교육 프로그램*/
+    .education:before{left: calc(50% - 135px);}
+    .education .education_content .education_slide_item{width: 221px; padding: 45px 10px 35px;}
+
+}
+
+@media all and (max-width: 1000px) {
+    .education{margin-top: 32px;}
+    .education:before{left: 315px;}
+    .education_wrap{width: 100%; padding-left: 20px;}
+    .education .education_title h2.h0{font-size: 24px; line-height: 29px;}
+    .education .education_content .tab_con_item .education_more{left:160px; width: 29px; height: 29px;}
+    .education .education_content .tab_con_item .education_more:before{width: 14px;}
+    .education .education_content .tab_con_item .education_more:after{height: 14px;}
+
+    .education .education_content .education_tab{margin-top: 30px; margin-right:83px;}
+    .education .education_content .education_tab .tab_nav_list{width: 172px;}
+    .education .education_content .education_tab .tab_btn{padding:18px 0 18px 10px; font-size: 14px; line-height: 14px;}
+
+
+    .education .education_content .education_tab .tab_nav_item.tab_nav_active .tab_btn{padding-left: 25px;}
+
+    .education .slick-list{width: 100%; padding-top: 37px;}
+    .education .education_content .tab_con_list{width:calc(100% - 255px); }
+    .education .education_content .education_slide_list.no_item p{min-height: auto; padding: 100px 0;}
+    .education .education_content .education_slide_item{width:200px; padding: 40px 20px 28px; margin-top: -17px; margin-right: 20px; }
+    .education .education_content .education_slide_item .title{height:18px; margin-bottom:18px; font-size: 18px; line-height: 18px;}
+    .education .education_content .education_slide_item .con_wrap{font-size: 14px; line-height: 16px;}
+    .education .education_content .education_slide_item .con_wrap .sub_text{margin: 5px 0 15px;}
+    .education .education_content .education_slide_item a.edu_more{margin-top: 15px; padding: 0 12px; font-size: 14px; line-height: 28px;}
+
+    .education .education_content .education_slide_item:hover{margin-top:-37px;}
+
+    .education .education_content .tab_con_item .education_ctrl{display: none;}
+
+
+    .education .education_content .slick-dots{padding: 40px 0 50px;}
+    .education .education_content .slick-dots.disabled{display: none;}
+    .education .education_content .slick-dots li{display: inline-block; width: 7px; height: 7px; border-radius: 50px; background-color: #747474;}
+    .education .education_content .slick-dots li + li{margin-left: 9px;}
+    .education .education_content .slick-dots li.slick-active{width: 25px; background-color: #008752;}
+
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+    .education .education_content .slick-dots{position:relative; left:-255px; width:calc(100% + 255px); text-align: center;}
+}
+
+@media all and (max-width: 640px) {
+    .education{margin-top:13px; }
+    .education:before{top:203px; left: 0; z-index: -1; width: 100%; height: calc(100% - 203px);}
+    .education_wrap{padding-left: 15px;}
+
+    .education .education_title{margin-top: 0;}
+    .education .education_title h2.h0{font-size: 20px; line-height: 22px;}
+    .education .education_content{position: relative;}
+    .education .education_content:before{display: block; position: absolute; top:20px; left: 0; z-index:-1; width:calc(100% - 15px); height:40px; border-radius: 10px; background-color: #f2f2f2; }
+    .education .education_content.end:before{ width:calc(100% - 20px);}
+    .education .education_content .tab_con_item .education_more{top:-20px; left:120px; width: 22px; height: 22px;}
+    .education .education_content .tab_con_item .education_more:before{width: 11px;}
+    .education .education_content .tab_con_item .education_more:after{height: 11px;}
+
+    .education .education_content .education_tab{display:block; width:calc(100% - 15px); overflow-x:scroll; overflow-y:hidden;margin-top:0; margin-right: 0;
+        mask-image:linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%);
+        -webkit-mask-image:linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%);
+    }
+    .education .education_content .education_tab.end{ mask-image:none; -webkit-mask-image:none; }
+
+    .education .education_content .education_tab .tab_nav_list{display:block; width: 675px; padding:20px 0;}
+    .education .education_content .education_tab .tab_nav_item{display: inline-block;}
+
+    .education .education_content .education_tab .tab_btn{padding: 13px 20px;}
+    .education .education_content .education_tab .tab_btn:before{width: 1px; height: 13px; left: auto; right: 0; bottom: 13px;}
+
+    .education .education_content .education_tab .tab_nav_item.tab_nav_active .tab_btn:before{top:0; left: -1px; width:calc(100% + 1px); height:100%;
+        border-radius:11px; background-image: none; box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.1);}
+
+    .education .education_content .tab_con_list{display:block; width: 100%; text-align: center;}
+    .education .slick-list{padding-top:18px;}
+    .education .education_content .education_slide_item{margin-right: 10px;}
+    .education .education_content .education_slide_item:hover{margin-top:-17px; }
+
+    .education .education_content .education_slide_list.no_item{margin-top:60px;}
+    .education .education_content .education_slide_list.no_item p{padding:0;}
+    .education .education_content .education_slide_list.no_item .slick-list{padding-top: 0;}
+
+    .education .education_content .slick-dots{display:inline-block; padding: 30px 0 50px;}
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+@media all and (min-width:1401px){
+.search_btn{right:47px;}
+#header .lnb .menu .depth1_list{width: 783px;}
+#header .lnb .depth1_item:nth-child(2) .depth2_text{min-height:62px;}
+}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+.search_btn{right:28px;}
+#header .lnb .menu .depth1_list{width:614px;}
+#header .lnb .menu .depth1_text{padding:42px 19px;}
+}

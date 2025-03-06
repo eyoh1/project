@@ -1,0 +1,63 @@
+<div class="title_box">
+    <h2 class="daily_title"><span class="point">9월 1일</span> 프로그램</h2>
+    <button type="button" class="close_btn">닫기</button>
+</div>
+<div class="daily_list">
+    <div class="daily_item clearfix">
+        <span class="daily_type">방학 생태교실</span>
+        <!--방학 생태교실:파랑, 특별 교육프로그램:초록, 곤충탐사대:핑크-->
+        <div class="desc_box">
+            <p class="line">
+                <span class="program_title">곤충을 직접 기르고 자라는 모습을 관찰하는 프로그램 입니다</span>
+            </p>
+            <p class="line">
+                <span class="program_reservation">5명 예약가능</span>
+                <span>/</span>
+                <span class="program_num">20명 정원</span>
+            </p>
+        </div>
+    </div>
+    <div class="daily_item clearfix">
+        <span class="daily_type type2">특별 교육프로그램</span>
+        <!--방학 생태교실:파랑, 특별 교육프로그램:초록, 곤충탐사대:핑크-->
+        <div class="desc_box">
+            <p class="line">
+                <span class="program_title">이로운곤충 해로운곤충</span>
+            </p>
+            <p class="line">
+                <span class="program_reservation">20명 예약가능</span>
+                <span>/</span>
+                <span class="program_num">20명 정원</span>
+            </p>
+        </div>
+    </div>
+    <div class="daily_item clearfix">
+        <span class="daily_type type3">곤충탐사대</span>
+        <!--방학 생태교실:파랑, 특별 교육프로그램:초록, 곤충탐사대:핑크-->
+        <div class="desc_box">
+            <p class="line">
+                <span class="program_title">곤충생태관과 왕숙천변을 탐사</span>
+            </p>
+            <p class="line">
+                <span class="program_reservation">10명 예약가능</span>
+                <span>/</span>
+                <span class="program_num">15명 정원</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    (function ($) {
+        'use strict';
+        $(function () {
+            $('.close_btn').on('click', function () {
+                $('.daily_box').removeClass('active');
+                $('.daily_box').fadeOut(500);
+                $('td').removeClass('active_layer');
+            });
+        });
+    })(window.jQuery);
+
+</script>

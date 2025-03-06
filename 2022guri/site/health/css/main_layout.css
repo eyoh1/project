@@ -1,0 +1,833 @@
+@charset "UTF-8";
+
+/*메인전용 폰트*/
+
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 500;
+    src:url("../font/S-CoreDream-5Medium.woff") format('woff');
+}
+
+
+@media all and (min-width:1401px ) {
+    #header .lnb .menu .depth1_list{width: 1053px; padding-right: 134px;}
+    #header .lnb .menu .depth1_text{padding: 42px 21px;}
+}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    #header .lnb .menu .depth1_list{width: 755px; padding-right: 60px;}
+    #header .lnb .menu .depth1_text{padding: 42px 10px; font-size: 18px;}
+
+}
+@media (min-width: 1001px) {
+    #header .lnb .depth2_item{display: inline-block; float: none; vertical-align: top;}
+    #header .lnb .depth2_item:nth-child(-n+5).open .depth3_list{min-height:auto;}
+    #header .lnb .depth2_item:nth-child(n+6):nth-child(-n+10).open .depth3_list{min-height: auto;}
+}
+
+.logo .text .em_blue{color: #1b75bc;}
+body.normal #container{padding-top: 0;}
+.lnb .menu:after{display: none;}
+
+@media (max-width: 1000px) {
+
+    .logo .text{color: #000000;}
+    .logo .text:before{display: none;}
+
+    body.normal #container{padding-top: 25px;}
+}
+@media (max-width: 640px) {
+    body.normal #container{padding-top: 10px;}
+}
+
+/*rowgroup1 - 상단슬릭*/
+.rowgroup1{position: relative; padding-top: 50px; font-size: 0; line-height: 0;}
+.rowgroup1:before{display: block; position: absolute; top: 0; left: 0; width: 100%; height:403px; background-color: #fafafa;}
+
+
+.rowgroup1 .health_slick{display:inline-block; position: relative; width:calc(100% - 440px); vertical-align: top;}
+
+.rowgroup1 .health_slick .health_slick_box{display: block; position: relative; border-radius:50px 50px 100px 50px; overflow: hidden;}
+.rowgroup1 .health_slick .health_slick_box a{text-decoration: none;}
+/*.rowgroup1 .health_slick .item_list{height: 500px;}*/
+.rowgroup1 .health_slick .health_slick_photo{display: block; position: relative; height: 500px;
+    background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.rowgroup1 .health_slick .health_slick_item img{width: 0; height: 0;}
+
+.rowgroup1 .health_slick .health_slick_control{display:inline-block; position: absolute; left: 80px; bottom:30px; }
+
+.rowgroup1 .health_slick .health_slick_control .countbox{display:inline-block; position: absolute; top: 0; bottom: 0; left: 41px; height: 30px; margin: auto 0; padding: 0 19px 0 22px; font-size: 16px; line-height: 26px; letter-spacing: -0.035em; font-weight: 200; color: rgba(0, 0, 0, 0.5);}
+.rowgroup1 .health_slick .health_slick_control .countbox .current{margin-right:2px; color: #000;}
+
+.rowgroup1 .health_slick .health_slick_control .arrow{display:inline-block; position: relative; width:41px; height: 41px; border-radius: 10px; background-color: #fff;}
+.rowgroup1 .health_slick .health_slick_control .arrow:before{display: inline-block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width:8px; height: 13px;
+    background-image: url("../../../site/health/images/main/slick_icon_sprite.png"); background-repeat: no-repeat; background-position: 0 0;}
+.rowgroup1 .health_slick .health_slick_control .arrow.auto{margin-left: 5px;}
+.rowgroup1 .health_slick .health_slick_control .arrow.next{margin-left: 70px;}
+.rowgroup1 .health_slick .health_slick_control .arrow.next:before{background-position: -20px 0;}
+.rowgroup1 .health_slick .health_slick_control .arrow.auto:before{width:11px; height:9px; background-position: -41px -2px;}
+.rowgroup1 .health_slick .health_slick_control .arrow.auto.slick-play:before{width:8px; height:13px; background-position: -64px 0;}
+
+
+/*슬릭 마크업*/
+.rowgroup1 .markup_box{position:relative; padding:94px 81px 180px; background-color: #bbf0e0;}
+.rowgroup1 .markup_box:before{display: block; position: absolute; top:55px; right:38px; width:444px; height:342px;
+    background-image: url("../../../site/health/images/main/markup_icon01.png"); background-repeat: no-repeat; background-size: contain;}
+.rowgroup1 .markup_box .markup_title{font-size: 40px; line-height: 44px; letter-spacing: -0.035em; color: #000; font-weight: 600; font-family: 'SCoreDream';}
+.rowgroup1 .markup_box .markup_title span{display:block; color: #008762;}
+.rowgroup1 .markup_box .markup_sub_title{margin:20px 0; font-size: 16px; line-height: 24px; letter-spacing: -0.035em; color: #393939; font-weight: 200;}
+.rowgroup1 .markup_box .btn.markup_btn{padding: 11px 15px 13px 15px; background-color: #008762; border-color: #008762; border-radius: 10px; color: #fff;}
+
+
+/*.rowgroup1 .markup_box:after{display: block; position: absolute; top:0; left: 0; width:960px; height:500px;
+  background: url("../../../site/health/images/main/slick_img01.jpg") no-repeat;}*/
+
+
+
+.rowgroup1 .service_time_box{display:inline-block; position: relative; width:400px; margin-left:40px; padding: 50px 0 37px; border-radius: 30px; background-color: #fff; box-shadow: 0px 0px 20px 8px rgba(225,238,236,0.3);}
+.rowgroup1 .service_time_box .service_title{position:relative; z-index:1; margin-bottom:10px; padding-bottom:7px; font-size:22px; line-height:26px; letter-spacing:-0.035em; color:#000; font-weight:500; font-family: 'SCoreDream'; text-align: center;}
+.rowgroup1 .service_time_box .service_title em{position:relative; color:#1b75bc;}
+.rowgroup1 .service_time_box .service_title em:before{display:inline-block; position:absolute; bottom:-5px; left:-5px; z-index: -1; width: 15px; height: 15px; border-radius: 50%; background-color: #98c1e1;}
+.rowgroup1 .service_time_box ul{padding: 0 30px 0 40px;}
+.rowgroup1 .service_time_box ul li span{font-size: 16px; line-height: 30px; letter-spacing: -0.035em; color: #000; font-weight: 200;}
+.rowgroup1 .service_time_box ul li span.bu_title{position: relative; padding-left: 13px;}
+.rowgroup1 .service_time_box ul li span.bu_title:before{display: block; position: absolute; top: 0; bottom: 0; left: 0; width:4px; height: 5px; margin: auto 0; border-radius: 50%; background-color: #cccccc; }
+.rowgroup1 .service_time_box ul li span.bu_text{margin-left:9px; color: #8c8c8c;}
+.rowgroup1 .service_time_box ul li span.bu_text a{position:relative; color: #008752;}
+.rowgroup1 .service_time_box ul li span.bu_text a:before{display: block; position: absolute; top: 0; bottom: 0; right:-21px; margin: auto 0; width: 14px; height: 14px;
+    background: url("../../../site/health/images/main/phone_icon01.png") no-repeat; transition:all 0.13s linear;}
+.rowgroup1 .service_time_box ul li span.bu_text a:after{display:inline-block; position:absolute; bottom:3px; left:0; width:100%; height: 1px; background-color: #008752;}
+.rowgroup1 .service_time_box ul li span.bu_text a:hover{text-decoration: none;}
+.rowgroup1 .service_time_box ul li span.bu_text a:hover:before{right: -26px;}
+
+.rowgroup1 .service_time_box .notice{margin:8px 0 22px; padding-left:55px; font-size: 16px; line-height: 26px; letter-spacing: -0.035em; font-weight: 200; color: #000;}
+.rowgroup1 .service_time_box .notice em{color: #e31937;}
+
+.rowgroup1 .service_time_box .service_link_box{position: relative; padding: 0 40px; text-align: left;}
+.rowgroup1 .service_time_box .service_link_box .service_link{display:inline-block; position: relative; width:calc((100% - 31px) / 4); height: 74px; padding: 10px 5px; border: 1px solid #e3f9f0; border-radius: 10px; background-color: #e3f9f0;
+    font-size: 16px; line-height: 26px; letter-spacing: -0.035em; color: #4d4d4d; text-align: center;}
+.rowgroup1 .service_time_box .service_link_box .service_link + .service_link{margin-left: 10px;}
+.rowgroup1 .service_time_box .service_link_box .service_link.type2{background-color: #e4f6fd; border-color: #e4f6fd; }
+.rowgroup1 .service_time_box .service_link_box .service_link.type3{background-color: #fdf0ec; border-color: #fdf0ec; }
+.rowgroup1 .service_time_box .service_link_box .service_link.type4{background-color: #f7f0f9; border-color: #f7f0f9; }
+
+.rowgroup1 .service_time_box .service_link_box .service_link:hover{text-decoration: none; border-color:#8cd9af; background-color: inherit; color: #00ab4e;}
+.rowgroup1 .service_time_box .service_link_box .service_link + .service_link:hover{background-color:inherit; border-color: #98c1e1; color: #1b75bc; }
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .rowgroup1:before{height: 320px;}
+    /*비주얼 슬릭*/
+    .rowgroup1 .health_slick{width: calc(100% - 305px);}
+    .rowgroup1 .health_slick .health_slick_photo{height: 362px; background-position: left center;}
+    .rowgroup1 .health_slick .health_slick_control{left: 58px; bottom: 30px;}
+
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box{padding:43px 58px 118px; }
+    .rowgroup1 .markup_box:before{right:15px; width: 280px; height: 216px;}
+    .rowgroup1 .markup_box .markup_title{font-size: 30px; line-height: 34px;}
+    .rowgroup1 .markup_box .markup_sub_title{font-size: 15px;}
+    .rowgroup1 .markup_box .btn.markup_btn{padding:8px 13px 11px 13px; font-size: 15px;}
+
+
+    /*근무시간*/
+    .rowgroup1 .service_time_box{width: 285px; padding:15px 0; margin-left: 20px;}
+    .rowgroup1 .service_time_box .service_title{font-size: 18px;}
+    .rowgroup1 .service_time_box ul{padding: 0 0 0 13px;}
+    .rowgroup1 .service_time_box ul li span{font-size: 13px; line-height: 25px;}
+    .rowgroup1 .service_time_box ul li span.bu_title{padding-left: 9px;}
+    .rowgroup1 .service_time_box .notice{padding-left: 0; margin:6px 0 13px; font-size: 14px; text-align: center;}
+    .rowgroup1 .service_time_box .service_link_box{padding: 0 13px;}
+    .rowgroup1 .service_time_box .service_link_box .service_link{/*width: 124px;*/ height: 44px; padding: 0 0; font-size: 14px;line-height: 20px;}
+
+}
+@media all and (max-width: 1000px) {
+    .rowgroup1{padding-top: 40px;}
+    .rowgroup1:before{height: 677px;}
+
+    /*비주얼슬릭*/
+    .rowgroup1 .health_slick{display: block; width: 100%;}
+    .rowgroup1 .health_slick .health_slick_photo{height:auto; padding: 26.35% 0; }
+    .rowgroup1 .health_slick .health_slick_control{left:calc(10% - 19px); bottom: auto; top: 85%;}
+
+/*    .rowgroup1 .health_slick .health_slick_control .arrow.slick-pause:before{background-position: 1px 0;}*/
+    .rowgroup1 .health_slick .health_slick_control .arrow.auto.slick-play:before{width: 10px;}
+
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box{padding:26.35% 0;  }
+/*    .rowgroup1 .markup_box .markup_title{position: absolute; top: calc(0% + 73px); left: 66px; font-size: 31px; line-height: 35px;}
+    .rowgroup1 .markup_box .markup_sub_title{position: absolute; top: calc(0% + 160px); left: 66px; margin: 0; font-size: 15px; line-height: 20px;}
+    .rowgroup1 .markup_box .btn.markup_btn{position: absolute; top: calc(0% + 213px); left: 66px; padding: 6px 13px 8px 13px; font-size: 15px; }*/
+
+    .rowgroup1 .markup_box .markup_title{position: absolute; top: calc(20% - 10px); left: 66px;}
+    .rowgroup1 .markup_box .markup_sub_title{position: absolute; top:43%; left: 66px; margin: 0;}
+    .rowgroup1 .markup_box .btn.markup_btn{position: absolute; top: 58%; left: 66px; }
+    .rowgroup1 .markup_box:before{top: 19%; right: 14px; width: 43%; height: 311px;}
+
+    /*근무시간*/
+    .rowgroup1 .service_time_box{display: block; width: 100%; margin-top: 30px; margin-left: 0; padding: 40px 0;}
+    .rowgroup1 .service_time_box ul{padding: 0 40px;}
+    .rowgroup1 .service_time_box ul li{display:inline-block; width: 50%; vertical-align: top;}
+    .rowgroup1 .service_time_box .notice{margin:8px 0 15px; padding-left: 0; text-align: center;}
+    .rowgroup1 .service_time_box .service_link_box{padding: 0 45px; text-align: center;}
+    .rowgroup1 .service_time_box .service_link_box .service_link{width: calc((100% - 10px) / 2);}
+
+    .rowgroup1 .service_time_box .service_link_box .service_link.type3{margin-left: 0;}
+    .rowgroup1 .service_time_box .service_link_box .service_link:nth-child(n + 3){margin-top: 10px;}
+}
+
+@media all and (max-width: 800px) {
+    /*비주얼슬릭*/
+    .rowgroup1 .health_slick .health_slick_box{border-radius: 40px 40px 80px 40px;}
+    .rowgroup1 .health_slick .health_slick_control{bottom: auto; left: calc(10% - 14px);}
+    .rowgroup1 .health_slick .health_slick_control .arrow{width: 33px; height: 33px;}
+    .rowgroup1 .health_slick .health_slick_control .arrow:before{transform: scale(0.85);}
+    .rowgroup1 .health_slick .health_slick_control .arrow.slick-pause:before{transform: scale(1);  background-image:url("../../../site/health/images/main/slick_icon_360.png"); background-position: 0 0;}
+    .rowgroup1 .health_slick .health_slick_control .arrow.next{margin-left: 55px;}
+    .rowgroup1 .health_slick .health_slick_control .countbox{left:0; padding:0 0 0 50px; font-size: 15px;}
+
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box .markup_title{left: calc(10% - 14px); font-size: 31px; line-height: 35px;}
+    .rowgroup1 .markup_box .markup_sub_title{left: calc(10% - 14px); font-size: 15px; line-height: 20px;}
+    .rowgroup1 .markup_box .btn.markup_btn{left: calc(10% - 14px); padding: 6px 13px 8px 13px; font-size: 15px; }
+    .rowgroup1 .markup_box:before{top: 13%; right: 14px; width: 47%; height: 272px;}
+
+
+    /*근무시간*/
+    .rowgroup1 .service_time_box .service_title{margin-bottom:4px; font-size: 20px;}
+    .rowgroup1 .service_time_box ul li span{font-size: 15px; line-height: 28px;}
+    .rowgroup1 .service_time_box .service_link_box .service_link{font-size: 15px;}
+
+}
+@media all and (max-width: 750px) {
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box:before{top: 22%; right: 3px; width: 40%; height: 186px;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup1{padding-top: 35px;}
+    .rowgroup1:before{height: 530px;}
+
+    /*비주얼슬릭*/
+    .rowgroup1 .health_slick{padding-bottom: 38px; border-radius: 17px; background-color: #fff;}
+    .rowgroup1 .health_slick .health_slick_box{border-radius: 15px 15px 35px 15px;}
+    .rowgroup1 .health_slick .health_slick_photo{padding: 25.3% 0;}
+    .rowgroup1 .health_slick .health_slick_control{top: auto; bottom: 0; left: calc(50% - 81px);}
+    .rowgroup1 .health_slick .health_slick_control .arrow:before{width: 9px;}
+
+    .rowgroup1 .health_slick .health_slick_control .countbox{padding-left:46px; }
+    .rowgroup1 .health_slick .health_slick_control .arrow{height: 38px;}
+    .rowgroup1 .health_slick .health_slick_control .arrow.next{margin-left: 54px;}
+    .rowgroup1 .health_slick .health_slick_control .arrow.auto{margin-left: 0;}
+
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box{padding: 25.3% 0;}
+    .rowgroup1 .markup_box:before{right: 24px;}
+    .rowgroup1 .markup_box .markup_title{font-size: 20px; line-height: 22px;}
+    .rowgroup1 .markup_box .markup_sub_title{top:39%; width:235px; font-size: 14px; line-height: 17px; word-break: keep-all;}
+    .rowgroup1 .markup_box .btn.markup_btn{top: 73%;}
+
+
+
+    /*근무시간*/
+    .rowgroup1 .service_time_box{padding: 30px 0;}
+    .rowgroup1 .service_time_box .service_title{font-size: 18px;}
+    .rowgroup1 .service_time_box .service_title em:before{bottom: -2px;}
+    .rowgroup1 .service_time_box ul{padding: 0 25px;}
+    .rowgroup1 .service_time_box ul li{display:inline-block; width: 100%;}
+    .rowgroup1 .service_time_box ul li span{font-size: 14px; line-height: 22px;}
+    .rowgroup1 .service_time_box ul li span.bu_text a:after{bottom: 0;}
+    .rowgroup1 .service_time_box .notice{font-size: 14px; line-height: 19px;}
+    .rowgroup1 .service_time_box .service_link_box{padding: 0 30px;}
+    .rowgroup1 .service_time_box .service_link_box .service_link{padding:4px 0 3px 0; font-size: 14px;}
+}
+
+@media all and (max-width: 480px) {
+    /*비주얼 슬릭 마크업*/
+    .rowgroup1 .markup_box:before{top:10%; right:20px; height: 160px;}
+    .rowgroup1 .markup_box .markup_title{font-size: 16px;}
+    .rowgroup1 .markup_box .markup_title span{display: inline-block;}
+    .rowgroup1 .markup_box .markup_sub_title{top:33%; width:160px; font-size: 12px; line-height: 14px;}
+
+    .rowgroup1 .markup_box .btn.markup_btn{top:72%; padding:6px 10px 8px 10px; font-size: 12px; line-height: 12px; }
+
+}
+
+
+/*자주찾는 서비스*/
+.rowgroup2 .favorite_wrap{position: relative; width: 1400px; margin:0 auto; padding-top: 60px;}
+.rowgroup2 .favorite_wrap ul{font-size: 0; line-height: 0;}
+.rowgroup2 .favorite_wrap ul li{display:inline-block; position: relative; width: calc((100% - 680px) / 9); vertical-align: top; text-align: center;}
+.rowgroup2 .favorite_wrap ul li + li{margin-left: 85px;}
+.rowgroup2 .favorite_wrap ul li a{position:relative; width: 100%; height: 100%; padding-top: 98px;}
+.rowgroup2 .favorite_wrap ul li a:before{display: block; position: absolute; top: 0; width:80px; height: 80px; border-radius: 30px; background-color: #f9f9f9;
+    background-image: url("../../../site/health/images/main/favorite_icon01.png"); background-repeat: no-repeat; }
+.rowgroup2 .favorite_wrap ul li:nth-child(1) a:before{background-position:26px 19px; background-color: #e31937; box-shadow: 0 0 20px 8px rgba(227,25,55,0.15);}
+.rowgroup2 .favorite_wrap ul li:nth-child(2) a:before{background-position:-139px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(3) a:before{background-position:-304px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(4) a:before{background-position:-469px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(5) a:before{background-position:-634px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(6) a:before{background-position:-799px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(7) a:before{background-position:-964px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(8) a:before{background-position:-1129px 20px; }
+.rowgroup2 .favorite_wrap ul li:nth-child(9) a:before{background-position:-1293px 20px; }
+.rowgroup2 .favorite_wrap ul li:hover a:before{background-color:#ffebee; }
+.rowgroup2 .favorite_wrap ul li:nth-child(1):hover a:before{background-color:#e31937; }
+
+.rowgroup2 .favorite_wrap ul li span{font-size: 16px; line-height: 18px; letter-spacing: -0.035em; font-weight: 200; color: #000;}
+
+
+@media all and (max-width: 1400px ) {
+    .rowgroup2 .favorite_wrap{width: 1000px;}
+    .rowgroup2 .favorite_wrap ul li{width: calc((100% - 280px) / 9);}
+    .rowgroup2 .favorite_wrap ul li + li{margin-left: 35px;}
+}
+@media all and (max-width: 1000px ) {
+    .rowgroup2 .favorite_wrap{width:100%; padding-left: 20px; padding-bottom: 20px; overflow-x:scroll; overflow-y:hidden;}
+    .rowgroup2 .favorite_wrap .favorite_box{width: 1000px;}
+
+    .rowgroup2 .favorite_wrap ul li + li{margin-left: 30px;}
+    .rowgroup2 .favorite_wrap ul li a{padding-top: 95px;}
+    .rowgroup2 .favorite_wrap ul li span{font-size: 15px;}
+
+}
+@media all and (max-width: 640px ) {
+    .rowgroup2 .favorite_wrap .favorite_box{width: 750px;}
+    .rowgroup2 .favorite_wrap ul li{width: 68px;}
+    .rowgroup2 .favorite_wrap ul li a{width: 68px; padding-top: 80px;}
+    .rowgroup2 .favorite_wrap ul li a:before{left:-6px; transform: scale(0.85);}
+    .rowgroup2 .favorite_wrap ul li + li{margin-left: 15px;}
+    .rowgroup2 .favorite_wrap ul li span{font-size: 14px;}
+
+}
+
+/* 공지사항 */
+.rowgroup3{margin-top: 60px; font-size: 0; line-height: 0;}
+.board{display:inline-block; position:relative; width:calc(100% - 830px); margin-right:15px; padding-top: 32px;}
+.board .inner_box .board_list{display:block; position: relative; width:100%;}
+.board .inner_box .board_list .board_item{display:inline-block; position:relative; padding:7px 6px; margin-right: 29px;
+    font-size:22px; line-height: 26px; letter-spacing:-0.035em; color: #919090; }
+.board .inner_box .board_list .board_item .text{font-family: 'SCoreDream'; font-weight: 500;}
+
+.board .inner_box .board_list .board_item.active{color: #000;}
+.board .inner_box .board_list .board_item.active:before{display: block; position: absolute; bottom:2px; left:2px; z-index: -1;
+    width:15px; height:15px; background-color:#33bc71; border-radius: 50px; }
+
+.board .inner_box .board_content{display:block; width:100%;}
+.board .inner_box .board_content .board_wrap{display:none; }
+.board .inner_box .board_content .board_wrap.active{display:block; }
+
+
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child{margin-top:0; padding: 30px 0 26px;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child:before{display: block; position: absolute; bottom: 0; width: calc(100% - 50px); height: 1px; background-color:rgba(0, 0, 0, 0.08); }
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link .title{font-size: 18px; line-height: 18px; letter-spacing: -0.035em; font-weight:200; color: #000;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box{width: 95px; height: 95px; margin-right: 30px; padding-top:16px; border: 1px solid #e9e9e9;
+    border-radius: 30px 30px 10px 30px; font-weight: 600; color: #000; text-align: center; vertical-align: top;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box .day{font-size: 35px; line-height: 35px; letter-spacing: -0.035em;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box .month{margin-top:8px; font-size: 15px; line-height: 15px; letter-spacing:-0.035em; font-weight: 400;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link:hover .title:before{display: none;}
+
+.board .inner_box .board_content .board_wrap .date_list .date_item{display:block; position:relative; padding-left:9px;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:nth-child(2){margin-top: 20px;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:nth-child(n + 5){display: none;}
+
+
+.board .inner_box .board_content .board_wrap .date_list .date_item .date_link{display:inline-block; width: calc(100% - 140px); vertical-align: middle;}
+.board .inner_box .board_content .board_wrap .date_list .date_item .date_link:hover{text-decoration: none;}
+.board .inner_box .board_content .board_wrap .date_list .date_item .title{display:inline-block; position: relative;
+    max-width:100%; font-size: 16px; line-height:40px; letter-spacing:-0.035em; color: #000;
+    overflow: hidden; text-overflow:ellipsis; white-space: nowrap; }
+
+.board .inner_box .board_content .board_wrap .date_list .date_item .date_link:hover .title:before{display: block; position: absolute; bottom:10px; width: 100%; height: 1px; background-color: #000;}
+
+.board .inner_box .board_content .board_wrap .date_list .date_item .desc{overflow:hidden; height:0; font-size: 16px; color: #636363; transition: height .1s .2s;   word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .desc{display:-webkit-box; height:75px; margin-top:20px;
+    font-size: 16px; letter-spacing: -0.035em; line-height: 25px; color: #8c8c8c; word-break: keep-all;
+    overflow: hidden;  text-overflow:ellipsis; -webkit-line-clamp:3; -webkit-box-orient:vertical;}
+.board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link:hover .desc{color: #000000;}
+
+.board .inner_box .board_content .board_wrap .date_list .date_item .date_box{display: inline-block; width: 110px; text-align:left; vertical-align: middle; font-size:16px; line-height: 40px; color: #969595; font-weight: 200;}
+
+
+
+.board .inner_box .board_content .board_wrap .link_more{display:inline-block; position:absolute; top:45px; right:45px; font-size:16px; line-height:16px; letter-spacing: -0.035em; color: #000;
+    text-decoration: none;}
+.board .inner_box .board_content .board_wrap .link_more:before{display: block; position: absolute; bottom:-3px; left: 0; width: 100%; height: 1px; background-color: #000;}
+/*.board .inner_box .board_content .board_wrap .link_more:hover{color: #354d95;}*/
+
+.board .inner_box .board_content .board_wrap.active .no-cont{min-height:900px; padding:20px 0; text-align: center;}
+
+
+
+
+
+/*민워서식 다운로드*/
+.rowgroup3 .form_down_wrap{display: inline-block; position: relative; width: 400px; height:385px; padding:37px 40px 0 40px; margin-bottom: 27px; border-radius: 30px; background-color: #fed761; font-size: 0; line-height: 0; vertical-align: top;}
+.rowgroup3 .form_down_wrap:before{display: block; position: absolute; bottom:-27px; right: -9px; width:344px; height:144px;
+    background: url("../../../site/health/images/main/form_down_icon.png") no-repeat;}
+.rowgroup3 .form_down_wrap .form_down_title{position: relative; font-size: 22px; line-height: 26px; letter-spacing: -0.035em; color: #423201; font-family: 'SCoreDream'; font-weight: 500;}
+.rowgroup3 .form_down_wrap .form_down_text{position: relative; margin: 14px 0 26px; font-size: 16px; line-height: 22px; letter-spacing: -0.035em; color: #664f09; font-weight: 200; word-break: keep-all;}
+.rowgroup3 .form_down_wrap ul li{display: inline-block; position: relative; width: calc((100% - 10px) / 2);
+    border: 1px solid rgba(0, 0, 0, 0.2); border-radius:15px; text-align: center;}
+.rowgroup3 .form_down_wrap ul li:nth-child(2n){margin-left: 10px; }
+.rowgroup3 .form_down_wrap ul li:nth-child(n + 3){margin-top: 10px; }
+.rowgroup3 .form_down_wrap ul li:hover{border-color:#fff; background-color: #fff;}
+.rowgroup3 .form_down_wrap ul li a{width: 100%; height: 100%; padding: 12px 0 11px 0; font-size: 16px; line-height: 25px; letter-spacing: -0.035em; font-weight: 200; color: #423201;}
+.rowgroup3 .form_down_wrap ul li a:hover{text-decoration: none;}
+
+
+/*팝업*/
+.popup{display:inline-block; position: relative; width: 355px; margin-left: 60px; vertical-align: top;}
+.popup .inner_box{display: block; position: relative; border-radius: 30px; overflow: hidden;}
+.popup .popup_control{display:inline-block; position: absolute; bottom:-25px; right: 0; padding: 14px 13px 15px 24px; border-radius: 30px 0 0 30px; font-size: 0; line-height:0; background-color: #fff;}
+.popup .popup_control .countbox{display: inline-block; margin-right: 20px; vertical-align: bottom;}
+.popup .popup_control .countbox span{font-size: 15px; line-height: 20px; letter-spacing: -0.035em; font-weight: 400; color:#8c8c8c; }
+.popup .popup_control .countbox span + span{margin-left: 6px;}
+.popup .popup_control .countbox .current{font-size:20px; color:#4d4d4d; font-weight: 600;}
+
+.popup .popup_control button {position: relative; width: 15px; height: 15px; border: 0; font-size: 0; color: transparent; vertical-align: middle;}
+.popup .popup_control button:before{display: block; position: absolute; left:0; right: 0; bottom: 0; top:0; margin: auto; background-image: url('../../../site/health/images/main/popup_icon.png'); background-repeat: no-repeat;}
+.popup .popup_control button.prev:before{width: 8px; height: 12px; background-position: 0 -1px;}
+.popup .popup_control button.next:before{width: 8px; height: 12px; background-position: -51px -1px;}
+
+.popup .popup_control button.auto{margin: 0 10px;}
+.popup .popup_control button.auto.slick-pause:before{width: 11px; height: 13px; background-position: -24px center;}
+.popup .popup_control button.auto.slick-play:before{width: 11px; height: 13px; background-position: -76px center;}
+.popup .popup_list .popup_item{display: inline-block; text-align: center;}
+
+@media all and (max-width: 1400px) {
+    /*게시판*/
+    .board .inner_box .board_content .board_wrap .link_more{right: 10px;}
+
+    /*민원서식*/
+    .rowgroup3 .form_down_wrap:before{background-size: contain;}
+    .rowgroup3 .form_down_wrap .form_down_text{word-break: break-all;}
+
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+    /*게시판*/
+    .board{width:calc(100% - 590px); padding-top: 23px;}
+    .board .inner_box .board_content .board_wrap .link_more{top: 35px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child{padding: 20px 0 16px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link .title{font-size: 16px; line-height: 18px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .desc{height:63px; font-size: 15px; line-height: 21px;}
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item:nth-child(2){margin-top: 15px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_box{font-size:15px; line-height: 27px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .title{font-size:15px; line-height: 27px;}
+
+
+    /*민원서식*/
+    .rowgroup3 .form_down_wrap{width: 285px; height:292px; padding: 37px 20px 0 20px;}
+    .rowgroup3 .form_down_wrap:before{width: 300px; height: 126px;}
+    .rowgroup3 .form_down_wrap .form_down_title{font-size: 18px; line-height: 20px;}
+    .rowgroup3 .form_down_wrap .form_down_text{margin: 9px 0 13px; font-size: 14px; line-height: 16px;}
+    .rowgroup3 .form_down_wrap ul li{border-radius: 10px;}
+    .rowgroup3 .form_down_wrap ul li a{padding: 6px 0 5px 0; font-size: 14px;}
+
+    /*팝업*/
+    .popup{width: 270px; margin-left: 20px;}
+
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup3{margin-top: 50px;}
+   /*게시판*/
+    .board{display: block; width: 100%; margin-right: 0; margin-bottom: 55px; padding-top: 0;}
+    .board .inner_box .board_list .board_item{font-size: 20px;}
+    .board .inner_box .board_content .board_wrap .link_more{top: 12px; right: 0;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_link{width: calc(100% - 125px);}
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link{padding-top: 6px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child{padding: 28px 0 25px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child:before{width: 100%;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .desc{height:50px; margin-top:15px; font-size: 15px; -webkit-line-clamp:2;}
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item{padding-left: 10px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:nth-child(2){margin-top: 15px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_box{font-size: 15px; line-height: 30px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .title{font-size: 15px; line-height: 30px;}
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_link:hover .title:before{bottom: 6px;}
+
+
+    /*민원서식*/
+    .rowgroup3 .form_down_wrap{width:calc(100% - 384px); height: 370px; padding-top: 36px;}
+    .rowgroup3 .form_down_wrap:before{right:-15px; bottom:-28px; width: 330px; height: 138px;}
+    .rowgroup3 .form_down_wrap .form_down_title{font-size: 20px;}
+    .rowgroup3 .form_down_wrap .form_down_text{margin:13px 0 23px; font-size: 15px;}
+    .rowgroup3 .form_down_wrap ul li a{padding:11px 0 10px 0; font-size: 15px;}
+
+    /*팝업*/
+    .popup{width: 344px; margin-left: 40px;}
+    .popup .popup_control .countbox span{font-size: 15px;}
+
+
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+    /*추가*/
+    .rowgroup3 .form_down_wrap{width:calc(50% + 5px); height: auto; padding-top: 36px;}
+    .popup{width: calc(50% - 45px);}
+
+
+    .rowgroup3 .form_down_wrap{background-color: inherit;}
+    .rowgroup3 .form_down_wrap:after{display: block; position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: auto; padding: 48.4% 0; border-radius:30px;  background-color:#fed761; }
+    .rowgroup3 .form_down_wrap:before{display: none;}
+    .rowgroup3 .wrap:before{display: block; position: absolute; bottom:-27px; left:calc(50% - 311px); width:332px; height:139px;
+        background: url("../../../site/health/images/main/form_down_icon.png") no-repeat; background-size: contain;}
+
+    .rowgroup3 .form_down_wrap .form_down_text{margin: 12px 0 19px;}
+}
+@media all and (max-width: 800px) {
+    .rowgroup3 .form_down_wrap{width:calc(50% + 5px); height: 370px; padding-top: 36px;}
+    .rowgroup3 .form_down_wrap .form_down_text{margin:13px 0 18px; line-height: 19px; }
+
+    .popup{width: calc(50% - 45px);}
+}
+
+@media all and (max-width: 640px) {
+
+    /*게시판*/
+    .board{margin-bottom: 40px;}
+    .board .inner_box .board_list .board_item{margin-right:20px; padding: 2px; font-size: 18px; line-height: 25px;}
+    .board .inner_box .board_list .board_item.active:before{left: -3px; bottom: 0;}
+
+    .board .inner_box .board_content .board_wrap .link_more{top:6px; font-size: 14px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_link{width:calc(100% - 100px); }
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child{padding: 12px 0 15px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box{width: 80px; height: 80px; margin-right: 20px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box .day{font-size: 28px; line-height: 28px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_box .month{margin-top:6px; font-size: 13px; line-height: 13px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .date_link .title{font-size: 16px; line-height: 16px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:first-child .desc{height:43px; font-size: 14px; line-height: 22px; word-break: break-all;}
+
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item{padding-left: 5px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item:nth-child(2){margin-top: 10px;}
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_box{width:95px; font-size: 14px; line-height:24px; }
+    .board .inner_box .board_content .board_wrap .date_list .date_item .title{font-size: 14px; line-height:24px; }
+
+    .board .inner_box .board_content .board_wrap .date_list .date_item .date_link:hover .title:before{bottom: 3px;}
+    /*민원서식*/
+    .rowgroup3 .form_down_wrap{display: block; width: 100%; height: auto; padding: 30px 33px 58px 33px; margin-bottom: 62px;}
+    .rowgroup3 .form_down_wrap .form_down_title{font-size: 18px; line-height: 18px;}
+    .rowgroup3 .form_down_wrap .form_down_text{margin:10px 0 13px; font-size: 14px; line-height: 18px;}
+    .rowgroup3 .form_down_wrap ul{padding: 0 17px;}
+    .rowgroup3 .form_down_wrap:before{right:17px; width:111px; height:72px; background:url("../../../site/health/images/main/form_down_icon02.png") no-repeat;}
+
+    .rowgroup3 .form_down_wrap ul li{border-radius: 10px;}
+    .rowgroup3 .form_down_wrap ul li:nth-child(n + 3){margin-top: 5px;}
+    .rowgroup3 .form_down_wrap ul li a{padding: 4px 0;}
+
+
+    /*팝업*/
+    .popup{left:calc(50% - 165px); width: 330px; height: 360px; margin-left: 0; }
+    .popup .popup_control{padding:14px 13px 15px 22px; }
+    .popup .popup_control .countbox .current{font-size: 18px;}
+    .popup .popup_control .countbox span{font-size: 14px;}
+}
+
+
+/*맞춤서비스*/
+.rowgroup4{margin-top: 90px;}
+/*.life{position: relative; width: 1732px; margin: 0 auto; padding-top: 75px; padding-bottom: 69px; border-radius: 100px 100px 20px 100px; background-color: #e6fafe;}*/
+
+.life{position: relative; padding-top: 75px; padding-bottom: 69px; }
+.life:before{display: block; position: absolute; top: 0; left:-160px; width: calc(100% + 332px); height: 100%; border-radius: 100px 100px 20px 100px; background-color: #e6fafe; }
+.life .life_title{position:relative; text-align: center;}
+.life .life_title h2{font-size:35px; line-height:35px; letter-spacing:-0.035em; color:#021b3a; font-weight:600; font-family:'SCoreDream';}
+.life .life_title h2 span{color: #1966c5;}
+.life .life_title .sub_title{margin-top:16px; font-size: 17px; line-height: 26px; letter-spacing: -0.035em; color: rgba(0, 0, 0, 0.5);}
+
+.life .life_box{display: inline-block; position: relative; float: left; width:50%; font-size: 0; line-height: 0;}
+.life .life_box ul li input{position:absolute; left:0; top:0; width:auto; padding:0; border:0; opacity:0;}
+.life .life_box ul li label{ display:block; position:relative; z-index:2; text-align:center;}
+.life .life_box ul li span{font-size: 16px; line-height:16px; letter-spacing: -0.035em; color: #000; font-weight: 200;}
+.life .life_box.left ul li:nth-child(3) span{letter-spacing: -0.06em;}
+.life .life_box h3.h0{margin-top:30px; margin-bottom:25px; font-size: 22px; line-height: 26px; letter-spacing: -0.035em; color: #021b3a; font-weight: 500;}
+
+.life .life_box.left{padding-right: 45px;}
+.life .life_box.left ul li{display: inline-block; position: relative; width: calc((100% - 175px) / 6); margin-right: 35px; vertical-align: top;}
+.life .life_box.left ul li:last-child{margin-right: 0;}
+
+.life .life_box.left ul li label{padding-top:94px; }
+.life .life_box.left ul li label:before{display: block; position: absolute; top:0; left: 0; width:78px; height:78px; border-radius:30px; border: 1px solid rgba(0, 20, 105, 0.1);
+    transition-property:background-color, border-color, box-shadow; transition-duration:200ms; transition-timing-function:ease-in-out;
+    background-image: url("../../../site/health/images/main/life_icon01.png"); background-repeat: no-repeat;}
+/*.life .life_box.left ul li.item01 label:before{background-position: 21px center;}
+.life .life_box.left ul li.item02 label:before{background-position: -93px center;}
+.life .life_box.left ul li.item03 label:before{background-position: -209px center;}
+.life .life_box.left ul li.item04 label:before{background-position: -324px center;}
+.life .life_box.left ul li.item05 label:before{background-position: -439px center;}*/
+.life .life_box.left ul li.item01 label:before{background-image: url("../../../site/health/images/main/life_all.png"); background-position: center;}
+/*.life .life_box.left ul li.item01 label:before{background-position: 20px 11px;}*/
+.life .life_box.left ul li.item02 label:before{background-position: -95px 11px;}
+.life .life_box.left ul li.item03 label:before{background-position: -210px 11px;}
+.life .life_box.left ul li.item04 label:before{background-position: -325px 11px;}
+.life .life_box.left ul li.item05 label:before{background-position: -440px 11px;}
+.life .life_box.left ul li.item06 label:before{background-image: url("../../../site/health/images/main/life_icon03.png"); background-position:19px 15px;}
+.life .life_box.left ul li:hover label:before{border-color: #fff; background-color: #fff; box-shadow: 0 0 25px 8px rgba(156,200,212,0.4);}
+
+
+.life .life_box.left ul li input[type="checkbox"]:checked + label:before{display: block;  border-color: #fff; background-color: #fff; box-shadow: 0 0 25px 8px rgba(156,200,212,0.4);}
+.life .life_box.left ul li label:after{display: none; position: absolute; top:-11px; right:-1px; width:27px; height:27px; background: url("../../../site/health/images/main/life_icon02.png") no-repeat;}
+.life .life_box.left ul li input[type="checkbox"]:checked + label:after{display: block;}
+
+.life .life_box.right{padding-left: 50px; padding-right: 62px;}
+.life .life_box.right ul li{display: inline-block; position: relative; margin-right: 10px;}
+.life .life_box.right ul li:nth-child(n + 8){margin-top: 10px;}
+.life .life_box.right ul li label{display:block; position:relative; z-index:2; padding:11px 13px 11px 13px;  border: 1px solid rgba(0, 20, 105, 0.1); border-radius:10px; text-align:center; color:#43475e;
+    transition-property:background-color, border-color, box-shadow; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.life .life_box.right ul li:hover label{border-color:#fff; background-color: #fff; box-shadow: 0 0 10px 8px rgba(207,231,238,0.75);}
+.life .life_box.right ul li input[type="checkbox"]:checked + label{border-color:#fff; background-color: #fff; box-shadow: 0 0 10px 8px rgba(207,231,238,0.75);}
+
+.life .submit_box{position:relative; margin-top:41px; text-align: center;}
+.life .submit_box input[type="submit"]{display: inline-block; position: relative; width: 481px; padding:18px 34px 18px 0; border-radius: 50px; background-color: #1966c5;
+    font-size:20px; line-height: 26px; letter-spacing: -0.035px; font-weight: 400; color: #fff;
+    background-image:url("../../../site/health/images/main/life_icon04.png"); background-repeat: no-repeat; background-position: 284px center;
+    transition-property:background-color, box-shadow; transition-duration:200ms; transition-timing-function:ease-in-out;}
+.life .submit_box input[type="submit"]:hover{background-color:#2372d2; box-shadow: 0 0 15px 8px rgba(25,102,197,0.3);}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    .life .life_box.right{padding-right: 23px;}
+}
+@media all and (max-width: 1400px) {
+    .life .life_box.left ul li{width:calc((100% - 135px) / 4);}
+    .life .life_box.left ul li.item04{margin-right: 0;}
+    .life .life_box.left ul li:nth-child(n + 5) {margin-top: 15px;}
+}
+@media all and (max-width: 1000px) {
+/*    .rowgroup4{margin-top: 60px;}*/
+    .rowgroup4{margin-top: 86px;}
+    .life{padding:50px 0;}
+    .life:before{left: -50px; width: calc(100% + 100px);}
+
+    .life .life_title h2{font-size: 30px; line-height: 30px;}
+    .life .life_title .sub_title{font-size: 16px; line-height: 16px;}
+
+    .life .life_box{display: block; width: 100%;}
+    .life .life_box h3.h0{margin-top:30px; margin-bottom:20px; font-size: 18px; line-height: 20px;}
+    .life .life_box ul li span{font-size: 15px; line-height: 15px;}
+
+    .life .life_box.left{padding-right: 0;}
+    .life .life_box.left ul li{width:80px;}
+    .life .life_box.left ul li.item04{margin-right: 35px;}
+    .life .life_box.left ul li:nth-child(n + 5) {margin-top: 0;}
+
+    .life .life_box.right{padding: 0;}
+    .life .life_box.right h3.h0{margin-top: 36px;}
+    .life .life_box.right ul li:nth-child(n + 8){margin-top: 0;}
+    .life .life_box.right ul li:nth-child(n + 12){margin-top: 10px;}
+
+    .life .submit_box{margin-top: 30px;}
+    .life .submit_box input[type="submit"]{width: 322px; padding: 9px 27px 9px 0; background-position: 195px center; font-size: 16px; }
+
+}
+@media all and (max-width: 800px) {
+        .rowgroup4{margin-top: 60px;}
+    .life .life_box.left ul li{margin-right: 4%;}
+    .life .life_box.left ul li.item04{margin-right:4%;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup4{margin-top: 50px;}
+    .rowgroup4 .wrap{width: 100%;}
+
+    .life{padding: 40px 0;}
+    .life:before{left: -55px; width: calc(100% + 110px);}
+    .life .life_title h2{font-size: 20px; line-height: 20px;}
+    .life .life_title .sub_title{margin-top:12px; font-size: 14px; line-height: 14px;}
+    .life .life_box h3.h0{margin-top:30px; margin-bottom:17px; font-size: 16px; line-height: 18px;}
+    .life .life_box.right h3.h0{margin-top: 30px;}
+
+    .life .life_box.left{width: 100%; padding-left: 15px; padding-bottom: 20px; overflow-x:scroll; overflow-y: hidden;}
+    .life .life_box.left ul{width: 500px;}
+
+    .life .life_box.left ul li{width: 68px; margin-right: 15px;}
+    .life .life_box.left ul li.item04{margin-right:15px;}
+    .life .life_box.left ul li label{padding-top: 78px;}
+    .life .life_box.left ul li label:before{left:-6px; transform: scale(0.85);}
+    .life .life_box.left ul li label:after{top:-5px; width: 25px; height: 25px; background-size: contain;}
+    .life .life_box.left ul li:nth-child(3) span{letter-spacing: -0.07em;}
+    .life .life_box ul li span{font-size: 14px; line-height: 14px;}
+
+
+    .life .life_box.right{width: 100%; padding-left: 15px; padding-bottom:20px; overflow-x:scroll; overflow-y: hidden;}
+    .life .life_box.right ul{width: 1170px;}
+
+    .life .life_box ul li span{font-size: 14px;}
+    .life .life_box.right ul li:nth-child(n + 12){margin-top: 0;}
+    .life .life_box.right ul li label{padding:10px 10px 10px 9px; border-radius: 5px; }
+
+    .life .submit_box{margin-top: 10px;}
+    .life .submit_box input[type="submit"]{width:186px; padding:3px 16px 4px 0; background-position:119px center; font-size: 14px; line-height: 27px;}
+
+}
+
+/*홍보동영상*/
+.rowgroup5{margin-top: 60px; margin-bottom:86px;  font-size: 0; line-height: 0;}
+
+.rowgroup5 .youtube_slide{display:inline-block; position: relative; width:635px; padding:40px 39px; margin-right: 45px; border: 1px solid #e6e6e6; border-radius: 20px; text-align: center;}
+
+.rowgroup5 .youtube_slide h2.h0{margin-bottom:24px; font-size:22px; line-height:26px; letter-spacing:-0.035em; color:#000000; font-weight:500; font-family:'SCoreDream'; text-align: left;}
+.rowgroup5 .youtube_slide .y_img{font-size: 0; line-height: 0;}
+.rowgroup5 .youtube_slide .y_slide_item{margin-right: 35px;}
+.rowgroup5 .youtube_slide .y_slide_item a{position: relative; border-radius:10px; overflow: hidden; text-decoration: none;}
+
+.rowgroup5 .youtube_slide .y_slide_item .t_img{display: block; position: relative; width:260px; height:146px; border-radius: 10px;
+    background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.rowgroup5 .youtube_slide .y_slide_item img{width: 0; height: 0;}
+.rowgroup5 .youtube_slide .y_slide_item .y_img_title{display: inline-block; max-width:260px; margin-top:9px; text-overflow: ellipsis; white-space: nowrap;
+    font-size: 17px; line-height: 20px; letter-spacing: -0.035em; color: #4d4d4d; font-weight: 200; overflow: hidden;}
+
+
+.rowgroup5 .y_img .y_img_control{display:inline-block; position: absolute; top:40px; right:40px; font-size:0; line-height: 0;}
+.rowgroup5 .y_img .y_img_control button{width:37px; height: 37px; border: 1px solid #cccccc; border-radius:10px; ;
+    background-image: url("../../../site/health/images/main/youtube_icon01.png"); background-repeat: no-repeat; transition: all 0.2s linear;}
+.rowgroup5 .y_img .y_img_control button + button{margin-left: 10px;}
+.rowgroup5 .y_img .y_img_control button.prev{ background-position:13px center;}
+.rowgroup5 .y_img .y_img_control button.next{border-color:#000; background-position: -34px center;}
+.rowgroup5 .y_img .y_img_control button:hover{box-shadow: 0px 0px 10px 8px rgba(227,227,227,0.5);}
+
+/*바로가기*/
+.rowgroup5 .go_to_health{display: inline-block; width: calc(100% - 680px); border: 1px solid #e9e9e9; border-radius: 20px; vertical-align: top; overflow: hidden;}
+.rowgroup5 .go_to_health ul li{display: inline-block; position: relative; width: 50%; padding: 0 40px;}
+.rowgroup5 .go_to_health ul li:hover{background-color: #f8f8f8;}
+.rowgroup5 .go_to_health ul li:nth-child(2n){border-left:1px solid #e9e9e9;}
+.rowgroup5 .go_to_health ul li:nth-child(n + 3){border-top:1px solid #e9e9e9;}
+.rowgroup5 .go_to_health ul li a{display:table; position:relative; width: 100%; height:103px; padding-left: 39px;
+    font-size: 17px; line-height: 20px; letter-spacing: -0.035em; color: #8c8c8c; font-weight: 200; text-decoration: none;}
+.rowgroup5 .go_to_health ul li a:after{display:none; position: absolute; top:0; bottom: 0; right: 0; margin: auto 0; width:9px; height: 9px; border-radius: 50px; background-color: #33bc71; }
+.rowgroup5 .go_to_health ul li a:before{display: block; position: absolute; top: 0; bottom: 0; left:0; margin: auto 0;
+    background-image: url("../../../site/health/images/main/goto_icon01.png"); background-repeat: no-repeat;}
+.rowgroup5 .go_to_health ul li:nth-child(1) a:before{width: 24px; height: 20px; background-position: 0 0;}
+.rowgroup5 .go_to_health ul li:nth-child(2) a:before{width: 21px; height: 23px; background-position: -69px -1px;}
+.rowgroup5 .go_to_health ul li:nth-child(3) a:before{width: 18px; height: 23px; background-position: 0 -102px;}
+.rowgroup5 .go_to_health ul li:nth-child(4) a:before{width: 20px; height: 20px; background-position: -69px -103px;}
+.rowgroup5 .go_to_health ul li:nth-child(5) a:before{width: 19px; height: 24px; background-position: 0 -206px;}
+.rowgroup5 .go_to_health ul li:nth-child(6) a:before{width: 24px; height: 24px; background-position: -69px -205px;}
+
+.rowgroup5 .go_to_health ul li:hover a:before{background-image: url("../../../site/health/images/main/goto_icon02.png");}
+
+.rowgroup5 .go_to_health ul li a span{display: table-cell; vertical-align: middle;}
+.rowgroup5 .go_to_health ul li a span br{display: none;}
+
+.rowgroup5 .go_to_health ul li:hover a{color: #000;}
+.rowgroup5 .go_to_health ul li:hover a:after{display:inline-block; position: absolute; top:0; bottom: 0; right: 0; margin: auto 0; width:9px; height: 9px; border-radius: 50px; background-color: #33bc71; }
+
+
+@media all and (max-width: 1400px) {
+    /*홍보동영상*/
+    .rowgroup5 .youtube_slide{width: 500px; margin-right: 30px;}
+    .rowgroup5 .youtube_slide .y_slide_item{margin-right: 20px;}
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 200px; height:113px;}
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_title{max-width: 200px;}
+
+    /*바로가기*/
+    .rowgroup5 .go_to_health{width:calc(100% - 530px); }
+    .rowgroup5 .go_to_health ul li{padding: 0 10px 0 19px;}
+    .rowgroup5 .go_to_health ul li a{height:90px; padding-left:33px;}
+}
+@media all and (max-width: 1000px) {
+    /*홍보동영상*/
+    .rowgroup5{margin-bottom: 90px;}
+    .rowgroup5 .youtube_slide .y_img{border-radius: 10px; overflow: hidden;}
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_wrap{border-radius:10px; overflow: hidden;}
+    .rowgroup5 .youtube_slide{width: 351px; padding: 35px 44px;}
+    .rowgroup5 .youtube_slide h2.h0{margin-top:10px; margin-bottom:21px; font-size: 20px; line-height: 20px;}
+    .rowgroup5 .y_img .y_img_control{top: 35px; right: 45px;}
+    .rowgroup5 .youtube_slide .y_slide_item{margin-right:10px;}
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 260px; height: 146px;}
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_title{max-width: 260px; margin-top: 18px;}
+
+    /*바로가기*/
+    .rowgroup5 .go_to_health{width:calc(100% - 381px); }
+    .rowgroup5 .go_to_health ul li{padding: 0 10px 0 12px;}
+    .rowgroup5 .go_to_health ul li a{height:100px; padding-left:24px;  font-size: 16px;}
+    .rowgroup5 .go_to_health ul li a:before{transform: scale(0.9);}
+    .rowgroup5 .go_to_health ul li:nth-child(1) a{padding-left: 26px;}
+    .rowgroup5 .go_to_health ul li:nth-child(2) a{padding-left: 28px;}
+    .rowgroup5 .go_to_health ul li:nth-child(3) a{padding-left: 24px;}
+    .rowgroup5 .go_to_health ul li:nth-child(4) a{padding-left: 25px;}
+    .rowgroup5 .go_to_health ul li:nth-child(5) a{padding-left: 23px; letter-spacing: -0.08em;}
+    .rowgroup5 .go_to_health ul li:nth-child(6) a{padding-left: 29px;}
+
+    .rowgroup5 .go_to_health ul li:nth-child(2) a:before{width: 22px;}
+    .rowgroup5 .go_to_health ul li:nth-child(3) a:before{width: 19px;}
+    .rowgroup5 .go_to_health ul li:nth-child(4) a:before{width: 21px;}
+    .rowgroup5 .go_to_health ul li:nth-child(5) a:before{width: 20px;}
+
+
+    /*변경*/
+    .rowgroup5 .youtube_slide{width:calc(50% - 26px); padding: 35px calc(4% - 1px); margin-right: 30px;}
+    .rowgroup5 .go_to_health{width: calc(50% - 4px);}
+    .rowgroup5 .y_img .y_img_control{right: 36px;}
+
+}
+/*@media all and (max-width: 800px) {
+    !* 홍보동영상 *!
+    .rowgroup5 .youtube_slide{width: 255px; padding: 35px 15px; margin-right: 15px;}
+    .rowgroup5 .y_img .y_img_control{right: 15px;}
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 220px; height: 127px;}
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_title{width: 220px; font-size: 16px;}
+
+    !*바로가기*!
+    .rowgroup5 .go_to_health{width: calc(100% - 270px);}
+    .rowgroup5 .go_to_health ul li a{height: 92px;}
+    .rowgroup5 .go_to_health ul li a span br{display: block;}
+
+}*/
+@media (min-width: 641px) and (max-width: 800px) {
+    /*홍보동영상*/
+    .rowgroup5 .youtube_slide{width:calc(50% - 26px); padding: 35px calc(6% - 1px); margin-right: 30px;}
+    .rowgroup5 .go_to_health{width: calc(50% - 4px);}
+
+    .rowgroup5 .youtube_slide{padding: 35px 0;}
+    .rowgroup5 .youtube_slide h2.h0{padding-left: calc(50% - 131px);}
+    .rowgroup5 .y_img .y_img_control{right:calc(50% - 129px); }
+    .rowgroup5 .youtube_slide .y_slide_item{margin-right: 50px;}
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 260px;}
+}
+@media (min-width: 641px) and (max-width: 700px) {
+    .rowgroup5 .youtube_slide h2.h0{padding-left: calc(50% - 118px);}
+    .rowgroup5 .y_img .y_img_control{right:calc(50% - 120px); }
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 240px;}
+}
+
+@media (min-width: 641px) and (max-width: 789px) {
+    .rowgroup5 .go_to_health ul li a span br{display: block;}
+}
+/*@media (min-width: 641px) and (max-width: 800px) {
+    .rowgroup5 .go_to_health ul li:nth-child(5){padding-right: 15px;}
+    .rowgroup5 .go_to_health ul li:nth-child(5):hover a:after{right: -10px;}
+}*/
+@media all and (max-width: 640px) {
+    .rowgroup5{margin-top: 40px; margin-bottom: 80px;}
+
+    /* 홍보동영상 */
+    .rowgroup5 .youtube_slide{width: 100%; margin-right: 0; padding: 35px;}
+    .rowgroup5 .youtube_slide h2.h0{font-size: 18px; line-height: 18px;}
+
+    .rowgroup5 .y_img .y_img_control{top: 27px; right: 35px;}
+    .rowgroup5 .y_img .y_img_control button{transform: scale(0.9);}
+    .rowgroup5 .y_img .y_img_control button + button{margin-left: 6px;}
+
+    .rowgroup5 .youtube_slide .y_slide_item .t_img{width: 260px; height: 146px;}
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_title{width:260px; margin-top: 15px; font-size: 14px; line-height: 14px;}
+
+
+    /*바로가기*/
+    .rowgroup5 .go_to_health{width: 100%; margin-top: 40px;}
+    .rowgroup5 .go_to_health ul li{padding: 0 15px 0 12px;}
+
+    .rowgroup5 .go_to_health ul li a{height: 50px; font-size: 14px;}
+    .rowgroup5 .go_to_health ul li:hover a:after{width: 7px; height: 7px;}
+    .rowgroup5 .go_to_health ul li a span br{display: none;}
+}
+@media all and (max-width: 480px) {
+    .rowgroup5 .youtube_slide .y_slide_item .y_img_title{display: none;}
+    .rowgroup5 .youtube_slide .y_slide_item.slick-active .y_img_title{display: block;}
+
+}
+@media all and (max-width: 380px) {
+    .rowgroup5 .go_to_health ul li:nth-child(5){padding: 0 3px 0 12px;}
+}

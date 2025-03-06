@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* jalnan 폰트 */
+@font-face {
+    font-family: 'Jalnan';
+    src: url('/common/font/JalnanOTF00.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
