@@ -1,0 +1,40 @@
+$g-color:#000;
+
+@mixin test($color, $margin) {
+    color:$color;
+    margin:$margin $margin;
+}
+
+@function abc($a, $b) {
+    @return $a + $b;
+}
+
+.test {
+    margin-bottom:0;
+    @include test($g-color, 0px);
+
+    li {
+        display:block;
+
+        ul {
+            display:block;
+        }
+
+        &:last-child {
+            margin: {
+                top:30px;
+                left:10px;
+            }
+        }
+    }
+
+    font: {
+        size:20px;
+        weight:bold;
+    }
+}
+
+.test2 {
+    color:$g-color;
+    @extend .test;
+}

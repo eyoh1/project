@@ -1,0 +1,339 @@
+@charset "UTF-8";
+#wrapper{overflow:hidden; position:relative; width:100%; min-width:1600px}
+.wrap{position:relative; width:1600px; margin-right:auto; margin-left:auto}
+@media all and (max-width:1600px){
+    #wrapper{min-width:1300px}
+    .wrap{width:1300px}
+}
+@media all and (max-width:1300px){
+    #wrapper{min-width:1000px}
+    .wrap{width:1000px}
+}
+@media all and (max-width:1000px){
+    #wrapper{min-width:0}
+    .wrap{width:auto; margin-right:0; margin-left:0; padding-right:3%; padding-left:3%}
+}
+
+/* gnb */
+.gnb{position:relative; z-index:40}
+.gnb:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:100%; background-color:#eee; transform:translateX(-50%)}
+
+/* gnb 사이트 */
+.gnb .site{position:relative; font-size:0; line-height:0}
+.gnb .site_item{display:inline-block; margin-left:10px; padding-top:10px; padding-bottom:10px}
+.gnb .site_item:first-child{margin-left:0}
+.gnb .site_anchor{color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+
+/* gnb 링크 */
+.gnb .link{position:absolute; top:0; right:0; font-size:0; line-height:0}
+.gnb .link_item{display:inline-block; margin-left:10px; padding-top:10px; padding-bottom:10px; vertical-align:top}
+.gnb .link_item:first-child{margin-left:0}
+.gnb .link_anchor,.gnb .link_button{color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+
+/* gnb 언어 */
+.gnb .language{position:relative; padding-top:9px; padding-bottom:9px}
+.gnb .language_panel{display:none; position:absolute; top:100%; left:0; z-index:30; width:100%; background-color:#fff; border:1px solid #000}
+.gnb .language_anchor{font-size:15px; line-height:17px}
+.gnb .language.active .language_panel{display:block}
+@media all and (max-width:1000px){
+    .gnb{display:none}
+}
+
+/* 그룹 */
+#header .group{position:relative; z-index:30; width:100%}
+#header .group:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:100%; background-color:#fff; border-bottom:1px solid #ccc; transform:translateX(-50%)}
+
+/* 로고 */
+.logo{position:relative; padding-top:30px; padding-bottom:30px}
+.logo .logo_anchor{position:relative; z-index:10}
+@media all and (max-width:1000px){
+    .logo{z-index:10}
+    .logo .logo_anchor img{width:70%}
+}
+
+/* 검색 */
+.search{position:absolute; top:0; left:0; width:100%; height:100%; font-size:0; line-height:0}
+.search:before{display:block; visibility:hidden; opacity:0; position:fixed; top:0; left:0; z-index:10; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.4); transition-property:visibility,opacity; transition-duration:0.25s; transition-timing-function:linear}
+.search .search_hide,.search .search_show{display:none}
+.search .search_panel{padding-top:20px}
+.search .search_form{width:350px; margin-right:auto; margin-left:auto}
+.search .search_fieldset{position:relative; border:1px solid #000; box-sizing:border-box}
+.search .search_query{width:100%; height:50px; padding-left:10px; font-size:16px; line-height:18px; letter-spacing:-0.03em}
+.search .search_submit{position:absolute; top:0; right:0; width:50px; height:50px; background-color:#ccc}
+@media all and (max-width:1000px){
+    .search .search_show{display:block; position:absolute; top:0; right:50px; bottom:0; z-index:10; width:40px; height:40px; margin-top:auto; margin-bottom:auto; background-color:#ccc}
+    .search .search_hide{display:block; position:absolute; top:0; right:0; bottom:0; width:30px; height:30px; background-color:#000; margin-top:auto; margin-bottom:auto}
+    .search .search_panel{display:none; position:absolute; top:0; left:0; z-index:30; width:100%; padding-bottom:20px}
+    .search .search_panel:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:100%; background-color:#eee; transform:translateX(-50%)}
+
+    /* 검색 활성화 */
+    .search.active:before{visibility:visible; opacity:1}
+    .search.active .search_panel{display:block}
+    .search_open .lnb .menu_show{z-index:20}
+}
+
+/* 날씨 */
+.weather{position:absolute; top:0; right:0; font-size:0; line-height:0}
+.weather .weather_content{padding-top:20px}
+.weather .weather_info{display:inline-block; position:relative; padding-left:75px; vertical-align:middle}
+.weather .weather_sate{position:absolute; top:0; left:0; width:70px; height:50px; background-color:#ccc}
+.weather .weather_sate:before{display:block; position:absolute; top:0; bottom:0; left:0; width:70px; height:40px; margin-top:auto; margin-bottom:auto; background-color:#eee}
+.weather .weather_date{display:block; padding-top:2px; color:#000; font-size:14px; line-height:16px}
+.weather .weather_celsius{display:block; padding-right:3px; color:#000; font-size:27px; line-height:29px; letter-spacing:600}
+.weather .weather_celsius span+span{padding-left:2px; font-weight:300}
+.weather .weather_indicator{display:inline-block; margin-left:10px; vertical-align:middle}
+.weather .weather_aqi,.weather .weather_cal{color:#000; font-size:14px; line-height:16px; letter-spacing:-0.03em}
+.weather .weather_cal{margin-top:5px}
+.weather .weather_index{font-weight:500}
+.weather .weather_level{margin-left:5px}
+@media all and (max-width:1000px){
+    .weather{display:none}
+}
+
+/* 주메뉴 */
+@media all and (min-width:1001px){
+    .lnb{position:relative; width:100%; height:42px}
+    .lnb .wrap{height:100%}
+    .lnb .menu{overflow:hidden; position:absolute; top:0; left:0; z-index:20; width:100%; height:100%; background-color:#fff; transition-property:height}
+
+    /* 메뉴 배경 */
+    .lnb:before{display:block; visibility:hidden; opacity:0; position:fixed; top:0; left:0; z-index:10; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.4); transition-property:visibility,opacity; transition-duration:0.25s; transition-timing-function:linear}
+    .lnb_open .lnb:before{visibility:visible; opacity:1}
+
+    /* 메뉴 높이 */
+    .lnb .menu .depth2,.lnb .menu.after:after{height:calc(100% - 60px)}
+
+    /* 하단 배경 */
+    .lnb .menu.after:after{bottom:0; left:0; z-index:20; width:100%; height:1px; background-color:#ccc; box-sizing:border-box}
+
+    /* 하단 배경 활성화 */
+    .lnb_open .lnb .menu.after:after{visibility:visible; opacity:1}
+
+    /* 메뉴 상단 정보 */
+    .lnb .menu_header{display:none}
+
+    /* 메뉴 제목 */
+    .lnb .menu_title{display:none}
+
+    /* 1차 메뉴 */
+    .lnb .menu .depth1_list{width:100%; padding-right:60px; text-align:center}
+    .lnb .menu .depth1_item{width:20%}
+    .lnb .menu .depth1_item:first-child{margin-left:0}
+    .lnb .menu .depth1_text{display:inline-block; position:relative; padding-top:18px; padding-bottom:22px; padding-left:0; text-align:center; color:#000; font-size:18px; line-height:20px; letter-spacing:-0.03em; font-weight:300; text-decoration:none; transition-property:color}
+    .lnb .menu .depth1_text[target='_blank']:after{display:inline-block; width:15px; height:15px; margin-top:2.5px; margin-left:5px; vertical-align:top; background-color:#000}
+    .lnb .menu .depth1_text:hover{text-decoration:underline}
+
+    /* 1차 메뉴 활성화 */
+    .lnb .menu .depth1_item.active .depth1_text{text-decoration:none}
+    .lnb .menu .depth1_item.active .depth1_text:before{visibility:visible; opacity:1}
+
+    /* 2차 타이틀 */
+    .lnb .menu .depth2{overflow:visible; box-sizing:border-box; transition-property:visibility,opacity}
+    .lnb .menu .depth2:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:1px; background-color:#ccc; transform:translateX(-50%)}
+
+    /* 1차메뉴 라인 */
+    .lnb .menu .depth2_content{position:relative; padding-left:280px}
+
+    /* 메뉴 고정 높이 */
+    .lnb .menu .depth2_title{position:absolute; top:1px; left:0; width:280px; height:100%; background-color:#eee}
+    .lnb .menu .depth2_info{width:inherit; height:inherit; padding-top:60px; text-align:left; color:#000; font-weight:300}
+    .lnb .menu .depth2_info:before{display:block; position:absolute; right:0; bottom:0; width:200px; height:100px; background-color:#ccc}
+    .lnb .menu .depth2_slogan{display:block; font-size:16px; line-height:18px; letter-spacing:-0.03em}
+    .lnb .menu .depth2_subject{display:block; position:relative; margin-top:10px; padding-right:30px; font-size:30px; line-height:38px; letter-spacing:-0.025em; font-weight:500; word-break:keep-all}
+
+    /* 2차 메뉴 */
+    .lnb .menu .depth1_item.active .depth2{visibility:visible; opacity:1; z-index:10}
+    .lnb .menu .depth2_list{padding-bottom:30px; text-align:left}
+    .lnb .menu .depth2_item{position:relative; width:25%; padding:35px 20px 10px 30px}
+    .lnb .menu .depth2_item:before{display:block; position:absolute; top:0; right:0; width:1px; height:100vh; background-color:#ccc}
+    .lnb .menu .depth2_text{display:block; position:relative; padding-right:20px; color:#333; font-size:19px; line-height:25px; letter-spacing:-0.03em; font-weight:500; text-decoration:none; word-break:break-all}
+    .lnb .menu .depth2_text:hover{text-decoration:underline}
+    .lnb .menu .depth2_text[target='_blank']:after{display:block; position:absolute; top:0; right:0; bottom:0; width:20px; height:20px; margin-top:auto; margin-bottom:auto; background-color:#000; transition:none}
+    .lnb .menu .depth1_item .depth2_text:hover[target='_blank']:after{background-color:#999}
+
+    /* 3차 메뉴 */
+    .lnb .menu .depth1_item.active .depth3{visibility:visible; opacity:1; z-index:10}
+    .lnb .menu .depth3_list{margin-top:18px}
+    .lnb .menu .depth3_item{margin-top:4px}
+    .lnb .menu .depth3_item:first-child{margin-top:0}
+    .lnb .menu .depth3_text{display:inline-block; position:relative; z-index:20; padding-left:9px; color:#555; font-size:15px; line-height:21px; letter-spacing:-0.03em; word-break:keep-all}
+    .lnb .menu .depth3_text:before{display:block; position:absolute; top:9px; left:0; width:3px; height:3px; background-color:#000}
+    .lnb .menu .depth3_text:hover{text-decoration:underline}
+    .lnb .menu .depth3_text[target='_blank']:after{display:inline-block; width:14px; height:14px; margin-top:3px; margin-left:5px; background-color:#000; vertical-align:top; transition:none}
+
+    /* 4차 메뉴 */
+    .lnb .menu .depth4{display:none}
+}
+@media all and (max-width:1000px){
+
+    /* 메뉴 영역 */
+    .lnb .menu{visibility:hidden; overflow-x:hidden; overflow-y:auto; position:fixed; right:-100%; z-index:40; width:360px; height:100%; padding-top:90px; background-color:#fff; transition-property:visibility,right; transition-duration:0.25s; transition-timing-function:linear}
+    .lnb .wrap{height:inherit; padding-left:10px; padding-right:10px}
+
+    /* 열기 버튼 */
+    .lnb .menu_show{position:absolute; top:0; bottom:0; width:40px; height:40px; right:3%; z-index:30; margin-top:auto; margin-bottom:auto}
+    .lnb .menu_show .menu_btn{position:relative; width:inherit; height:inherit; background-color:#ccc}
+    .lnb .menu_show .menu_btn:before{display:block; position:absolute; top:0; right:0; bottom:0; left:0; width:15px; height:15px; margin:auto; background-color:#000}
+
+    /* 닫기 버튼 */
+    .lnb .menu_hide{position:absolute; top:7px; right:100%; width:30px; height:30px}
+    .lnb .menu_hide .menu_btn{display:block; position:relative; width:inherit; height:inherit; background-color:#ccc}
+    .lnb .menu_hide .menu_btn:before{display:block; position:absolute; top:0; right:0; bottom:0; left:0; width:10px; height:10px; margin:auto; background-color:#000}
+    .lnb_show .menu_hide{right:15px}
+
+    /* 메뉴 상단 */
+    .lnb .menu_header{display:block; position:absolute; top:0; left:0; width:100%}
+
+    /* lnb 링크 */
+    .lnb .link{position:relative; padding:14px 20px; font-size:0; line-height:0}
+    .lnb .link_item{display:inline-block; margin-left:10px; vertical-align:top}
+    .lnb .link_item:first-child{margin-left:0}
+    .lnb .link_anchor,.lnb .link_button{color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+
+    /* lnb 언어 */
+    .lnb .language{position:relative}
+    .lnb .language_panel{display:none; position:absolute; top:100%; left:0; z-index:30; width:100%; background-color:#fff; border:1px solid #000}
+    .lnb .language_anchor{font-size:14px; line-height:16px}
+    .lnb .language.active .language_panel{display:block}
+
+    /* 메뉴 상단 사이트 */
+    .lnb .site{position:relative; padding:14px 20px; background-color:#eee}
+    .lnb .site_item{display:inline-block; position:relative; margin-left:11px; padding-left:14px}
+    .lnb .site_item:before{display:block; position:absolute; top:0; bottom:0; left:0; width:3px; height:3px; margin-top:auto; margin-bottom:auto; background-color:#000}
+    .lnb .site_anchor{display:block; position:relative; color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+    .lnb .site_item:first-child{margin-left:0; padding-left:0}
+    .lnb .site_item:first-child:before{display:none}
+
+    /* 1차 메뉴 */
+    .lnb .menu .depth1{height:inherit; z-index:10}
+    .lnb .menu .depth1_list{position:relative; min-height:100%}
+    .lnb .menu .depth1_item{border-bottom:1px solid #ccc}
+    .lnb .menu .depth1_text{display:block; position:relative; padding-top:15px; padding-bottom:15px; color:#000; font-size:18px; line-height:23px; letter-spacing:-0.03em; text-decoration:none; transition-property:font-weight}
+    .lnb .menu .depth1_text:after{display:block; position:absolute; top:0; right:0; bottom:0; margin-top:auto; margin-bottom:auto}
+    .lnb .menu .depth1_text[target='_blank']:after{width:15px; height:15px; background-color:#000; transition:none}
+    .lnb .menu .depth1_item.has .depth1_text:after{width:15px; height:2px; background-color:#999; transition:none}
+
+    /* 1차 메뉴 활성화 */
+    .lnb .menu .depth1_item.active .depth1_text{font-weight:500}
+    .lnb .menu .depth1_item.has.active .depth1_text:after{background-color:#000}
+
+    /* 2차 메뉴 */
+    .lnb .menu .depth2{transition-property:visibility,opacity}
+    .lnb .menu .depth2_list{transition-property:padding-top,padding-bottom,border-top-width; border:0 solid #000}
+    .lnb .menu .depth2_item{transition-property:border-bottom-color}
+    .lnb .menu .depth2_text{display:block; position:relative; padding-right:40px; padding-left:10px; color:#000; letter-spacing:-0.03em; text-decoration:none; box-sizing:border-box; transition-property:padding-top,padding-bottom,color}
+    .lnb .menu .depth2_text:before{display:block; position:absolute; top:9px; left:2px; width:0; height:0; background-color:#000; transition-property:none}
+    .lnb .menu .depth2_text:after{display:block; visibility:hidden; opacity:0; position:absolute; top:0; right:0; bottom:0; margin-top:auto; margin-bottom:auto; transition:none}
+    .lnb .menu .depth2_text[target='_blank']:after{width:0; height:0; background-color:#000}
+    .lnb .menu .depth2_item.has .depth2_text:after{width:10px; height:2px; background-color:#999}
+
+    /* 2차 메뉴 활성화 */
+    .lnb_show .lnb .menu .depth1_item.active .depth2{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2{right:0; z-index:20}
+    .lnb .menu .depth1_item.active .depth2_list{padding-top:4px; padding-bottom:26px; border-top-width:1px}
+    .lnb .menu .depth1_item.active .depth2_item{margin-top:13px}
+    .lnb .menu .depth1_item.active .depth2_text{color:#000; font-size:15px; line-height:20px}
+    .lnb .menu .depth1_item.active .depth2_text:before{width:5px; height:5px}
+    .lnb .menu .depth1_item.active .depth2_text:after{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2_text[target='_blank']:after{width:12px; height:12px}
+    .lnb .menu .depth1_item.has .depth2_item.has.active .depth2_text:after{background-color:#000}
+
+    /* 3차 메뉴 */
+    .lnb .menu .depth3{transition-property:visibility,opacity,padding-top,padding-bottom}
+    .lnb .menu .depth3_list{padding-left:15px; padding-right:15px; transition-property:margin-top,padding-top,padding-bottom}
+    .lnb .menu .depth3_item{padding-left:10px}
+    .lnb .menu .depth3_item:before{display:block; position:absolute; top:0; left:0; width:0; height:0; background-color:#000; transition:none}
+    .lnb .menu .depth3_text{display:block; padding-right:25px; color:#000; letter-spacing:-0.03em; text-decoration:none; transition-property:color,font-weight}
+    .lnb .menu .depth3_text:after{display:block; visibility:hidden; opacity:0; position:absolute; top:0; right:0; bottom:0; margin-top:auto; margin-bottom:auto; transition:none}
+    .lnb .menu .depth3_text[target='_blank']:after{top:0; right:0; width:0; height:0; background-color:#000}
+    .lnb .menu .depth3_item.has .depth3_text:after{width:10px; height:2px; background-color:#999}
+
+    /* 3차 메뉴 활성화 */
+    .lnb_show .lnb .menu .depth1_item.active .depth2_item.active .depth3{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_list{padding-top:4px; padding-bottom:14px; margin-top:12px; background-color:#eee; border-top-width:1px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item{margin-top:9px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item:before{top:10px; width:3px; height:3px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_text{color:#000; font-size:15px; line-height:20px; letter-spacing:-0.03em}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_text:after{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_text[target='_blank']:after{top:4px; width:12px; height:12px}
+    .lnb .menu .depth1_item.has .depth2_item.has .depth3_item.has.active .depth3_text:after{background-color:#000}
+
+    /* 4차 메뉴 */
+    .lnb .menu .depth4{transition-property:visibility,opacity}
+    .lnb .menu .depth4_list{padding-right:10px; transition-property:padding-top,padding-bottom; border:0 solid #000}
+    .lnb .menu .depth4_item{padding-left:11px}
+    .lnb .menu .depth4_item:before{display:block; position:absolute; top:0; left:0; width:0; height:0; background-color:#5a5d6b; transition:none}
+    .lnb .menu .depth4_text{display:block; color:#525252; transition:none}
+    .lnb .menu .depth4_text:after{display:block; visibility:hidden; opacity:0; position:absolute; top:0; right:0; bottom:0; margin-top:auto; margin-bottom:auto; transition:none}
+    .lnb .menu .depth4_text[target='_blank']:after{top:0; right:0; width:0; height:0; background-color:#000}
+
+    /* 4차 메뉴 활성화 */
+    .lnb_show .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_list{margin-top:10px; padding-top:5px; padding-bottom:5px; border-top-width:1px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_item{margin-top:6px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_item:before{top:10px; width:5px; height:1px}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_text{color:#000; font-size:14px; line-height:19px; letter-spacing:-0.03em}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_text:after{visibility:visible; opacity:1}
+    .lnb .menu .depth1_item.active .depth2_item.active .depth3_item.active .depth4_text[target='_blank']:after{width:10px; height:10px}
+
+    /* 5차 메뉴 */
+    .lnb .menu .depth5{display:none}
+
+    /*
+        2단 메뉴 메뉴사용시  multiple 클래스 추가 필요함
+        <nav class="menu after eachdown multiple">
+
+        .lnb_show .lnb .menu .depth1_list{padding-right:70%; }
+        .lnb .menu .depth1_item{position:static; }
+        .lnb .menu .depth2{overflow-x:hidden;  overflow-y:auto;  @include position(absolute, 0, 0, px, px);  width:70%;  height:100%; }
+        .lnb .menu .depth2_list{margin-left:10px; }
+        */
+
+}
+@media all and (max-width:360px){
+    .lnb .menu{width:100%}
+}
+
+/* 하단 배너 */
+#footer .banner{position:relative; border-width:0}
+#footer .banner:before{display:block; position:absolute; top:0; left:50%; width:100vw; border-top:1px solid #ccc; transform:translateX(-50%)}
+#footer .banner_list{padding-left:140px}
+#footer .banner_item{margin-left:30px; padding-top:20px; padding-bottom:20px}
+#footer .banner_anchor{color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+#footer .banner_anchor:hover{text-decoration:underline}
+#footer .banner_control{position:absolute; top:0; bottom:0; left:20px; height:20px; margin-top:auto; margin-bottom:auto; font-size:0; line-height:0}
+#footer .banner_control .slick-arrow{display:inline-block; width:20px; height:20px; margin-left:5px; background-color:#000}
+#footer .banner_control .banner_prev{margin-left:0}
+#footer .banner_control .slick-pause{background-color:#666}
+#footer .banner_more{display:inline-block; width:20px; height:20px; margin-left:5px; background-color:#000; vertical-align:top}
+
+/* 하단 관련사이트 */
+#footer .site{position:relative; background-color:#eee; font-size:0; line-height:0}
+#footer .site:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:100%; background-color:#eee; transform:translateX(-50%)}
+#footer .site_item{display:inline-block; position:relative; width:25%}
+#footer .site_item:before{display:block; position:absolute; top:0; bottom:0; left:0; width:1px; height:20px; margin-top:auto; margin-bottom:auto; background-color:#000}
+#footer .site_item:first-child:before{display:none}
+#footer .site_show{display:block; width:100%; position:relative; padding-top:20px; padding-bottom:20px; padding-left:20px; text-align:left; color:#000; font-size:16px; line-height:18px; letter-spacing:-0.03em}
+#footer .site_show:before{display:block; position:absolute; top:0; right:20px; bottom:0; width:15px; height:15px; margin-top:auto; margin-bottom:auto; background-color:#000}
+#footer .site_show:hover{background-color:#ddd}
+#footer .site_panel{display:none; position:absolute; bottom:100%; left:0; width:100%; background-color:#fff; border:1px solid #333}
+#footer .site_anchor{color:#000; font-size:16px; line-height:18px}
+
+/* 활성화 */
+#footer .site_item.active .site_panel{display:block}
+
+/* 하단 바로가기 */
+#footer .link{position:relative; font-size:0; line-height:0}
+#footer .link:before{display:block; position:absolute; bottom:0; left:50%; width:100vw; border-bottom:1px solid #ccc; transform:translateX(-50%)}
+#footer .link_list{padding-top:20px; padding-bottom:20px}
+#footer .link_item{display:inline-block; position:relative; padding-right:20px; padding-left:20px}
+#footer .link_item:before{display:block; position:absolute; top:0; bottom:0; left:0; width:1px; height:10px; margin-top:auto; margin-bottom:auto; background-color:#ccc}
+#footer .link_item:first-child:before{display:none}
+#footer .link_anchor{color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em}
+#footer .link_anchor:hover{text-decoration:underline}
+
+/* 하단 정보 */
+#footer .footer_content{position:relative; margin-top:30px; margin-bottom:30px}
+#footer .logo{display:inline-block; margin-left:20px}
+#footer .info{display:inline-block; margin-left:40px; vertical-align:middle}
+#footer .wa{position:absolute; top:0; right:0}

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+/* visual */
+.rowgroup1{position:relative; z-index: 1; padding-bottom: 121px; font-size: 0; line-height: 0;}
+.visual{display:inline-block; position: relative; width: calc(100% - 620px); vertical-align: top;}
+.visual_list{left: -210px; width: calc(100% + 210px); border-radius: 0 60px 0 0; overflow: hidden;}
+.visual_list .slick-list{padding-left: 210px;}
+.visual_list .visual_item{margin-left: 40px; border-radius:0 60px; overflow: hidden;}
+.visual_list .visual_anchor{display: block; position: relative; width: 100%; height: 100%;}
+
+.visual_control{display: inline-block; position: absolute; bottom:-35px; right:0; padding: 20px 0 20px 37px; border-top-left-radius: 70px; background-color: #fff;}
+.visual_control .visual_num{display: inline-block; position: relative; margin-right: 25px; vertical-align: top; font-family: 'Paperlogy';}
+.visual_control .visual_num span{font-size:14px; line-height:45px; letter-spacing:0; font-weight: 700;}
+.visual_control .visual_num .slash,
+.visual_control .visual_num .visual_total{font-weight: 400; color:#666666;}
+.visual_control .visual_num .slash{margin: 0 3px;}
+
+.visual_control .visual_btn{display: inline-block; position: relative; width:45px; height: 45px; margin-right: 10px; border-radius: 50%; box-shadow:0 7px 15px 0 rgba(0,0,0,0.15);}
+.visual_control .visual_btn:before{display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width:8px; height:14px; margin:auto; background-image:url("../../../site/edtotal/images/main/main_sprite.png"); background-repeat: no-repeat;}
+.visual_control .visual_btn.visual_prev:before{background-position: left top;}
+.visual_control .visual_btn.visual_next:before{background-position: left -48px;}
+.visual_control .visual_btn:hover.visual_prev:before{background-position: left -24px;}
+.visual_control .visual_btn:hover.visual_next:before{background-position: left -72px;}
+.visual_control .visual_btn.visual_auto:before{width:8px; height:11px; background-position: left -96px;}
+.visual_control .visual_btn.slick-play:before{background-position: left -117px;}
+
+
+/* goto */
+.goto{display: inline-block; position:relative; width: 620px; padding-left: 80px; vertical-align: top;}
+.goto .goto_title{font-family:'Paperlogy'; font-size: 26px; line-height: 26px; letter-spacing: 0; font-weight: 600;}
+
+.goto .service{display: block; position: relative; padding: 34px 0 38px 48px; border-radius:50px 50px 0 50px; background-color: #e6f0f9;}
+.goto .service .service_item{display: inline-block; position: relative; width:50%; margin-top: 28px; vertical-align: top;}
+.goto .service .service_item:nth-child(2n){width:calc(50% - 30px); margin-left: 30px;}
+.goto .service .service_anchor{position: relative; z-index: 1; padding-left:28px; font-family:'Paperlogy'; font-size: 17px; line-height: 20px; letter-spacing: 0; transition: all cubic-bezier(0.4, 0, 0.2, 1);}
+.goto .service .service_anchor:before{display: block; position: absolute; top: 0; left: 0; background-image: url("../../../site/edtotal/images/main/service_sprite.png"); background-repeat: no-repeat;}
+.goto .service .service_item:nth-child(1) .service_anchor:before{width:19px; height:18px; background-position:left top;}
+.goto .service .service_item:nth-child(2) .service_anchor:before{width:19px; height:19px; background-position:left -28px;}
+.goto .service .service_item:nth-child(3) .service_anchor:before{width:20px; height:21px; background-position:left -57px;}
+.goto .service .service_item:nth-child(4) .service_anchor:before{width:20px; height:19px; background-position:left -88px;}
+.goto .service .service_item:nth-child(5) .service_anchor:before{width:23px; height:21px; background-position:left -117px;}
+.goto .service .service_item:nth-child(6) .service_anchor:before{width:20px; height:20px; background-position:left -148px;}
+.goto .service .service_item:nth-child(7) .service_anchor:before{width:22px; height:21px; background-position:left -178px;}
+.goto .service .service_item:nth-child(8) .service_anchor:before{width:21px; height:20px; background-position:left -209px;}
+.goto .service .service_item .service_anchor:after{display:block; position: absolute; left:-8px; bottom: -4px; z-index: -1; width:0; height:12px; border-radius: 50px; background-color: #c4ddf4; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.goto .service .service_anchor:hover{color: #005aab; font-weight: 600;}
+.goto .service .service_anchor:hover:after{width:calc(100% + 24px);}
+
+/* 찾기 */
+.goto .search_wrap{display: block; position: relative; margin-top: 15px; padding: 31px 0 38px 48px; border-radius:50px 50px 0 50px; background-color: #fdefe3;}
+.goto .search_btn_item{display: inline-block; position: relative;}
+.goto .search_btn_item button{font-family:'Paperlogy'; font-size: 22px; line-height: 30px; font-weight: 600; color: #444444;}
+.goto .search_btn_item.active button{font-size:26px; color: #e94858;}
+
+.goto .search_item{display: none;}
+.goto .search_item.active{display:block;}
+.goto .search_select_box{display:inline-block; position:relative; width:100%; font-size:0; line-height:0; box-sizing:border-box;}
+.goto .search_select_box .search_select{display:inline-block; width:100%; min-height:46px; padding-right:38px; padding-left:20px; border:1px solid #e0d5cc; border-radius:6px; outline:none; background:#fff url("../../../site/edtotal/images/main/main_sprite.png") no-repeat left 150px; font-size: 16px; color:#666666; line-height:46px; vertical-align:top; box-sizing:border-box; appearance:none;-webkit-appearance:none; -moz-appearance:none;}
+.goto .search_select_box .search_select:focus{border:1px solid #000}
+.goto .search_input{display:inline-block; width:100%; min-height:46px; padding-right:20px; padding-left:20px; border:1px solid #e0d5cc; border-radius:6px; outline:none; background-color:#fff; font-size: 16px; color:#666; line-height:46px; vertical-align:top; box-sizing:border-box;}
+.goto .search_input:focus{border:1px solid #000;}
+.goto .search_input::placeholder{color:#666;}
+
+.goto .search_wrap .search_submit{display: inline-block; position: relative; width: 80px; height: 46px; border-radius: 15px 15px 15px 5px; background: #ef5665 url("../../../site/edtotal/images/main/main_sprite.png") no-repeat center -145px;}
+.goto .search_wrap .search_submit:hover{background-color: #e44958;}
+
+
+/* 수강신청 // 공통 */
+.padding_left_box{padding-left: 58px;}
+.main_title{display:inline-block; position:relative; font-family: 'Paperlogy'; font-size: 30px; letter-spacing: 0; font-weight: 700;}
+.left_box{display: inline-block; width: 211px; margin-top: 50px;}
+.right_box{display: inline-block; position: relative; width: calc(100% - 211px); padding-left: 80px; vertical-align: top;}
+.left_box .tab_item button{display: block; position: relative; font-family: 'Paperlogy'; font-size: 18px; line-height: 50px; font-weight: 500; }
+.left_box .tab_item.active button{font-weight: 700; color: #e94858;}
+
+.right_box .grey_box{display: inline-block; position: relative; width: calc((100% - 30px) / 2); margin-right: 30px;}
+.right_box .grey_box:nth-child(2n){margin-right: 0;}
+.right_box .grey_box:hover .c_anchor{box-shadow:11px 16px 20px 0 rgba(17,6,45,0.1);}
+
+.right_box .c_title{display:block; margin-top:7px; font-size: 20px; line-height: 24px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.right_box .c_anchor{display: block; position: relative; width: 100%; border: 1px solid #e3e4e5; border-radius:15px; background-color: #fff; box-shadow:none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+
+.main_more{display:inline-block; position:absolute; top:-31px; right:0; padding-right:27px; font-family: 'Paperlogy'; font-size: 14px; line-height: 20px; letter-spacing: 0; font-weight: 500;}
+.main_more:before{display: block; position: absolute; top: 0; bottom: 0; right:11px; width:10px; height:10px; margin: auto 0; background:url("../../../site/edtotal/images/main/main_sprite.png") no-repeat left bottom;}
+@media all and (min-width: 1001px) {
+    .left_box{overflow: hidden;}
+    .left_box .tab_item button:before{display: block; position: absolute; top: -4px; bottom: 0; left:calc(100% + 48px); opacity: 0; visibility: hidden; width:0; height:3px; margin: auto 0; background-color:#ef5665; transition: all 0.4s ease-in-out;}
+    .left_box .tab_item.active button:before{opacity:1; visibility:visible; width: 200%;}
+}
+
+/* 수강신청 */
+.rowgroup2{position: relative;}
+.rowgroup2:before{display: block; position: absolute; bottom:43px; left:-5px; width: 960px; height: 690px; background: url("../../../site/edtotal/images/main/main_bg.png") no-repeat;}
+.class{display: block; position: relative; font-size: 0; line-height: 0;}
+.class .main_title{position: absolute; top:-1px;}
+.class_panel .class_item:nth-child(n + 3){margin-top:35px;}
+.class_panel .c_anchor{height: 213px; padding:39px 34px 20px 33px;}
+.class .class_content{min-height: 461px;}
+.class_item .category{display: inline-block; position: absolute; top:-16px; left: 0; width:100px; height: 40px; border-radius: 15px 15px 15px 0; font-family: 'Paperlogy'; font-size: 18px; line-height: 40px; color: #fff; font-weight: 700; text-align: center;}
+.class_item .category.type1{background-color: #ef5665;}
+.class_item .category.type2{background-color: #0965b7;}
+.class_item .category.type3{background-color: #666666;}
+.class_item .category.type4{background-color: #b653e4;}
+.class_item .class_place{display:block; font-size: 15px; line-height: 25px; font-weight: 200; color: #ef5665;}
+
+.class_item ul{margin-top: 18px;}
+.class_item ul li{display: inline-block; position: relative; width: 63%; padding-left: 12px;}
+.class_item ul li:nth-child(2n){width: 37%;}
+.class_item ul li:before{display: block; position: absolute; top:16px; left: 0; width: 4px; height: 4px; border-radius: 50%; background-color: #bdbdbd;}
+.class_item ul li span{font-size: 16px; line-height: 34px;}
+.class_item ul li .dt{width:99px; font-weight: 500;}
+.class_item ul li:nth-child(2n) .dt{width: 84px;}
+.class_item ul li .dd{color: #444444; font-weight: 300;}
+
+
+/* 퀵 아이콘 */
+.rowgroup3{display: block; position: relative; margin-top: 80px;}
+.quick{}
+.quick{display: block; position: relative; font-size: 0; line-height: 0;}
+.quick ul li{display: inline-block; position: relative; width: calc((100% - 248px) / 9); margin-right: 31px;}
+.quick ul li:last-child{margin-right: 0;}
+.quick ul li a{display:block; position:relative; font-family:'Paperlogy'; font-size: 17px; line-height: 22px; color: #333333; font-weight: 500; text-align: center;}
+.quick ul li:hover a{color: #000000;}
+.quick ul li a:before{display: block; position: absolute; top: 120px; left: 0; right: 0; z-index: 1; width: 40px; height: 40px; margin: 0 auto; border-radius: 50%; background:#fff url("../../../site/edtotal/images/main/q_icon.png") no-repeat center center; opacity: 0; transition:transform, visibility, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.quick ul li:hover a:before{opacity: 1; transform: scale(1); visibility: visible;}
+.quick ul li i{display: inline-block; position: relative; width: 100%; height:140px; margin-bottom: 12px; border-radius: 15px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.quick ul li:nth-child(4n-3) i{background-color: #fff7e1;}
+.quick ul li:nth-child(4n-2) i{background-color: #fff3f1;}
+.quick ul li:nth-child(4n-1) i{background-color: #defcf2;}
+.quick ul li:nth-child(4n) i{background-color: #f0f5ff;}
+.quick ul li:nth-child(4n-3):hover i{background-color: #ffecb6;}
+.quick ul li:nth-child(4n-2):hover i{background-color: #fde8e5;}
+.quick ul li:nth-child(4n-1):hover i{background-color: #caf0e3;}
+.quick ul li:nth-child(4n):hover i{background-color: #e3ecfc;}
+
+.quick ul li i:after,
+.quick ul li i:before{display: block; position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto; background-image: url("../../../site/edtotal/images/main/q_quick_sprite.png"); background-repeat: no-repeat; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.quick ul li:nth-child(1) i:before{width:59px; height:50px; background-position:left top;}
+.quick ul li:nth-child(2) i:before{width:75px; height:76px; background-position:left -81px;}
+.quick ul li:nth-child(3) i:before{width:80px; height:74px; background-position:left -167px;}
+.quick ul li:nth-child(4) i:before{width:83px; height:73px; background-position:left -251px;}
+.quick ul li:nth-child(5) i:before{width:83px; height:74px; background-position:left -334px;}
+.quick ul li:nth-child(6) i:before{width:80px; height:68px; background-position:left -418px;}
+.quick ul li:nth-child(7) i:before{width:79px; height:83px; background-position:left -496px;}
+.quick ul li:nth-child(8) i:before{width:79px; height:85px; background-position:left -589px;}
+.quick ul li:nth-child(9) i:before{width:78px; height:77px; background-position:left -684px;}
+
+.quick ul li i:after{top:18px; background-image: url("../../../site/edtotal/images/main/quick_hover_sprite.png"); transform:scale(0.85); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.quick ul li:nth-child(1) i:after{width:86px; height:81px; background-position:left top;}
+.quick ul li:nth-child(2) i:after{width:75px; height:76px; background-position:left -91px;}
+.quick ul li:nth-child(3) i:after{top:0; width:101px; height:87px; background-position:left -177px;}
+.quick ul li:nth-child(4) i:after{width:96px; height:83px; background-position:left -274px;}
+.quick ul li:nth-child(5) i:after{width:97px; height:85px; background-position:left -367px;}
+.quick ul li:nth-child(6) i:after{width:93px; height:77px; background-position:left -462px;}
+.quick ul li:nth-child(7) i:after{width:92px; height:96px; background-position:left -549px;}
+.quick ul li:nth-child(8) i:after{width:92px; height:98px; background-position:left -655px;}
+.quick ul li:nth-child(9) i:after{width:92px; height:88px; background-position:left -763px;}
+.quick ul li:hover i:after{transform: scale(1); z-index: 4}
+
+
+@media all and (min-width: 1001px) {
+    .quick ul li:hover i{border-radius:30px; transform: translateY(-10px);}
+    .quick ul li i:before{opacity:1; visibility: visible; transition:transform, visibility, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+    .quick ul li:hover i:before{opacity: 0; visibility: hidden;}
+    .quick ul li i:before{background-image: url("../../../site/edtotal/images/main/quick_sprite.png");}
+    .quick ul li:nth-child(1) i:before{width:59px; height:50px; background-position:left top;}
+    .quick ul li:nth-child(2) i:before{width:60px; height:55px; background-position:left -60px;}
+    .quick ul li:nth-child(3) i:before{width:66px; height:53px; background-position:left -125px;}
+    .quick ul li:nth-child(4) i:before{width:67px; height:52px; background-position:left -188px;}
+    .quick ul li:nth-child(5) i:before{width:68px; height:54px; background-position:left -250px;}
+    .quick ul li:nth-child(6) i:before{width:64px; height:47px; background-position:left -314px;}
+    .quick ul li:nth-child(7) i:before{width:63px; height:63px; background-position:left -371px;}
+    .quick ul li:nth-child(8) i:before{width:64px; height:65px; background-position:left -444px;}
+    .quick ul li:nth-child(9) i:before{width:64px; height:56px; background-position:left -519px;}
+    .quick ul li:nth-child(2):hover i:after{transform: scale(1.15); z-index: 4;}
+    .quick ul li:nth-child(2) i:after{left:1px; transform: scale(1);}
+}
+
+
+/* 게시판 */
+.rowgroup4{display: block; position: relative; margin-top: 93px; margin-bottom: 80px; font-size: 0; line-height: 0;}
+.board{}
+.board .main_title{top: 26px;}
+.board .left_box{margin-top: 65px;}
+.board .left_box .tab_item button{line-height:40px;}
+
+.board_item{display: none;}
+.board_item.active{display: block;}
+.board_item .grey_box:nth-child(n + 3){margin-top: 20px;}
+.board_item .c_anchor{height: 89px; padding: 31px 32px 30px 34px;}
+.board_item .board_new{display: inline-block; position: absolute; top:-11px; left: 0; width:54px; height: 26px; border-radius: 10px 10px 10px 0; border: 2px solid #ef5665; background-color: #fff; font-family: 'Paperlogy'; font-size:12px; line-height: 22px; font-weight: 600; color:#ef5665; text-align: center;}
+.board_item .c_title{width:calc(100% - 165px); margin-top:0; font-size: 19px;}
+.board_item .board_date{display: inline-block; position: absolute; top: 0; bottom: 0; right:32px; height: 15px; margin: auto 0; font-size:15px; line-height: 15px; color: #666666; font-weight: 300;}
+
+/* 평생학습 생생소식 */
+.rowgroup5{display: block; position: relative; padding-top: 96px; padding-bottom: 116px; font-size: 0; line-height: 0;}
+.rowgroup5:before{display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, #b1d6f6 0%,#e2fafe 70%); }
+.rowgroup5:after{display: block; position: absolute; bottom: 0; left: 0; width: 100%; height:calc(50% - 28px); background-color: #fff; }
+.news{position:relative; z-index: 1;}
+.news:before{display: block; position: absolute; left: 79px; bottom:-104px; width:100vw; height: 300px; border-top-left-radius:200px; background-color: #fff;}
+.news .news_wrap{position: relative;}
+.news .main_title{position: absolute; top:-40px; line-height: 36px;}
+.news .news_sub{margin-top:47px; font-family: 'Paperlogy'; font-size: 15px; line-height: 22px; font-weight: 600; color:#666666; text-align: left;}
+.news .news_list{width: calc(100% + 34px); margin-left: -34px;}
+.news .news_item{margin-left: 34px;}
+.news .news_anchor{display: block; position: relative; width: 100%; height: 100%;}
+.news .news_img{height:290px; border-radius: 15px; overflow: hidden;}
+.news .news_item .news_img img{width:100%; height:100%; transform: scale(1); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
+.news .news_item:hover .news_img img{transform: scale(1.05);}
+.news .news_text{display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; min-height:52px; font-size: 16px; line-height:26px; letter-spacing: -0.025em;}
+.news .news_control{display: inline-block; position: absolute; top:187px; left: 0;}
+.news_control .news_btn{display: inline-block; position: relative; width:46px; height:46px; margin-right: 5px; border-radius: 50%; box-shadow:0 7px 15px 0 rgba(0,0,0,0.15); background-color: #fff;}
+.news_control .news_btn:before{display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width:8px; height:14px; margin:auto; background-image:url("../../../site/edtotal/images/main/main_sprite.png"); background-repeat: no-repeat;}
+.news_control .news_btn.news_prev:before{background-position: left top;}
+.news_control .news_btn.slick-disabled:before{opacity: 0.4;}
+.news_control .news_btn.news_next:before{background-position: left -48px;}
+.news .main_more{top: -35px;}
+.news .main_more:hover{color: #4a58d9;}
+.news .main_more:hover:before{background-image:url("../../../site/edtotal/images/main/more_hover.png");}
+
+

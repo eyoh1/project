@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* sub_head */
+@media all and (min-width: 1001px) {
+    #container{background-color: inherit;}
+    
+    .sub_head{height:auto; padding-top:127px; padding-bottom: 17px; border-bottom: 1px solid #103e89; text-align: left;}
+    .addons{top: auto; bottom: 26px;}
+    .addons .addons_button{border:1px solid #e4e4e4;}
+    .addons .addons_button:hover{border:none; border-color: #e4e4e4;}
+}
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .sub_head{padding-bottom: 50px;}
+    .addons{bottom: 10px;}
+}
+
+/* 고대비 */
+
+.color_switch .sub_head .sub_title h2,
+.color_switch .breadcrumbs .breadcrumbs_item a{color: #fff;}
+.color_switch .breadcrumbs .breadcrumbs_item:before,
+.color_switch .breadcrumbs .breadcrumbs_item:first-child{filter:brightness(0) invert(1);}
+.color_switch .sub_head {border-bottom-color: rgba(255, 255, 255, 0.5);}
+
+.color_switch .text_btn span{color: #fff;}
+
+.color_switch .sitemap_depth2 .sitemap3_item a,
+.color_switch .sitemap_title h3 a,
+.color_switch .history .history_box p,
+.color_switch .history .history_year,
+.color_switch .history .history_box .history_em{color: #fff;}
+
+.color_switch .tab .tab_list.n1 > .tab_item > .tab_button{color: #fff;}
+.color_switch .tab .tab_list.n1 > .tab_item.active > .tab_button{background-color: #fff; border-color: #fff; box-shadow: none; color: #000}
+.color_switch .tab .tab_list.n1 > .tab_item:hover > .tab_button{border-color: #fff; color: #fff;}
+.color_switch .tab .tab_list.n1 > .tab_item.active:hover > .tab_button{ color: #000;}
+
+
+.color_switch .p-nav--group .p-nav__link:not(.active):hover{border-color: #fff; color: #fff;}
+.color_switch .p-nav--group .p-nav__link{color: #fff;}
+.color_switch .p-nav--group .p-nav__link.active{background-color: #fff; border-color: #fff; color: #000;}
+
+.color_switch .bbs_page:before{filter:brightness(0) invert(1);}
+.color_switch .p-table td .p-table__subject_text,
+.color_switch .p-form-checkbox__label,
+.color_switch .p-form-radio__label,
+.color_switch .p-author__info .p-split,
+.color_switch .bbs.bbs__gallery .p-media__heading-text,
+.color_switch .p-post-move__link,
+.color_switch .p-post-move__title,
+.color_switch .bbs_page .item{color: #fff;}
+.color_switch .p-table{background-color: #fff;}
+.color_switch .p-table colgroup+tbody tr:first-child th,
+.color_switch .p-table colgroup+tbody tr:first-child td,
+.color_switch .p-post-move{border-top-color: #fff; background-color:#000;}
+
+.color_switch .title_box .box_wrap .caution.type2 .caution_icon{filter:brightness(0) invert(1);}
+
+.color_switch .title_box .box_wrap .caution,
+.color_switch .arrow_list li,
+.color_switch .table_unit,
+.color_switch ol.num > li,
+.color_switch ul.num > li,
+.color_switch .caution,
+.color_switch .bu li .caution,
+.color_switch .dl .dt:has(+ .dd):before,
+.color_switch .dl .dt,
+.color_switch .bu li,
+.color_switch h5,
+.color_switch h3{color: #fff;}
+
+.color_switch .p-table .p-form-checkbox__label,
+.color_switch .p-table .p-form-radio__label,
+.color_switch .p-table .arrow_list li,
+.color_switch .p-table ol.num > li,
+.color_switch .p-table ul.num > li,
+.color_switch .p-table .caution,
+.color_switch .p-table .bu li .caution,
+.color_switch .p-table .dl .dt:has(+ .dd):before,
+.color_switch .p-table .dl .dt,
+.color_switch .p-table .bu li,
+.color_switch .p-table .bu li,
+
+.color_switch .table .arrow_list li,
+.color_switch .table ol.num > li,
+.color_switch .table ul.num > li,
+.color_switch .table .bu li .caution,
+.color_switch .table .bu li,
+.color_switch .table .bu li,
+
+.color_switch .step .arrow_list li,
+.color_switch .step ol.num > li,
+.color_switch .step ul.num > li,
+.color_switch .step .caution,
+.color_switch .step .bu li .caution,
+.color_switch .step .dl .dt:has(+ .dd):before,
+.color_switch .step .dl .dt,
+.color_switch .step .bu li,
+.color_switch .step .bu li,
+
+.color_switch .caution_box .arrow_list li,
+.color_switch .caution_box ol.num > li,
+.color_switch .caution_box ul.num > li,
+.color_switch .caution_box .caution,
+.color_switch .caution_box .bu li .caution,
+.color_switch .caution_box .dl .dt:has(+ .dd):before,
+.color_switch .caution_box .dl .dt,
+.color_switch .caution_box .bu li,
+.color_switch .caution_box .bu li,
+
+.color_switch .box .text_btn span,
+.color_switch .box .arrow_list li,
+.color_switch .box ol.num > li,
+.color_switch .box ul.num > li,
+.color_switch .box .caution,
+.color_switch .box .bu li .caution{color: #575e6d;}
+
+.color_switch .p-form__label{color:#fff !important;}
+
+.color_switch .p-datepicker-days button.day:hover,
+.color_switch .p-datepicker-days thead th,
+.color_switch .p-datepicker__head .p-datepicker-switch{color: #000;}
+@media all and (min-width: 1001px) {
+    .color_switch #container:before{display: block;position: absolute;top:-137px;left:50%;right: 0;transform: translateX(-50%);width: 1803px;height: 225px;margin: 0 auto;border-radius: 100px 20px;background-color: #eef6fe;}
+
+}
+@media all and (max-width: 1000px) {
+    .color_switch #header .group:before{background-color: #000;}
+    .color_switch .sub_head .sub_title h2{color: #000;}
+    .color_switch .lnb .menu_show .menu_btn:before{filter:brightness(0) invert(1);}
+}
+
+/* 검색 수정 25.01.14 */
+.search.logs_open{z-index:50;}
+.search.logs_open .search_form{overflow:visible;}
+.search .search_box .query_wrap{height:80px;border:none;}
+.search .search_box .search_input{position:absolute;z-index:5;width:100%;height:auto;padding:2px;}
+.search.logs_open .search_box .search_input{z-index:20;}
+.search .search_box .search_input:before{display:block;position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;z-index:0;border:2px solid #3c7ae2;border-radius:40px;background-color:#fff;}
+.search .search_box .search_input .search_query{position:relative;z-index:10;height:76px;}
+.search .search_box .option_toggle{z-index:25;margin-top:15px;}
+.search .search_form .form_top .search_submit{z-index:25;margin-top:10px;}
+.search .search_box .search_logs{display:block;visibility:hidden;overflow:hidden;position:relative;z-index:10;height:0;border-radius:0 0 40px 40px;transition:.25s ease-in-out;opacity:0;}
+.search .search_box .search_logs.active{visibility:visible;opacity:1;}
+.search .search_box .search_logs:before{display:block;position:absolute;top:0;right:32px;left:32px;height:1px;background-color:#e9e9e9;}
+.search .search_box .search_logs ul{padding-top:16px;padding-bottom:16px;font-size:0;line-height:normal;}
+.search .search_box .search_logs li{position:relative;}
+.search .search_box .search_logs a{display:flex;align-items:center;height:45px;padding-right:120px;padding-left:50px;color:#0a266b;font-family:'SCoreDream';font-size:18px;font-weight:400;}
+.search .search_box .search_logs a em{font-weight:600;}
+.search .search_box .search_logs a:before{display:none;position:absolute;top:calc(50% - 8px);right:94px;width:16px;height:16px;background-image:url(/search/images/search.png);}
+.search .search_box .search_logs .search_delete{display:block;position:absolute;top:calc(50% - 7px);right:50px;width:14px;height:14px;background-image:url(/search/images/delete.png);}
+.search .search_box .search_logs a:focus,.search .search_box .search_logs a:has(+.search_delete:focus){background-color:#eef6fe;text-decoration:none;}
+.search .search_box .search_logs a:focus:before{display:block;}
+@media all and (min-width:1001px){
+    .search .search_box .search_logs a:hover{background-color:#eef6fe;}
+    .search .search_box .search_logs a:hover:before{display:block;}
+}
+@media all and (max-width:1000px){
+    .search .search_box .query_wrap{height:60px;}
+    .search .search_box .search_input .search_query{height:56px;}
+    .search .search_box .option_toggle{margin-top:10px;}
+    .search .search_form .form_top .search_submit{margin-top:8px;}
+    .search .search_box .search_input:before{border-radius:30px;}
+    .search .search_box .search_logs a{height:35px;font-size:16px;}
+}
+@media all and (max-width:640px){
+    .search .search_box .option_toggle{margin-top:16px;}
+    .search .search_box .search_logs a{height:28px;padding-right:80px;padding-left:27px;font-size:14px;}
+    .search .search_box .search_logs a:before{right:50px;}
+    .search .search_box .search_logs .search_delete{right:20px;}
+}
