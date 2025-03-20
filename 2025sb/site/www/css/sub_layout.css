@@ -16,7 +16,7 @@
 
 /* 고대비 */
 
-.color_switch .sub_head .sub_title h2,
+.color_switch .sub_head .sub_title h2{color:#fff;}
 .color_switch .breadcrumbs .breadcrumbs_item a{color: #fff;}
 .color_switch .breadcrumbs .breadcrumbs_item:before,
 .color_switch .breadcrumbs .breadcrumbs_item:first-child{filter:brightness(0) invert(1);}
