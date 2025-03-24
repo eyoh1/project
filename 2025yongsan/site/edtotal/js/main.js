@@ -166,6 +166,12 @@
 
 			responsive: [
 				{
+					breakpoint: 1301,
+					settings: {
+						slidesToShow: 2,
+					}
+				},
+				{
 					breakpoint: 1001,
 					settings: {
 						autoplay: false,
