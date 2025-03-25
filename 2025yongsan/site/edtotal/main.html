@@ -253,7 +253,7 @@
                         </div>
                     </section>
                     <section class="goto">
-                        <div class="service">
+                        <div class="service goto_item">
                             <p class="goto_title">자주 찾는 서비스</p>
                             <ul class="service_list">
                                 <li class="service_item">
@@ -275,14 +275,14 @@
                                     <a href="#n" target="_blank" title="새창" class="service_anchor">학습동아리 안내</a>
                                 </li>
                                 <li class="service_item">
-                                    <a href="#n" target="_blank" title="새창" class="service_anchor">평생학습 프로그램 e-book</a>
+                                    <a href="#n" target="_blank" title="새창" class="service_anchor">평생학습 프로그램 <br> e-book</a>
                                 </li>
                                 <li class="service_item">
                                     <a href="#n" target="_blank" title="새창" class="service_anchor">러닝톡 신청 바로가기</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="search_wrap">
+                        <div class="search_wrap goto_item">
                             <ul class="search_list">
                                 <li class="search_btn_item active">
                                     <button class="search_btn" title="선택됨">강좌 찾기</button>
@@ -301,7 +301,7 @@
                                                 <div class="search_form">
                                                     <div class="search_box s_top">
                                                         <div class="search_select_box">
-                                                            <select name="sc2" title="강좌 검색" class="search_select">
+                                                            <select name="" id="" class="skip" title="전체">
                                                                 <option value="">전체</option>
                                                                 <option value="F0810101">구민정보화교육</option>
                                                                 <option value="F0810102">여성교실</option>
@@ -341,15 +341,42 @@
                                                 <legend>교육기관 검색</legend>
                                                 <div class="search_form">
                                                     <div class="search_box s_top">
-                                                        <div class="search_select">
-                                                            <button type="button" id="search01" class="select_input" data-param="전체">전체</button>
-                                                            <ul class="select_list">
-                                                                <li class="select_item"><button type="button" class="select_button" data-value="">검색 선택</button></li>
-                                                                <li class="select_item"><button type="button" class="select_button" data-value="교육강좌">교육강좌</button></li>
-                                                                <li class="select_item"><button type="button" class="select_button" data-value="체험견학">체험견학</button></li>
-                                                                <li class="select_item"><button type="button" class="select_button" data-value="공연행사">공연행사</button></li>
-                                                                <li class="select_item"><button type="button" class="select_button" data-value="시설대관">시설대관</button></li>
-                                                            </ul>
+                                                        <div class="search_select_box half">
+                                                            <select name="" id="" class="skip" title="동 선택">
+                                                                <option value="">동 선택</option>
+                                                                <option value="이촌1동">이촌1동</option>
+                                                                <option value="이촌2동">이촌2동</option>
+                                                                <option value="용문동">용문동</option>
+                                                                <option value="청파동">청파동</option>
+                                                                <option value="후암동">후암동</option>
+                                                                <option value="보광동">보광동</option>
+                                                                <option value="서빙고동">서빙고동</option>
+                                                                <option value="이태원1동">이태원1동</option>
+                                                                <option value="이태원2동">이태원2동</option>
+                                                                <option value="원효로1동">원효로1동</option>
+                                                                <option value="원효로2동">원효로2동</option>
+                                                                <option value="효창동">효창동</option>
+                                                                <option value="한강로동">한강로동</option>
+                                                                <option value="용산2가동">용산2가동</option>
+                                                                <option value="한남동">한남동</option>
+                                                                <option value="남영동">남영동</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="search_select_box half">
+                                                            <select name="" id="" class="skip" title="구분 선택">
+                                                                <option value="">구분 선택</option>
+                                                                <option value="01">동자치회관</option>
+                                                                <option value="02">도서관</option>
+                                                                <option value="03">글로벌 빌리지센터</option>
+                                                                <option value="04">복지시설</option>
+                                                                <option value="05">공공기관</option>
+                                                                <option value="06">초등학교</option>
+                                                                <option value="07">중학교</option>
+                                                                <option value="08">고등학교</option>
+                                                                <option value="09">대학교</option>
+                                                                <option value="10">시립유치원</option>
+                                                                <option value="11">민간시설</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="search_box s_bottom">
@@ -371,7 +398,8 @@
                     <section class="class padding_left_box">
                         <h2 class="main_title">수강신청</h2>
                         <div class="class_wrap">
-                            <ul class="class_tab left_box">
+                            <div class="class_tab left_box">
+                            <ul class="tab_list">
                                 <li class="tab_item active">
                                     <button type="button" data-type="all">수강신청</button>
                                 </li>
@@ -385,6 +413,7 @@
                                     <button type="button" data-type="n3">용산형 동네배움터</button>
                                 </li>
                             </ul>
+                            </div>
                             <div class="class_panel right_box">
                                 <div class="skip">목록</div>
                                 <div class="class_content">
@@ -658,7 +687,6 @@
                     </section>
                 </div>
             </div>
-            
             <div class="rowgroup4">
                 <div class="wrap">
                     <section class="board padding_left_box">
@@ -734,7 +762,6 @@
                     </section>
                 </div>
             </div>
-            
             <div class="rowgroup5">
                 <div class="wrap">
                     <section class="news padding_left_box">
@@ -788,6 +815,8 @@
                     </section>
                 </div>
             </div>
+            
+           
         </main>
     </div>
     

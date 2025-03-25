@@ -51,6 +51,7 @@
 					breakpoint: 1001,
 					settings: {
 						slidesToShow: 1,
+						slidesToScroll: 1,
 						variableWidth:false,
 					}
 				}
@@ -123,6 +124,17 @@
 			$classMore.prop('href', url);
 		}).eq(0).trigger('click');
 
+		/* class 메뉴 스크롤*/
+		$('.class_wrap .class_tab').scroll(function(){
+			var scrL= $('.class_wrap .class_tab').scrollLeft();
+			if(scrL == $('.class_wrap .class_tab ul').width() - $('.class_wrap .class_tab').width()){
+				$('.class_wrap .class_tab').addClass('end');
+			} else {
+				$('.class_wrap .class_tab').removeClass('end');
+			}
+		});
+
+
 
 		/* 새소식 */
 		var $board = $('.board'),
@@ -174,21 +186,99 @@
 				{
 					breakpoint: 1001,
 					settings: {
-						autoplay: false,
-						arrows: false,
-						variableWidth: false,
+						variableWidth: true,
 						slidesToShow: 1,
 					}
-				}, {
-					breakpoint: 641,
-					settings: {
-						autoplay: false,
-						variableWidth: false,
-						infinite: true,
-						slidesToShow: 1,
-					}
-				},
+				}
 			],
+		});
+
+
+
+/*
+		$('.search_select_box select').each(function(){
+			var $this = $(this), selectOptions = $(this).children('option').length;
+
+			$this.addClass('select_hide');
+			$this.wrap('<div class="select"></div>');
+			$this.after('<div class="select_custom"></div>');
+
+			var $selectCustom = $this.next('div.select_custom');
+			$selectCustom.text($this.children('option').eq(0).text());
+
+			var $optionlist = $('<ul />', {
+				'class': 'select_options'
+			}).insertAfter($selectCustom);
+
+			for (var i = 0; i < selectOptions; i++) {
+				$('<li />', {
+					text: $this.children('option').eq(i).text(),
+					rel: $this.children('option').eq(i).val()
+				}).appendTo($optionlist);
+			}
+
+			var $optionlistItems = $optionlist.children('li');
+
+			$selectCustom.click(function(e) {
+				e.stopPropagation();
+				$('div.select_custom.active').not(this).each(function(){
+					$(this).removeClass('active').next('ul.select_options').hide();
+				});
+				$(this).toggleClass('active').next('ul.select_options').slideToggle();
+			});
+
+			$optionlistItems.click(function(e) {
+				e.stopPropagation();
+				$selectCustom.text($(this).text()).removeClass('active');
+				$this.val($(this).attr('rel'));
+				$optionlist.hide();
+			});
+
+			$(document).click(function() {
+				$selectCustom.removeClass('active');
+				$optionlist.hide();
+			});
+		});
+*/
+
+
+
+		/* 검색 */
+		var $mainSearch = $container.find('.search_form'),
+			$searchSelect = $mainSearch.find('.search_select_box');
+
+		$searchSelect.each(function(){
+			var thisIdx = $(this).index(),
+				thisTitle = $(this).find('select').attr('title'),
+				thisTag = $(this).find('select').html().replaceAll('    ',''),
+				thisOpt = thisTag.replaceAll('<option','    <li class="select_item"><button type="button" class="select_button"').replaceAll('</option>','</button></li>'),
+				thisHtml = '<button type="button" class="select_input" data-index="' + thisIdx + '">' + thisTitle + '</button>\n' + '<ul class="select_list">' + thisOpt  + '</ul>'
+
+			$(this).append(thisHtml);
+		});
+
+		$(document).on('click', '.search_form .select_input', function(){
+			var $thisParent = $(this).parent();
+
+			if($thisParent.hasClass('active')){
+				$thisParent.removeClass('active');
+			} else {
+				$searchSelect.removeClass('active');
+				$thisParent.toggleClass('active');
+			}
+		});
+
+		$(document).on('click', '.search_form .select_item', function(){
+			var thisIdx = $(this).index(),
+				$thisParent = $(this).parents('.search_select_box'),
+				$thisOpt = $thisParent.find('select option'),
+				$selectBtn = $thisParent.find('.select_input'),
+				$thisBtn = $(this).find('button'),
+				thisVal = $thisBtn.text();
+
+			$selectBtn.text(thisVal);
+			$thisOpt.eq(thisIdx).prop('selected',true);
+			$searchSelect.removeClass('active');
 		});
 
 	});

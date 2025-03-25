@@ -51,44 +51,7 @@
     .logo .logo_anchor img{width:70%}
 }
 
-/* 검색 */
-.search{position:absolute; top:0; left:0; width:100%; height:100%; font-size:0; line-height:0}
-.search:before{display:block; visibility:hidden; opacity:0; position:fixed; top:0; left:0; z-index:10; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.4); transition-property:visibility,opacity; transition-duration:0.25s; transition-timing-function:linear}
-.search .search_hide,.search .search_show{display:none}
-.search .search_panel{padding-top:20px}
-.search .search_form{width:350px; margin-right:auto; margin-left:auto}
-.search .search_fieldset{position:relative; border:1px solid #000; box-sizing:border-box}
-.search .search_query{width:100%; height:50px; padding-left:10px; font-size:16px; line-height:18px; letter-spacing:-0.03em}
-.search .search_submit{position:absolute; top:0; right:0; width:50px; height:50px; background-color:#ccc}
-@media all and (max-width:1000px){
-    .search .search_show{display:block; position:absolute; top:0; right:50px; bottom:0; z-index:10; width:40px; height:40px; margin-top:auto; margin-bottom:auto; background-color:#ccc}
-    .search .search_hide{display:block; position:absolute; top:0; right:0; bottom:0; width:30px; height:30px; background-color:#000; margin-top:auto; margin-bottom:auto}
-    .search .search_panel{display:none; position:absolute; top:0; left:0; z-index:30; width:100%; padding-bottom:20px}
-    .search .search_panel:before{display:block; position:absolute; top:0; left:50%; width:100vw; height:100%; background-color:#eee; transform:translateX(-50%)}
 
-    /* 검색 활성화 */
-    .search.active:before{visibility:visible; opacity:1}
-    .search.active .search_panel{display:block}
-    .search_open .lnb .menu_show{z-index:20}
-}
-
-/* 날씨 */
-.weather{position:absolute; top:0; right:0; font-size:0; line-height:0}
-.weather .weather_content{padding-top:20px}
-.weather .weather_info{display:inline-block; position:relative; padding-left:75px; vertical-align:middle}
-.weather .weather_sate{position:absolute; top:0; left:0; width:70px; height:50px; background-color:#ccc}
-.weather .weather_sate:before{display:block; position:absolute; top:0; bottom:0; left:0; width:70px; height:40px; margin-top:auto; margin-bottom:auto; background-color:#eee}
-.weather .weather_date{display:block; padding-top:2px; color:#000; font-size:14px; line-height:16px}
-.weather .weather_celsius{display:block; padding-right:3px; color:#000; font-size:27px; line-height:29px; letter-spacing:600}
-.weather .weather_celsius span+span{padding-left:2px; font-weight:300}
-.weather .weather_indicator{display:inline-block; margin-left:10px; vertical-align:middle}
-.weather .weather_aqi,.weather .weather_cal{color:#000; font-size:14px; line-height:16px; letter-spacing:-0.03em}
-.weather .weather_cal{margin-top:5px}
-.weather .weather_index{font-weight:500}
-.weather .weather_level{margin-left:5px}
-@media all and (max-width:1000px){
-    .weather{display:none}
-}
 
 /* 주메뉴 */
 @media all and (min-width:1001px){
@@ -135,7 +98,6 @@
     .lnb .menu .depth2_content{position:relative; padding-left:280px}
 
     /* 메뉴 고정 높이 */
-    .lnb .menu .depth2_title{position:absolute; top:1px; left:0; width:280px; height:100%; background-color:#eee}
     .lnb .menu .depth2_info{width:inherit; height:inherit; padding-top:60px; text-align:left; color:#000; font-weight:300}
     .lnb .menu .depth2_info:before{display:block; position:absolute; right:0; bottom:0; width:200px; height:100px; background-color:#ccc}
     .lnb .menu .depth2_slogan{display:block; font-size:16px; line-height:18px; letter-spacing:-0.03em}
