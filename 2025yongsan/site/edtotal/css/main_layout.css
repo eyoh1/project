@@ -485,32 +485,6 @@
     .news_control .news_btn:before{transform: scale(0.8);}
 }
 
-/* 지워 */
-@media all and (max-width: 640px) {
-    .wrap{padding: 0 15px;}
-}
-
-
-
-
-
-
-
-
-/*.goto .search_select_box .search_select{display:none;}*/
-/*.search_select_box .select{display:block; position:relative; width:100%; height:48px; color:#fff; font-size:16px; cursor:pointer;}*/
-/*.search_select_box .select_custom{position:absolute; top:0; left:0; right:0; bottom:0; padding:8px 15px; background-color:#fff; border: 1px solid #e0d5cc; border-radius: 6px; color:#666666; transition:all 0.2s ease-in;}*/
-/*.search_select_box .select_custom:after{position:absolute; top:16px; right:10px; width:0; height:0; border:7px solid transparent; border-color:#9E9E9E transparent transparent transparent; content:""; transform:rotateZ(0deg); transition:all 0.5s; transform-origin:50% 25%;}*/
-/*.search_select_box .select_custom:active, .select_custom.active{background-color:#fff; color:#666666;}*/
-/*.search_select_box .select_custom:active:after, .select_custom.active:after{transform:rotateZ(180deg); transition:all 0.5s; transform-origin:50% 25%;}*/
-/*.search_select_box .select_custom:focus{outline:2px;}*/
-/*.search_select_box .select_options{display:block; position:absolute; top:100%; left:0; right:0; z-index:999; max-height:200px; margin:0; padding:0; border-radius:0px 0px 5px 5px; background-color:#AED581; list-style:none; overflow-y:auto;}*/
-/*.search_select_box .select_options li{margin:0; padding:12px 0; padding-left:15px; color:#424242; transition:all 0.15s ease-in;!* text-indent:15px;*! !* border-top:1px solid #AED581;*!-webkit-transition:all 0.15s ease-in; -o-transition:all 0.15s ease-in; -moz-transition:all 0.15s ease-in;}*/
-/*.search_select_box .select_options li:hover{background:#fff; color:#424242;}*/
-/*.search_select_box .select_options li[rel="hide"]{display:none;}*/
-/*.search_select_box ::-webkit-scrollbar{width:10px; border-radius:0 0 5px 0; background-color:#F5F5F5;}*/
-/*.search_select_box ::-webkit-scrollbar-thumb{border-radius:10px; background-color:#666666;}*/
-
 
 
 

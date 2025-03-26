@@ -3,7 +3,6 @@
 @import url('../../../common/css/default.css');
 @import url('../../../common/css/layout.css');
 @import url('../../../common/css/program.css');
-@import url('../../../site/edtotal/css/common.css');
-@import url('../../../site/edtotal/css/font.css');
-
+@import url('common.css');
+@import url('font.css');
 @import url('main_layout.css');

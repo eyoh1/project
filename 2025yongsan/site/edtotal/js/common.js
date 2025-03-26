@@ -41,8 +41,9 @@
         $bannerList.slick({
             draggable : false,
             infinite: true,
-            variableWidth: true,
-            slidesToShow: 4,
+            variableWidth: false,
+            vertical:true,
+            slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
             playText : '재생',
@@ -60,6 +61,29 @@
             $bodyHtml.stop().animate({
                 scrollTop: 0
             }, 250);
+        });
+
+        //바로가기
+        $('.footer .site .site_list .site_item .site_show').on('click', function () {
+            var $this = $(this),
+                $MyParent = $this.parent('li.site_item'),
+                MyParentIsActive = $MyParent.is('.active'),
+                $MyLayer = $this.siblings('.site_panel'),
+                $OtherParents = $MyParent.siblings('li.site_item'),
+                $OtherLayer = $OtherParents.find('.site_panel'),
+                $OtherBtn = $OtherParents.find('.site_show');
+            if (!MyParentIsActive) {
+                $OtherParents.removeClass('active');
+                $OtherLayer.slideUp();
+                $OtherBtn.attr('title', '목록열기');
+                $MyParent.addClass('active');
+                $this.attr('title', '목록닫기');
+                $MyLayer.slideDown();
+            } else {
+                $MyParent.removeClass('active');
+                $this.attr('title', '목록열기');
+                $MyLayer.slideUp();
+            }
         });
 
 	});

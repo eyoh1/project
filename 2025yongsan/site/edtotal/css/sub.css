@@ -2,6 +2,7 @@
 
 @import url('../../../common/css/default.css');
 @import url('../../../common/css/layout.css');
-/*@import url('../../../common/css/program.css');*/
+@import url('../../../common/css/program.css');
 @import url('common.css');
+@import url('font.css');
 @import url('sub_layout.css');

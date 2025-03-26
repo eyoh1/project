@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 /* colgroup */
-.colgroup{float:right; position:relative; width:990px; margin-top:30px; margin-bottom:30px}
+.colgroup{float:right; position:relative; width:1200px; margin-top:30px; margin-bottom:30px}
+@media all and (max-width:1600px){
+    .colgroup{width:700px}
+}
 @media all and (max-width:1300px){
     .colgroup{width:700px}
 }
@@ -13,25 +16,26 @@
 }
 
 /* 콘텐츠 */
-#contents{position:relative; min-height:600px; margin-top:30px; margin-bottom:50px}
+#contents{position:relative; min-height:600px; margin-top:60px; margin-bottom:100px}
 @media all and (max-width:640px){
     #contents{min-height:300px; margin-top:0; margin-bottom:25px}
 }
 
 /* 사이드 메뉴 */
-.side{float:left; position:relative; z-index:30; width:250px; font-size:0; line-height:0}
+.side{float:left; position:relative; z-index:30; width:380px; padding-left: 100px; font-size:0; line-height:0}
 
 /* 사이트 타이틀 */
-.side .side_title{position:relative; width:250px; height:120px; background-color:#eee; text-align:center}
+.side .side_title{position:relative; width:100%; height:150px; border-top-right-radius:120px; background-color:#0552bb; text-align:left;}
+.side .side_title:before{display: block; position: absolute; top: 0; right: 100%; width: 100vw; height: 100%; background-color:#0552bb;}
 .side .side_title:after{display:inline-block; height:100%; vertical-align:middle}
-.side .side_subject{display:inline-block; padding-right:20px; padding-left:20px; vertical-align:middle; color:#000; font-size:24px; line-height:30px; letter-spacing:-0.03em; font-weight:600}
+.side .side_subject{display:inline-block; position: relative; width: 100%; vertical-align:middle; font-family: 'Paperlogy'; color:#fff; font-size:24px; line-height:30px; font-weight:700;}
+.side .side_subject:before{display: block; position: absolute; top:-13px; right:45px; width: 56px; height: 54px; background: url("../../../site/edtotal/images/sub/side_icon.png") no-repeat;}
 .side .side_menu{position:relative}
 
 /* 2차 메뉴 */
 .side .menu .depth1_item{margin-top:-1px; border-top:1px solid #ccc; box-sizing:border-box}
 .side .menu .depth1_item:first-child{padding-top:1px; border-top-width:0}
 .side .menu .depth1_text{display:block; position:relative; padding:15px 50px 15px 20px; color:#000; font-size:17px; line-height:22px; letter-spacing:-0.03em; text-decoration:none; word-break:keep-all; transition-property:background,color}
-.side .menu .depth1_text:hover{text-decoration:underline}
 .side .menu .depth1_text:after{display:block; position:absolute; top:0; right:20px; bottom:0; margin-top:auto; margin-bottom:auto}
 .side .menu .depth1_item.has .depth1_text:after{width:15px; height:3px; background-color:#000; transition:none}
 .side .menu .depth1_text[target='_blank']:after{width:12px; height:12px; background-color:#000; transition:none}
@@ -99,15 +103,3 @@
 .breadcrumbs .breadcrumbs_item:first-child:before{display:none}
 .breadcrumbs .breadcrumbs_anchor:hover{text-decoration:underline}
 
-/* 공유, 인쇄 */
-.addons{position:absolute; right:0; bottom:20px; font-size:0; line-height:0}
-.addons .addons_item{display:inline-block; margin-left:10px; vertical-align:top}
-.addons .addons_button{font-size:16px; line-height:18px; letter-spacing:-0.03em}
-.addons .share{position:relative}
-.addons .share_item{display:inline-block; margin-left:5px}
-.addons .share_panel{display:none; position:absolute; top:0; right:100%; white-space:nowrap}
-.addons .share_list{display:inline-block}
-.addons .share_anchor{display:block; width:20px; height:20px; background-color:#000}
-.addons .share_hide{display:inline-block; margin-left:5px; width:20px; height:20px; background:#999; vertical-align:top}
-.addons .share.active .share_panel{display:block}
-.addons .print .addons_button{font-weight:600}
