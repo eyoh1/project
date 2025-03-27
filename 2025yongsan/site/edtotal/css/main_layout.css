@@ -98,7 +98,7 @@
 
 .goto .search_select_box .select_list::-webkit-scrollbar{width:22px;}
 .goto .search_select_box .select_list::-webkit-scrollbar-thumb{height:10%; border:9px solid #fff; border-radius:50px; background-color:rgba(0, 0, 0, 0.25);}
-.goto .search_select_box .select_list::-webkit-scrollbar-track{background-color:#fff;}
+.goto .search_select_box .select_list::-webkit-scrollbar-track{background-color:#fff; border-radius: 50px;}
 
 
 .goto .search_input{display:inline-block; width:calc(100% - 90px); min-height:46px; margin-right: 10px; padding-right:20px; padding-left:20px; border:1px solid #e0d5cc; border-radius:6px; outline:none; background-color:#fff; font-size: 16px; color:#666; line-height:46px; vertical-align:top; box-sizing:border-box;}
@@ -122,6 +122,7 @@
 
     .goto .search_wrap{padding: 24px 51px 24px 48px;}
 
+    .goto .search_select_box .select_list{top: -255px; height: 300px;}
 }
 @media all and (max-width: 1300px) {
     .goto {width: 350px; padding-left: 30px;}
@@ -202,6 +203,8 @@
 
 .main_more{display:inline-block; position:absolute; top:-31px; right:0; z-index:1;  padding-right:27px; font-family: 'Paperlogy'; font-size: 14px; line-height: 20px; letter-spacing: 0; font-weight: 500;}
 .main_more:before{display: block; position: absolute; top: 0; bottom: 0; right:11px; width:10px; height:10px; margin: auto 0; background:url("../../../site/edtotal/images/main/main_sprite.png") no-repeat left bottom;}
+.main_more:hover{color: #ef5665;}
+.main_more:hover:before{background:url("../../../site/edtotal/images/main/over_icon.png") no-repeat left bottom;}
 @media all and (min-width: 1001px) {
     .left_box{overflow: hidden;}
     .left_box .tab_item button:before{display: block; position: absolute; top: -4px; bottom: 0; left:calc(100% + 48px); opacity: 0; visibility: hidden; width:0; height:3px; margin: auto 0; background-color:#ef5665; transition: all 0.4s ease-in-out;}
@@ -432,7 +435,7 @@
 }
 /* 평생학습 생생소식 */
 .rowgroup5{display: block; position: relative; padding-top: 96px; padding-bottom: 116px; font-size: 0; line-height: 0;}
-.rowgroup5:before{display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, #b1d6f6 0%,#e2fafe 70%); }
+.rowgroup5:before{display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, #e2fafe 0%,#b1d6f6 70%); }
 .rowgroup5:after{display: block; position: absolute; bottom: 0; left: 0; width: 100%; height:calc(50% - 28px); background-color: #fff; }
 .news{position:relative; z-index: 1;}
 .news:before{display: block; position: absolute; left: 79px; bottom:-104px; width:100vw; height: 300px; border-top-left-radius:200px; background-color: #fff;}
@@ -445,7 +448,7 @@
 .news .news_img{height:290px; border-radius: 15px; overflow: hidden;}
 .news .news_item .news_img img{width:100%; height:100%; transform: scale(1); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 .news .news_item:hover .news_img img{transform: scale(1.05);}
-.news .news_text{display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; min-height:52px; font-size: 16px; line-height:26px; letter-spacing: -0.025em;}
+.news .news_text{display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; min-height:52px; margin-top: 19px; margin-left: 7px; font-size: 16px; line-height:26px; letter-spacing: -0.025em;}
 .news .news_control{display: inline-block; position: absolute; top:187px; left: 0;}
 .news_control .news_btn{display: inline-block; position: relative; width:46px; height:46px; margin-right: 5px; border-radius: 50%; box-shadow:0 7px 15px 0 rgba(0,0,0,0.15); background-color: #fff;}
 .news_control .news_btn:before{display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width:8px; height:14px; margin:auto; background-image:url("../../../site/edtotal/images/main/main_sprite.png"); background-repeat: no-repeat;}
@@ -467,7 +470,7 @@
     .news .news_list{left: 0; width:calc(100% + 30px); margin-left: 0;}
     .news .news_item{width: 400px;}
 
-    .news .news_control{display: block; position: relative; top: auto; text-align: center;}
+    .news .news_control{display: block; position: relative; top: auto; margin-top: 15px; text-align: center;}
 }
 @media all and (max-width: 1000px) {
     .news .news_panel{margin-top: 20px;}

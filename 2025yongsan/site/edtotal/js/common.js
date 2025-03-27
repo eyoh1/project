@@ -31,6 +31,52 @@
             }
         });
 
+        /* gnb 마우스 오버 */
+        var $siteList = $('.gnb .site_list'),
+            $siteItem = $('.gnb .site_item'),
+            $siteLayer = $('.gnb .layer');
+
+        $('.gnb .site_list .site_item .site_anchor').on('mouseenter keyup', function() {
+            var $this = $(this),
+                $MyParent = $this.parent('.site_item'),
+                $OtherParents = $MyParent.siblings('.site_item'),
+                $MyLayer = $this.siblings('.layer'),
+                $OtherBtn = $OtherParents.find('.site_anchor'),
+                $OtherLayer = $OtherParents.find('.layer'),
+                IsActive = $MyParent.is('.active');
+            if(!IsActive){
+                $OtherParents.removeClass('active');
+                $OtherBtn.attr('title', '목록열기');
+                $OtherLayer.slideUp();
+                $MyParent.addClass('active');
+                $this.attr('title', '목록닫기');
+                $MyLayer.slideDown();
+            }
+        });
+        $siteLayer.on('mouseenter keyup', function() {
+            var $this = $(this);
+
+            $this.slideDown();
+        });
+        $siteLayer.on('mouseleave blur', function(event) {
+            var $this = $(this);
+            $this.slideUp();
+            $siteItem.removeClass('active');
+        });
+
+        $('.layer .half_box .mo_list_item').on('mouseenter keyup', function() {
+            var $this = $(this),
+                $MyParent = $this.parents('li'),
+                $OtherParents = $MyParent.siblings('li'),
+                IsActive = $MyParent.is('.active');
+
+            if(!IsActive){
+                $OtherParents.removeClass('active');
+                $MyParent.addClass('active');
+            }
+        });
+
+
         /* 배너모음 */
         var $banner = $footer.find('.banner'),
             $bannerList = $banner.find('.banner_list'),

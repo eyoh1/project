@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 /* colgroup */
-.colgroup{float:right; position:relative; width:1200px; margin-top:30px; margin-bottom:30px}
+.colgroup{float:right; position:relative; width:1200px; padding-left: 120px; padding-right: 100px;}
+.colgroup:before{display: block; position: absolute; top: 0; left: 0; width: 100vw; height: 150px; background-color: #eaf0f5; border-bottom-left-radius: 120px;}
 @media all and (max-width:1600px){
-    .colgroup{width:700px}
+    .colgroup{width:1030px; padding-left: 50px; padding-right: 0;}
 }
 @media all and (max-width:1300px){
-    .colgroup{width:700px}
+    .colgroup{width:700px; padding-left: 0;}
 }
 @media all and (max-width:1000px){
     .colgroup{float:none; width:auto}
@@ -30,40 +31,46 @@
 .side .side_title:after{display:inline-block; height:100%; vertical-align:middle}
 .side .side_subject{display:inline-block; position: relative; width: 100%; vertical-align:middle; font-family: 'Paperlogy'; color:#fff; font-size:24px; line-height:30px; font-weight:700;}
 .side .side_subject:before{display: block; position: absolute; top:-13px; right:45px; width: 56px; height: 54px; background: url("../../../site/edtotal/images/sub/side_icon.png") no-repeat;}
-.side .side_menu{position:relative}
+.side .side_menu{position:relative; margin-top: 19px;}
 
 /* 2차 메뉴 */
-.side .menu .depth1_item{margin-top:-1px; border-top:1px solid #ccc; box-sizing:border-box}
+.side .menu .depth1_item{margin-top:-1px; border-bottom:1px solid #bfd6ea; box-sizing:border-box}
 .side .menu .depth1_item:first-child{padding-top:1px; border-top-width:0}
-.side .menu .depth1_text{display:block; position:relative; padding:15px 50px 15px 20px; color:#000; font-size:17px; line-height:22px; letter-spacing:-0.03em; text-decoration:none; word-break:keep-all; transition-property:background,color}
+.side .menu .depth1_text{display:block; position:relative; padding:18px 50px 17px 8px; font-family: 'Paperlogy'; color:#333333; font-size:17px; line-height:22px; font-weight: 500; text-decoration:none; word-break:keep-all; transition-property:background,color}
+.side .menu .depth1_text:hover{color: #0552bb;}
 .side .menu .depth1_text:after{display:block; position:absolute; top:0; right:20px; bottom:0; margin-top:auto; margin-bottom:auto}
-.side .menu .depth1_item.has .depth1_text:after{width:15px; height:3px; background-color:#000; transition:none}
-.side .menu .depth1_text[target='_blank']:after{width:12px; height:12px; background-color:#000; transition:none}
-.side .menu .depth1_text[target='_blank']:hover:after{background-color:#666}
+.side .menu .depth1_item.has .depth1_text:after{transition:none; display:block; position:absolute; top:0; bottom:0; right:10px; width:17px; height:17px; margin: auto 0; background: url("../../../site/edtotal/images/sub/sub_sprite.png") no-repeat left -45px;}
+.side .menu .depth1_item.has:hover .depth1_text:after{background-position: left -99px;}
+.side .menu .depth1_text[target='_blank']:after{display:block; position:absolute; top:0; bottom:0; right:10px; width:17px; height:17px; margin: auto 0; background: url("../../../site/edtotal/images/sub/depth1_blank.svg") no-repeat;}
+.side .menu .depth1_text[target='_blank']:hover:after{background: url("../../../site/edtotal/images/sub/depth1_blank_b.svg") no-repeat;}
 
 /* 2차 메뉴 활성화 */
 .side .menu .depth1_item.active{position:relative; z-index:10}
-.side .menu .depth1_item.active .depth1_text{font-weight:500; background-color:#ddd}
+.side .menu .depth1_item.active .depth1_text{font-size:18px; font-weight:600; color: #0552bb;}
 .side .menu .depth1_item.active .depth1_text:before{visibility:visible; opacity:1}
 .side .menu .depth1_item.active .depth1_text:hover{text-decoration:none}
-.side .menu .depth1_item.has.active .depth1_text:after{height:6px}
+.side .menu .depth1_item.has.active .depth1_text:after{background-position: left -72px;}
 
 /* 3차 메뉴 */
 .side .menu .depth2{transition-property:visibility,opacity,background-color}
-.side .menu .depth2_list{padding-right:20px; padding-left:20px; transition-property:padding-top,padding-bottom}
+.side .menu .depth2_list{padding-right:20px; padding-left:9px; transition-property:padding-top,padding-bottom}
 .side .menu .depth2_item{margin-top:0; transition-property:margin-top}
-.side .menu .depth2_text{display:block; position:relative; padding-left:10px; text-decoration:none; transition:none}
-.side .menu .depth2_text:before{visibility:hidden; opacity:0; display:none; position:absolute; top:10px; left:1px; width:3px; height:3px; background-color:#000; transition-property:visibility,opacity}
-.side .menu .depth2_text:hover{text-decoration:underline}
+.side .menu .depth2_text{display:block; position:relative; padding-left:10px; letter-spacing: -0.02em; color: #444444;  text-decoration:none; transition:none}
+.side .menu .depth2_text:before{visibility:hidden; opacity:0; display:none; position:absolute; top:9px; left:0; width:4px; height:4px; background-color:#82a8dd; transition-property:visibility,opacity}
+.side .menu .depth2_text:hover{color: #005aab;}
+.side .menu .depth2_text:hover:before{background-color: #0552bb;}
 .side .menu .depth2_item.has .depth2_text:after{display:block; position:absolute; top:0; right:0; bottom:0; width:10px; height:3px; margin-right:auto; margin-left:auto; background-color:#000; transition-property:none}
 .side .menu .depth2_text[target='_blank']:after{display:inline-block; width:0; height:0; margin-left:5px; background-color:#000; transition:none}
 
 /* 3차 메뉴 활성화 */
-.side .menu .depth1_item.active .depth2{visibility:visible; opacity:1}
-.side .menu .depth1_item.active .depth2_list{margin-top:4px; margin-bottom:18px}
-.side .menu .depth1_item.active .depth2_item{margin-top:13px}
-.side .menu .depth1_item.active .depth2_text{color:#000; font-size:16px; line-height:22px}
-.side .menu .depth1_item.active .depth2_item.active .depth2_text{font-weight:600}
+.side .menu .depth1_item.active .depth2{visibility:visible; opacity:1; }
+.side .menu .depth1_item .depth2:before{display: block; position: absolute; opacity: 0; top: 0; left: 50%; right: 50%; width: 0; height: 3px; margin: 0 auto; background-color: #347ada; transition:all 0.25s cubic-bezier(.25, .46, .450, .94);}
+.side .menu .depth1_item.active .depth2:before{opacity:1; left:0; right:0; width: 100%;}
+.side .menu .depth1_item.active .depth2_list{margin-top:29px; margin-bottom:28px}
+.side .menu .depth1_item.active .depth2_item{margin-top:10px}
+.side .menu .depth1_item.active .depth2_text{color:#444444; font-size: 15px; line-height: 20px;}
+.side .menu .depth1_item.active .depth2_item.active .depth2_text{color: #0552bb;}
+.side .menu .depth1_item.active .depth2_item.active .depth2_text:before{background-color: #0552bb;}
 .side .menu .depth1_item.active .depth2_item.has.active .depth2_text:after{height:6px}
 .side .menu .depth1_item.active .depth2_text:before{visibility:visible; opacity:1; display:block}
 .side .menu .depth1_item.active .depth2_text[target='_blank']:after{width:12px; height:12px}
@@ -86,20 +93,27 @@
 .side .menu .depth1_item.active .depth2_item.active .depth3_text:before{visibility:visible; opacity:1; width:7px; height:1px}
 .side .menu .depth1_item.active .depth2_item.active .depth3_text[target='_blank']:after{width:12px; height:12px}
 .side .menu .depth1_item.active .depth2_item.active .depth3_text.active span{color:#000; text-decoration:underline}
+
+@media all and (max-width:1600px){
+    .side{width: 250px; padding-left: 0;}
+}
 @media all and (max-width:1000px){
     .side{display:none}
 }
 
+
 /* 서브헤드 */
-.sub_head{position:relative; padding-bottom:20px; border-bottom:1px solid #ccc}
-.sub_head .sub_title{padding-top:35px; color:#000; font-size:30px; line-height:32px; letter-spacing:-0.03em}
-.sub_head .sub_title h2{font-weight:300}
+.sub_head{position:relative; height: 150px;}
+.sub_head .sub_title{padding-top:41px;}
+.sub_head .sub_title h2{font-family: 'Paperlogy'; color:#222222; font-size:24px; line-height:30px; font-weight:500}
 
 /* 브래드크럼 */
-.breadcrumbs{font-size:0; line-height:0}
-.breadcrumbs .breadcrumbs_item{display:inline-block; position:relative; margin-left:14px; padding-left:16px; font-size:15px; line-height:20px; letter-spacing:-0.03em}
-.breadcrumbs .breadcrumbs_item:before{display:block; position:absolute; top:0; bottom:0; left:0; width:5px; height:10px; margin-top:auto; margin-bottom:auto; background-color:#000; font-size:0; line-height:0}
-.breadcrumbs .breadcrumbs_item:first-child{margin-left:0; padding-left:0}
-.breadcrumbs .breadcrumbs_item:first-child:before{display:none}
-.breadcrumbs .breadcrumbs_anchor:hover{text-decoration:underline}
+.breadcrumbs{margin-top:17px; font-size:0; line-height:0}
+.breadcrumbs .breadcrumbs_item{display:inline-block; position:relative; padding-left:14px; padding-right: 20px; font-size:15px; line-height:20px; color:#666666;}
+.breadcrumbs .breadcrumbs_item:first-child{padding-left: 19px;}
+.breadcrumbs .breadcrumbs_item:last-child{color: #333;}
+.breadcrumbs .breadcrumbs_item:first-child:after,
+.breadcrumbs .breadcrumbs_item:before{display:block; position:absolute; top:0; bottom:0; right:0; width:7px; height:11px; margin:auto 0; background: url("../../../site/edtotal/images/sub/sub_sprite.png") no-repeat left -24px; font-size: 0; line-height: 0;}
+.breadcrumbs .breadcrumbs_item:last-child:before{display: none;}
+.breadcrumbs .breadcrumbs_item:first-child:after{right: auto; left: 0; width: 14px; height: 14px; background-position: left top;}
 
