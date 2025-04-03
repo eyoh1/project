@@ -63,19 +63,103 @@
             $this.slideUp();
             $siteItem.removeClass('active');
         });
+        //gnb 마우스 오버 끝
 
-        $('.layer .half_box .mo_list_item').on('mouseenter keyup', function() {
+        //사이트맵
+        $('.sitemap_open').on('click', function () {
+            $('.sitemap_wrap').addClass('active').attr('title', '사이트맵 열림');
+        });
+        $('.sitemap_close').on('click', function () {
+            $('.sitemap_wrap').removeClass('active').attr('title', '사이트맵 닫힘');
+        });
+
+        //사이트맵 끝
+
+        /* 사이트맵 스크롤*/
+        $(".sitemap_list").scroll(function(){
+            var containerSctop = $(".sitemap_list").scrollTop();
+            var containerHeight = $(".sitemap_list").height();
+            var contentHeight = $('.inner_box').height();
+            if(containerSctop + containerHeight >= contentHeight-1)     {
+                $(".sitemap_list").addClass('end');
+            }else{
+                $(".sitemap_list").removeClass('end');
+            }
+        })
+
+        /* 모바일 탭 */
+        var $lnb = $('.lnb'),
+            $lnbTabItem = $lnb.find('.tab_btn_item'),
+            $lnbTabBtn = $lnbTabItem.find('button'),
+            $lnbTabConWrap = $lnb.find('.tab_panel_wrap');
+
+        $lnbTabBtn.on('click.tab', function () {
             var $this = $(this),
-                $MyParent = $this.parents('li'),
-                $OtherParents = $MyParent.siblings('li'),
-                IsActive = $MyParent.is('.active');
+                $Tabparent = $this.parents('.tab_btn_item'),
+                $thisIndex = $this.closest($lnbTabItem).index() + 1,
+                searchTabNavTitle = $this.text();
+
+            $this.attr('title', '선택됨');
+            $Tabparent.siblings().children('button').removeAttr('title');
+            $this.closest($lnbTabItem).addClass('active').siblings().removeClass('active');
+            $lnbTabConWrap.find($('.n' + $thisIndex)).addClass('active').attr('title', searchTabNavTitle + ' 선택됨').siblings().removeClass('active').removeAttr('title');
+        });
+
+        /* 모바일 패밀리사이트 */
+        var $familyItem = $lnb.find('.goto_btn');
+
+        $familyItem.on('click', function() {
+            var $this = $(this),
+                $MyParent = $this.parent('li.goto_item'),
+                IsActive = $MyParent.is('.active'),
+                $MyLayer = $this.siblings('.layer'),
+                $OtherParents = $MyParent.siblings('li.goto_item'),
+                $OtherLayer = $OtherParents.find('.layer'),
+                $OtherBtn = $OtherParents.find('.goto_btn'),
+                $depth2Btn = $MyLayer.find('.goto_item_depth2'),
+                $depth2Btn2 = $MyLayer.find('.goto_item_depth2 .goto_btn_2'),
+                $depth2Layer = $MyLayer.find('.goto_item_depth2 .layer');
 
             if(!IsActive){
                 $OtherParents.removeClass('active');
+                $OtherLayer.slideUp();
+                $OtherBtn.attr('title', '목록열기');
                 $MyParent.addClass('active');
-            }
+                $this.attr('title', '목록닫기');
+                $MyLayer.slideDown();
+            } else{
+                $MyParent.removeClass('active');
+                $depth2Btn.removeClass('active');
+                $depth2Btn2.attr('title', '목록열기');
+                $depth2Layer.slideUp();
+                $this.attr('title', '목록열기');
+                $MyLayer.slideUp();
+            };
         });
 
+        var $familyItem2 = $lnb.find('.goto_btn_2');
+
+        $familyItem2.on('click', function() {
+            var $this = $(this),
+                $MyParent = $this.parent('li.goto_item_depth2'),
+                IsActive = $MyParent.is('.active'),
+                $MyLayer = $this.siblings('.layer'),
+                $OtherParents = $MyParent.siblings('li.goto_item_depth2'),
+                $OtherLayer = $OtherParents.find('.layer'),
+                $OtherBtn = $OtherParents.find('.goto_btn');
+            if(!IsActive){
+                $OtherParents.removeClass('active');
+                $OtherLayer.slideUp();
+                $OtherBtn.attr('title', '목록열기');
+                $MyParent.addClass('active');
+                $this.attr('title', '목록닫기');
+                $MyLayer.slideDown();
+            } else{
+                $MyParent.removeClass('active');
+                $this.attr('title', '목록열기');
+                $MyLayer.slideUp();
+            };
+        });
 
         /* 배너모음 */
         var $banner = $footer.find('.banner'),

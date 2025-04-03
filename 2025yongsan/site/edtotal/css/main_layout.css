@@ -8,7 +8,7 @@
 .visual_list .visual_item{width:980px; margin-left: 40px; border-radius:0 60px; overflow: hidden;}
 .visual_list .visual_anchor{display: block; position: relative; width: 100%; height: 100%;}
 
-.visual_control{display: inline-block; position: absolute; bottom:-35px; right:0; padding: 20px 0 20px 37px; border-top-left-radius: 70px; background-color: #fff;}
+.visual_control{display: inline-block; position: absolute; bottom:-35px; right:0; z-index: 1; padding: 20px 0 20px 37px; border-top-left-radius: 70px; background-color: #fff;}
 .visual_control .visual_num{display: inline-block; position: relative; margin-right: 25px; vertical-align: top; font-family: 'Paperlogy';}
 .visual_control .visual_num span{font-size:14px; line-height:45px; letter-spacing:0; font-weight: 700;}
 .visual_control .visual_num .slash,
@@ -34,11 +34,17 @@
 }
 @media all and (max-width: 1000px) {
     .rowgroup1{padding-bottom: 80px;}
+    .rowgroup1:before{display: block; position: absolute; bottom:60px; right:calc(0% - 13px); opacity: 0.5; width:1000px; height: 690px; background: url("../../../site/edtotal/images/main/main_bg.png") no-repeat; background-size: cover;}
     .visual{display:block; width: 100%;}
     .visual_list{left: 0; width: 100%; border-radius: 0;}
     .visual_list .slick-list{padding-left: 0; border-radius: 0 45px;}
     .visual_list .visual_item{margin-left: 0; border-radius: 0;}
 }
+@media all and (max-width: 800px) {
+    .rowgroup1:before{bottom: auto; top: 0; right:calc(0% - 30px); height: 570px;}
+    .visual_control:before{display: block; position: absolute; top:50px; left:-177px; z-index: 0; width: 100%; height: 53px; background: url('../../../site/edtotal/images/main/main_m_bg.png') no-repeat 18px -30px;}
+}
+
 @media all and (max-width: 640px) {
     .rowgroup1{padding-bottom: 47px;}
     .visual_list .slick-list{border-radius: 0 30px;}
@@ -48,6 +54,9 @@
     .visual_control .visual_btn{width: 35px; height: 35px; margin-right: 5px;}
     .visual_control .visual_btn:last-child{margin-right: 0;}
     .visual_control .visual_btn:before{transform: scale(0.8);}
+
+    .rowgroup1:before{height: 50%; opacity: 1;}
+    .visual_control:before{top: 27px; left: -85px; background-position: -43px -65px;}
 }
 
 

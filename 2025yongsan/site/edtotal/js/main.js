@@ -194,55 +194,6 @@
 		});
 
 
-
-/*
-		$('.search_select_box select').each(function(){
-			var $this = $(this), selectOptions = $(this).children('option').length;
-
-			$this.addClass('select_hide');
-			$this.wrap('<div class="select"></div>');
-			$this.after('<div class="select_custom"></div>');
-
-			var $selectCustom = $this.next('div.select_custom');
-			$selectCustom.text($this.children('option').eq(0).text());
-
-			var $optionlist = $('<ul />', {
-				'class': 'select_options'
-			}).insertAfter($selectCustom);
-
-			for (var i = 0; i < selectOptions; i++) {
-				$('<li />', {
-					text: $this.children('option').eq(i).text(),
-					rel: $this.children('option').eq(i).val()
-				}).appendTo($optionlist);
-			}
-
-			var $optionlistItems = $optionlist.children('li');
-
-			$selectCustom.click(function(e) {
-				e.stopPropagation();
-				$('div.select_custom.active').not(this).each(function(){
-					$(this).removeClass('active').next('ul.select_options').hide();
-				});
-				$(this).toggleClass('active').next('ul.select_options').slideToggle();
-			});
-
-			$optionlistItems.click(function(e) {
-				e.stopPropagation();
-				$selectCustom.text($(this).text()).removeClass('active');
-				$this.val($(this).attr('rel'));
-				$optionlist.hide();
-			});
-
-			$(document).click(function() {
-				$selectCustom.removeClass('active');
-				$optionlist.hide();
-			});
-		});
-*/
-
-
-
 		/* 검색 */
 		var $mainSearch = $container.find('.search_form'),
 			$searchSelect = $mainSearch.find('.search_select_box');

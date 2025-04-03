@@ -8,18 +8,26 @@
 }
 @media all and (max-width:1300px){
     .colgroup{width:700px; padding-left: 0;}
+    .colgroup:before{left: -35px; border-bottom-left-radius: 100px;}
 }
 @media all and (max-width:1000px){
     .colgroup{float:none; width:auto}
+    .colgroup:before{left: 0; height: 130px; border-bottom-left-radius: 70px;}
+    .colgroup:after{display: block; position: absolute; top: 0; right:101.5%; width: 100%; height: 130px; background-color: #0552bb; border-top-right-radius: 70px;}
 }
 @media all and (max-width:640px){
-    .colgroup{margin-top:20px}
+    .colgroup:after,
+    .colgroup:before{height: 100px;}
+    .colgroup:after{right: 100%;}
 }
 
 /* 콘텐츠 */
 #contents{position:relative; min-height:600px; margin-top:60px; margin-bottom:100px}
+@media all and (max-width:1000px){
+    #contents{margin-top:30px;}
+}
 @media all and (max-width:640px){
-    #contents{min-height:300px; margin-top:0; margin-bottom:25px}
+    #contents{min-height:300px; margin-bottom:25px}
 }
 
 /* 사이드 메뉴 */
@@ -29,10 +37,12 @@
 .side .side_title{position:relative; width:100%; height:150px; border-top-right-radius:120px; background-color:#0552bb; text-align:left;}
 .side .side_title:before{display: block; position: absolute; top: 0; right: 100%; width: 100vw; height: 100%; background-color:#0552bb;}
 .side .side_title:after{display:inline-block; height:100%; vertical-align:middle}
-.side .side_subject{display:inline-block; position: relative; width: 100%; vertical-align:middle; font-family: 'Paperlogy'; color:#fff; font-size:24px; line-height:30px; font-weight:700;}
-.side .side_subject:before{display: block; position: absolute; top:-13px; right:45px; width: 56px; height: 54px; background: url("../../../site/edtotal/images/sub/side_icon.png") no-repeat;}
+.side .side_subject{display:inline-block; position: relative; z-index:1; width: calc(100% - 30px); vertical-align:middle; background-color: #0552bb; font-family: 'Paperlogy'; color:#fff; font-size:24px; line-height:45px; font-weight:700;}
+.side .side_subject:before{display: block; position: absolute; top:-6px; right:16px; z-index: -1; width: 56px; height: 54px; background: url("../../../site/edtotal/images/sub/side_icon.png") no-repeat;}
 .side .side_menu{position:relative; margin-top: 19px;}
-
+@media all and (max-width: 1300px) {
+    .side .side_title{border-top-right-radius:100px;}
+}
 /* 2차 메뉴 */
 .side .menu .depth1_item{margin-top:-1px; border-bottom:1px solid #bfd6ea; box-sizing:border-box}
 .side .menu .depth1_item:first-child{padding-top:1px; border-top-width:0}
@@ -106,6 +116,17 @@
 .sub_head{position:relative; height: 150px;}
 .sub_head .sub_title{padding-top:41px;}
 .sub_head .sub_title h2{font-family: 'Paperlogy'; color:#222222; font-size:24px; line-height:30px; font-weight:500}
+@media all and (max-width: 1000px) {
+    .sub_head{height:130px; padding-left: 35px;}
+    .sub_head .sub_title{padding-top: 33px;}
+    .sub_head .sub_title h2{font-size: 20px; line-height: 20px;}
+}
+@media all and (max-width: 640px) {
+    .sub_head{height: 100px;}
+    .sub_head .sub_title{padding-top: 27px;}
+    .sub_head .sub_title h2{font-size: 18px; line-height: 20px;}
+
+}
 
 /* 브래드크럼 */
 .breadcrumbs{margin-top:17px; font-size:0; line-height:0}
@@ -117,3 +138,13 @@
 .breadcrumbs .breadcrumbs_item:last-child:before{display: none;}
 .breadcrumbs .breadcrumbs_item:first-child:after{right: auto; left: 0; width: 14px; height: 14px; background-position: left top;}
 
+@media all and (max-width: 1000px) {
+    .breadcrumbs .breadcrumbs_item{font-size: 14px;}
+}
+@media all and (max-width: 640px) {
+    .breadcrumbs{margin-top: 11px;}
+    .breadcrumbs .breadcrumbs_item{padding-left:0; padding-right:12px; font-size: 12px; line-height: 14px;}
+    .breadcrumbs .breadcrumbs_item:first-child{padding-left: 17px;}
+    .breadcrumbs .breadcrumbs_item:first-child:after{left:-1px; top:2px; transform: scale(0.8);}
+    .breadcrumbs .breadcrumbs_item:before{right:2px; transform: scale(0.8);}
+}
