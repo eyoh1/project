@@ -1,6 +1,6 @@
 ### 2025yongsan (2025 용산구교육종합포털) - 작업중
 - [메인 레이아웃](https://eyoh1.github.io/project/2025yongsan/site/edtotal/main.html)
-
+- [서브 레이아웃](https://eyoh1.github.io/project/2025yongsan/site/edtotal/sub.html)
 
 ### 2024yeoju (2024 여주시청 전면개편)
 - [공통 서브 레이아웃](https://eyoh1.github.io/project/2024yeoju/site/public/sub.html)
