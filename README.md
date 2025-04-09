@@ -1,7 +1,7 @@
 
 
 ### 제이오텍 메인화면 틀코딩
-https://eyoh1.github.io/project/jeiotech/main.html
+https://eyoh1.github.io/project/Jeiotech/main.html
 
 
 
