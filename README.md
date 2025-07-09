@@ -1,11 +1,4 @@
 
-
-### 제이오텍 메인화면 틀코딩
-- [제이오텍 메인화면 틀코딩](https://eyoh1.github.io/project/JeioTech/main.html)
-
-
-
-
 ### 2025yongsan (2025 용산구교육종합포털) - 작업중
 - [메인 레이아웃](https://eyoh1.github.io/project/2025yongsan/site/edtotal/main.html)
 - [서브 레이아웃](https://eyoh1.github.io/project/2025yongsan/site/edtotal/sub.html)
